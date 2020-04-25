@@ -8,7 +8,7 @@
     <meta name="author" content="M. Ridwan Zalbina">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rumah Sakit Rasyyid</title>
-
+    <link rel="icon" href="<?php echo base_url();?>/assets/frontview/img/favicon.png" sizes="16x16" type="image/png">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Taviraj:300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">

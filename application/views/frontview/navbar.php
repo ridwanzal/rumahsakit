@@ -38,12 +38,12 @@
                     Fasilitas
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="<?php echo base_url();?>">Layanan Medis</a>
-                  <a class="dropdown-item" href="<?php echo base_url();?>">Fasilitas Penunjang</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>fasilitas/layanan">Layanan Medis</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>fasilitas/penunjang">Fasilitas Penunjang</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url();?>">Galeri <span class="sr-only"></span></a>
+                <a class="nav-link" href="<?php echo base_url();?>galeri">Galeri <span class="sr-only"></span></a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,6 +53,16 @@
                   <a class="dropdown-item" href="<?php echo base_url();?>">Artikel</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>">Berita</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>">Kegiatan</a>
+                </div>
+              </li> 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Informasi
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="<?php echo base_url();?>">Pengunjung</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>">Hak dan Kewajiban Pasien</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>">Promosi</a>
                 </div>
               </li> 
               <li class="nav-item">

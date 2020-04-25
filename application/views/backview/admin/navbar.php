@@ -5,7 +5,7 @@
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
                 <!-- <a class="navbar-brand" href="index.html">Concept</a> -->
-                <center><a href="<?php echo base_url();?>"><img style="height:35px;padding-left:20px;" src="<?php echo base_url();?>assets/frontview/img/logo2.png" alt=""></a></center>
+                <center><a href="<?php echo base_url();?>"><img style="height:35px;padding-left:20px;" src="<?php echo base_url();?>assets/frontview/img/logo3.png" alt=""></a></center>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -15,7 +15,7 @@
                             <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="<?php echo base_url();?>assets/backview/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
                             <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                 <div class="nav-user-info">
-                                    <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
+                                    <h5 class="mb-0 text-white nav-user-name">Welcome Administrator</h5>
                                 </div>
                                 <a class="dropdown-item" href="<?php echo base_url();?>login/logout"><i class="fas fa-power-off mr-2"></i>Logout</a>
                             </div>
@@ -40,29 +40,17 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav flex-column">
                             <li class="nav-divider">
-                                LAMAN PELANGGAN
+                                LAMAN ADMIN 
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link active" href="<?php echo base_url(); ?>pelanggan" ><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin" ><i class="fa fa-fw fa-user-circle"></i>Kelola Blog <span class="badge badge-success">6</span></a>
                             </li>
-                            <li class="nav-divider">
+                            <!-- <li class="nav-divider">
                                 MENU
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url(); ?>pelanggan/order" ><i class="fas fa-fw fa-file"></i> Kelola Rooms </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url(); ?>pelanggan/order" ><i class="fas fa-fw fa-file"></i> Pemesanan </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url(); ?>pelanggan/testimoni" ><i class="fas fa-fw fa-file"></i> Testimoni </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url(); ?>pelanggan/testimoni" ><i class="fas fa-fw fa-file"></i> Laporan </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url(); ?>admin/pelanggan" ><i class="fas fa-fw fa-file"></i> Pelanggan </a>
-                            </li>
+                                <a class="nav-link" href="<?php echo base_url(); ?>" ><i class="fas fa-fw fa-file"></i> Kelola Blog </a>
+                            </li> -->
                         </ul>
                     </div>
                 </nav>

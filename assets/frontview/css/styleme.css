@@ -25,7 +25,7 @@ body{
     padding-left: 0;
     padding-right: 0;
     padding-bottom:5px;
-    background :  #1a936f !important;
+    background :  #2d527c !important;
 }
 
 .infobar {
@@ -42,7 +42,7 @@ body{
 }
 
 .nav_container{
-    background :  #1a936f !important;
+    background :  #2d527c !important;
 }
 
 .navmain > li{
@@ -80,7 +80,7 @@ body{
     color: #fff;
     top: 50%;
     text-align : left;
-    left: 22%;
+    left: 21%;
 }
 
 .carousel_content{

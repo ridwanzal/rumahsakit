@@ -62,9 +62,14 @@ $route['feeds'] = 'main/feeds';
 
 //
 $route['kontak'] = 'main/contact';
+$route['galeri'] = 'main/galeri';
 $route['karir'] = 'main/karir';
+$route['fasilitas/layanan'] = 'main/layanan';
+$route['fasilitas/penunjang'] = 'main/penunjang';
 $route['profil/sejarah'] = 'main/sejarah';
 $route['profil/visimisi'] = 'main/visimisi';
+$route['artikel'] = 'main/artikel';
+
 
 // route pelanggan
 $route['pelanggan'] = 'pelanggan';

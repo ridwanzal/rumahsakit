@@ -7,16 +7,19 @@
                                 <div class="carousel-caption">
                                     <div class="carousel_content">
                                         <h1>RS. AR-Rasyid</h1>
-                                        <p>Memberikan layanan kesehatan yang bermutu bagi masyarakat.</p>
+                                        <p>Dengan pelayanan yang prima serta di dukung oleh tenaga medis yang berpengalaman, peralatan yang modern dan canggih.</p>
                                     </div>
                                 </div>
                             <img class="d-block w-100 imgslider" src="<?php echo base_url(); ?>assets/frontview/img/hospital.jpg" alt="First slide">
                             </div>
                             <div class="carousel-item">
-                            <img class="d-block w-100 imgslider" src="<?php echo base_url(); ?>assets/frontview/img/hospital.jpg" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                            <img class="d-block w-100 imgslider" src="<?php echo base_url(); ?>assets/frontview/img/hospital.jpg" alt="Third slide">
+                                <div class="carousel-caption">
+                                    <div class="carousel_content">
+                                        <h1>RS. AR-Rasyid</h1>
+                                        <p>Dengan pelayanan yang prima serta di dukung oleh tenaga medis yang berpengalaman, peralatan yang modern dan canggih.</p>
+                                    </div>
+                                </div>
+                            <img class="d-block w-100 imgslider" src="<?php echo base_url(); ?>assets/frontview/img/hospital2.jpg" alt="First slide">
                             </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

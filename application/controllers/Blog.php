@@ -6,7 +6,7 @@ use Sunra\PhpSimple\HtmlDomParser; // lib html parser
 use stringEncode\Encode; // lib html parser
 use PHPHtmlParser\Dom; // lib html parser
 use FastSimpleHTMLDom\Document; // lib html parser
-class Admin extends CI_Controller {
+class Blog extends CI_Controller {
 
       function __construct(){
         parent::__construct();		
@@ -26,7 +26,6 @@ class Admin extends CI_Controller {
         $data['header_page'] = "";
         $this->load->view('backview/header.php', $data);
         $this->load->view('backview/admin/navbar.php', $data);
-        $this->load->view('backview/admin/dashboard/blog.php', $data);
         $this->load->view('backview/footer.php', $data);
       }
 

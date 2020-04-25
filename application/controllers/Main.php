@@ -66,6 +66,35 @@ class Main extends CI_Controller {
 	$this->load->view('frontview/footer', $data);
  }
 
+ public function layanan(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/layanan/layanan', $data);
+	$this->load->view('frontview/footer', $data);
+ }
+
+
+ public function penunjang(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/layanan/penunjang', $data);
+	$this->load->view('frontview/footer', $data);
+ }
+
+
+ public function galeri(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/galeri/galeri', $data);
+	$this->load->view('frontview/footer', $data);
+ }
+
   public function sejarah(){
 	$data['title_bar'] = "";
 	$data['header_page'] = "";
