@@ -1,0 +1,137 @@
+.imgslider{
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.section_footer{
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.logo_main{
+    height: 80px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.navbar_custom{
+    padding-top:5px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom:5px;
+    background :  #1a936f !important;
+}
+
+.infobar {
+    display: flex;
+    padding-left: 20px;
+    position: relative;
+    top: 4px;
+}
+
+.infobar > span {
+    padding-left: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.nav_container{
+    background :  #1a936f !important;
+}
+
+.navmain > li{
+    padding-right:25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navmain > li > a{
+    color : #ffffff !important;
+}
+
+.footer_last{
+    background : #eee;
+    padding-top:20px;
+    padding-bottom: -5px;
+    border-top: 1px solid #eee;
+}
+
+
+/*
+    carousel
+*/
+
+.textheading{
+    position: relative;
+}
+
+.textheading_container{
+    position: absolute;
+    top: 100px;
+}
+
+.carousel-caption{
+    color: #fff;
+    top: 50%;
+    text-align : left;
+    left: 22%;
+}
+
+.carousel_content{
+    background : #000;
+    padding: 30px;
+    width: 50%;
+}
+
+.form-control {
+    border-radius: 0px !important;
+}
+
+.btn{
+    border-radius: 0px !important;
+}
+
+.search_component{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.search_component_button{
+    border : 1px solid #fff;
+    color : #fff;
+}
+
+search_component_button:hover{
+    color : #ffffff !important;
+    background : #fff !important;
+}
+
+.breadcrumbs_custom{
+    background : #e9ecef;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    border-radius: 0px;
+    top: 52px;
+}
+
+.breadcrumb{
+    padding-left: 7px !important;
+}
+
+.section_two{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #f1f1f1;
+}
