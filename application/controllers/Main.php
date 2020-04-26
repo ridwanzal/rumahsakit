@@ -36,6 +36,7 @@ class Main extends CI_Controller {
 			$this->load->view('frontview/page/index/section1', $data);
 			$this->load->view('frontview/page/index/section2', $data);
 			$this->load->view('frontview/page/index/section3', $data);
+			$this->load->view('frontview/page/index/section4', $data);
 			$this->load->view('frontview/footer', $data);
 		// }
   }
@@ -63,6 +64,51 @@ class Main extends CI_Controller {
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
 	$this->load->view('frontview/page/karir/karir', $data);
+	$this->load->view('frontview/footer', $data);
+ }
+
+ public function pengunjung(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/pengunjung/pengunjung', $data);
+	$this->load->view('frontview/footer', $data);
+ }
+
+ public function artikel(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/blog/bloglist', $data);
+	$this->load->view('frontview/footer', $data);
+ }
+
+ public function berita(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/blog/bloglist', $data);
+	$this->load->view('frontview/footer', $data);
+ }
+
+ public function kegiatan(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/blog/bloglist', $data);
+	$this->load->view('frontview/footer', $data);
+ }
+
+ public function artikeldetail(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/blog/blogdetail', $data);
 	$this->load->view('frontview/footer', $data);
  }
 

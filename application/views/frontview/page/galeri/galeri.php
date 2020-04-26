@@ -10,7 +10,7 @@
 </section>
 <br/>
 <br/>
-<section>
+<section class="section_four_two">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-4 col-6">

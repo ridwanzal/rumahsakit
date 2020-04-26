@@ -64,12 +64,14 @@ $route['feeds'] = 'main/feeds';
 $route['kontak'] = 'main/contact';
 $route['galeri'] = 'main/galeri';
 $route['karir'] = 'main/karir';
+$route['admin/karir'] = 'karir';
+$route['pengunjung'] = 'main/pengunjung';
 $route['fasilitas/layanan'] = 'main/layanan';
 $route['fasilitas/penunjang'] = 'main/penunjang';
 $route['profil/sejarah'] = 'main/sejarah';
 $route['profil/visimisi'] = 'main/visimisi';
 $route['artikel'] = 'main/artikel';
-
+$route['artikel/(:any)'] = 'blog/blog_content_detail/$1'; 
 
 // route pelanggan
 $route['pelanggan'] = 'pelanggan';

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-xs-12">
-                <center><h4>Kenapa harus Rumah Sakit Islam Ar Rasyid</h4></center>
+                <center><h4 class="section_two_head">Kenapa harus Rumah Sakit Islam Ar Rasyid</h4></center>
             </div>
         </div>
         <br/>

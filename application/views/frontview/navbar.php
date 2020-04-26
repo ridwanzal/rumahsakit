@@ -50,7 +50,7 @@
                     Artikel
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="<?php echo base_url();?>">Artikel</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>artikel">Artikel</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>">Berita</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>">Kegiatan</a>
                 </div>
@@ -60,7 +60,7 @@
                     Informasi
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="<?php echo base_url();?>">Pengunjung</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>pengunjung">Pengunjung</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>">Hak dan Kewajiban Pasien</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>">Promosi</a>
                 </div>

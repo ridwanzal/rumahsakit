@@ -6,34 +6,34 @@
             <li class="breadcrumb-item active" aria-current="page">Profil</li>
             <li class="breadcrumb-item active" aria-current="page">Kontak</li>
           </ol>
+        </nav>  
     </div>
-</nav>  
 </section>
 <br/>
 <br/>
-<section>
+<section class="section_four_two">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-xs-12">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Nama *</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan nama anda">
                     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Subject</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="exampleInputPassword1">Subject * </label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan subject pesan">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-xs-12">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Nama *</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <label for="exampleInputEmail1">Email *</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan email anda">
                     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Subject</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="exampleInputPassword1">Telephone *</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan telepon anda">
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
             <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Isi Pesan *</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Isi Pesan"></textarea>
                 </div>
             </div>
         </div>
