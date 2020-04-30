@@ -64,7 +64,7 @@
         </div>
     </div>
 </section>
-<a href="https://api.whatsapp.com/send?phone=+6282381827576&text=Hello, can you help me ?" class="floatwa" target="_blank"><i class="fa fa-whatsapp my-floatwa"></i></a>
+<a href="https://api.whatsapp.com/send?phone=++6281928529335&text=Assalamu'alaikum Wr Wb" class="floatwa" target="_blank"><i class="fa fa-whatsapp my-floatwa"></i></a>
 
 <!-- Js Plugins -->
 <script src="<?php echo base_url();?>/assets/frontview/js/jquery-3.3.1.min.js"></script>
