@@ -48,7 +48,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-xs-12">
-                <p class="text-muted">Copyright © 2020 Rumah Sakit Islam Ar-Rasyid. All Right Reserved.
+                <p class="text-muted">Copyright © 2020 Rumah Sakit Islam Ar-Rasyid. All Right Reserved. Affiliation with Marco Digital Partner.
                 <div class="">
                 </div>
             </div>
