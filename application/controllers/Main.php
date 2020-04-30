@@ -194,5 +194,31 @@ class Main extends CI_Controller {
 	$this->load->view('frontview/page/feed/feed', $data);
 	$this->load->view('frontview/footer', $data);
   }
+
+  public function submit_kontak(){
+	$nama = $this->input->post('nama', TRUE);
+	$email = $this->input->post('email', TRUE);
+	$telepon = $this->input->post('telepon', TRUE);
+	$subject = $this->input->post('subject', TRUE);
+	$pesan = $this->input->post('pesan', TRUE);
+		
+	$data = array(
+		'nama' => $nama,
+		'email' => $email,
+		'telepon' => $telepon,
+		'subject' => $subject,
+		'pesan' => $pesan
+	);
+
+	$this->db->insert('contact', $data);
+	$check = $this->db->affected_rows() > 0;
+	if($check){
+		$this->session->set_flashdata('message', 'Data berhasil dikirim');
+		$this->session->set_flashdata('allowlogin', 'Login untuk melanjutkan');
+		redirect(base_url('kontak'));
+	}
+  }
+
+
    
 }

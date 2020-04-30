@@ -64,7 +64,6 @@ $route['feeds'] = 'main/feeds';
 $route['kontak'] = 'main/contact';
 $route['galeri'] = 'main/galeri';
 $route['karir'] = 'main/karir';
-$route['admin/karir'] = 'karir';
 $route['pengunjung'] = 'main/pengunjung';
 $route['fasilitas/layanan'] = 'main/layanan';
 $route['fasilitas/penunjang'] = 'main/penunjang';
@@ -77,3 +76,8 @@ $route['artikel/(:any)'] = 'blog/blog_content_detail/$1';
 $route['pelanggan'] = 'pelanggan';
 $route['pelanggan/order'] = 'pelanggan/order';
 $route['pelanggan/testimoni'] = 'pelanggan/testimoni';
+
+
+// route admin
+$route['admin/karir'] = 'karir';
+$route['admin/kontak'] = 'kontak';
