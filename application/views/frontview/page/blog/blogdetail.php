@@ -22,6 +22,7 @@
                 <?php 
                     foreach ($datapost->result() as $row){ ?>
                         <h2><?php echo $row->title; ?></h2>
+                        <br/>
                         <?php
                             if($row->image_path == '' || $row->image_path == NULL){ ?>
                                 <img src="<?php echo base_url()?>assets/blog/thumb_img_default/thumb.png" style="width:inherit;margin-bottom:0px;border-radius:10px;">
@@ -59,6 +60,31 @@
                 <a href="https://twitter.com/intent/tweet?text=<?php echo base_url();?>artikel/<?php $datapost->result()[0]->slug ?>"><img src="https://bilba.go-jek.com/images/v4/custom/blog/twitter-social-icon-circle-color.svg" alt="Whatsapp" /></a>
             </div>
        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-xs-12">
+                <div id="disqus_thread"></div>
+                    <script>
+
+                    /**
+                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://rsarrasyid.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
     </div>
  </div>
 </section>
