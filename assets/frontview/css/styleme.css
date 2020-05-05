@@ -274,3 +274,20 @@ body{
     padding-right: 40px;
     color : #888;
 }
+
+.share_social > a {
+    padding-right: 30px;
+}
+
+.section_social_share {
+    padding-top:10px;padding-bottom:100px;
+}
+
+.date_image{
+    position: relative;;
+    top : -25px;
+    background : #eee;
+    padding : 10px;
+    width: 280px;
+    border-top-right-radius: 10px;
+}

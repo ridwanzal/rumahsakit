@@ -2,7 +2,7 @@
     <div class="container breadcrumbs_custom">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url();?>">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Karir</li>
           </ol>
     </div>
@@ -28,11 +28,8 @@
     <div class="container">
         <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="card">
-                            <d class="card-header">
                                 <h5 class="mb-0">Open Vacancy</h5>
-                            </d iv>
-                            <div class="card-body">
+                                <br/>
                                 <div class="table-responsive">
                                     <table id="example" class="table table-striped table-bordered second" style="width:100%">
                                         <thead>
@@ -62,8 +59,6 @@
                                                                                                 </tbody>
                                     </table>
                                 </div>
-                            </div>
-                        </div>
                     </div>
         </div>
     </div>

@@ -35,10 +35,11 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <h5>Social</h5>
-                <div style="display:flex;float:left;" id="footer_rights2">
-                        <a href=""><img src="https://image.flaticon.com/icons/svg/145/145802.svg" style="width:40px;"></a>
-                        <a><img src="https://image.flaticon.com/icons/svg/145/145805.svg" style="width:40px;"></a>
-                        <a><img src="https://image.flaticon.com/icons/svg/145/145812.svg" style="width:40px;"></a>
+                <div style="display:flex;float:left;margin-top:2px;" id="footer_rights2">
+                        <a href="#"><img src="https://image.flaticon.com/icons/svg/145/145802.svg" style="width:40px;"></a>
+                        <a href="#"><img src="https://image.flaticon.com/icons/svg/145/145805.svg" style="width:40px;"></a>
+                        <a href="#"><img src="https://image.flaticon.com/icons/svg/145/145812.svg" style="width:40px;"></a>
+                        <a href="#"><img src="https://image.flaticon.com/icons/svg/1384/1384060.svg" style="width:40px;"></a>
                 </div>
             </div>
         </div>
@@ -103,8 +104,8 @@
                     <div class="card mb-4 box-shadow">
                         <a href=`+result_url+`><img class="card-img-top" src=`+image_path+` alt="Card image cap" style="height:150px;background-size:cover;"></a>
                         <div class="card-body">
-                        <h5 class="blog_head">`+decode_result[i].title+`</h5>
-                        <p class="card-text">T`+decode_result[i].title+`</p>
+                        <a href="`+result_url+`" style="color:#000;"><h5 class="blog_head">`+decode_result[i].title+`</h5></a>
+                        <p class="card-text">`+shorten_text(decode_result[i].content)+`</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <small class="text-muted">`+decode_result[i].date_created+`</small>
@@ -121,7 +122,13 @@
               }, 1)
             }
       }});
-    });
+        });
+
+    function shorten_text(text){
+       let result = jQuery.trim(text).substring(0, 150)
+    .split(" ").slice(0, -1).join(" ") + "...";
+    return result;
+    }
     
 </script>
 </body>

@@ -29,8 +29,11 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="<?php echo base_url();?>profil/sejarah">Sejarah</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>profil/sejarah">Direksi</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>profil/visimisi">Visi Misi</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>profil/pmkp">PMKP</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>profil/pmkp">Rekanan</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>profil/pmkp">Prestasi</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -45,16 +48,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url();?>galeri">Galeri <span class="sr-only"></span></a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Artikel
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="<?php echo base_url();?>artikel">Artikel</a>
-                  <a class="dropdown-item" href="<?php echo base_url();?>">Berita</a>
-                  <a class="dropdown-item" href="<?php echo base_url();?>">Kegiatan</a>
-                </div>
-              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url();?>artikel">Artikel <span class="sr-only"></span></a>
+              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Informasi
