@@ -26,7 +26,12 @@ class Karir extends CI_Controller {
         $data['header_page'] = "";
         $query="SELECT * FROM karir_open order by date_created";
         $query_result = $this->db->query($query)->result();
+
+        $query2="SELECT * FROM banner_karir order by id DESC";
+        $query_result2 = $this->db->query($query2)->result();
+
         $data['karir_open'] = $query_result;
+        $data['banner_karir'] = $query_result2;
         $this->load->view('backview/header.php', $data);
         $this->load->view('backview/admin/navbar.php', $data);
         $this->load->view('backview/admin/dashboard/karir.php', $data);

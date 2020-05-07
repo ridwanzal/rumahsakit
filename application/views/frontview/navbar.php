@@ -32,8 +32,8 @@
                   <a class="dropdown-item" href="<?php echo base_url();?>profil/sejarah">Direksi</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>profil/visimisi">Visi Misi</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>profil/pmkp">PMKP</a>
-                  <a class="dropdown-item" href="<?php echo base_url();?>profil/pmkp">Rekanan</a>
-                  <a class="dropdown-item" href="<?php echo base_url();?>profil/pmkp">Prestasi</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>profil/rekanan">Rekanan</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>profil/prestasi">Prestasi</a>
                 </div>
               </li>
               <li class="nav-item dropdown">

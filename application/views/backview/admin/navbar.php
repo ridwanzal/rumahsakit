@@ -46,13 +46,16 @@
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin" ><i class="fa fa-fw fa-file"></i>Kelola Blog <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/banner" ><i class="fa fa-fw fa-file"></i>Kelola Banner <span class="badge badge-success">6</span></a>
+                            </li>
+                            <li class="nav-item ">
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin/karir/" ><i class="fa fa-fw fa-rocket"></i>Kelola Karir <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin/kontak" ><i class="fa fa-fw fa-user-circle"></i>Kelola Kontak <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="<?php echo base_url(); ?>admin" ><i class="fa fa-fw fa-inbox"></i>Kelola Galeri <span class="badge badge-success">6</span></a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/galeri" ><i class="fa fa-fw fa-inbox"></i>Kelola Galeri <span class="badge badge-success">6</span></a>
                             </li>
                             <!-- <li class="nav-divider">
                                 MENU

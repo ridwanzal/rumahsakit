@@ -31,7 +31,7 @@
                                                     </div>  
                                                     <div class="form-group">
                                                         <label for="exampleFormControlTextarea1">Deskripsi</label>
-                                                        <textarea class="form-control" id="editor" rows="2" name="description"></textarea>
+                                                        <textarea class="form-control" id="editor" rows="1" name="description"></textarea>
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="input-select">Status</label>
@@ -54,7 +54,7 @@
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h5 class="mb-0">Daftar Post</h5>
+                                        <h5 class="mb-0">Daftar Vacancy</h5>
                                     </div>
                                     <div class="card-body">
                                         <div class="table-responsive">
@@ -88,6 +88,77 @@
                                                                 <td><?php echo $list->date_created; ?></td>
                                                                 <td><?php echo $list->status; ?></td>
                                                                 <td><a href="" class="btn btn-primary">Lihat Detail</a></td>
+                                                            </tr>
+                                                        <?php }
+                                                    ?>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ============================================================== -->
+                            <!-- end data table  -->
+                            <!-- ============================================================== -->
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="card">
+
+                                        <!-- format uploads/uploads/#namapath/#namatable -->
+                                        <?php echo form_open_multipart('uploads/uploads/banners/banner'); ?>
+                                            <h5 class="card-header">Upload Banner / Flyer Karir</h5>
+                                            <div class="card-body">
+                                                    <div class="row">
+                                                            <div class="col-lg-1 col-md-1 col-xs-6">
+                                                            <img style="object-fit:cover;border-radius:10px;position:relative;top:6px;" width="50" height="50" id="img_thumb" src="<?php echo base_url() ?>assets/backview/images/image_default.png">
+                                                            </div>
+                                                            <div class="col-lg-11 col-md-11 col-xs-6" style="position: relative;left: -57px;">
+                                                                <div class="form-group">
+                                                                    <label for="exampleFormControlFile1">Upload multiple images*</label>
+                                                                    <input type="file" class="form-control" id="upload_thumb" name="berkas[]" multiple required>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="submit" value="Upload" class="btn btn-sm btn-success"/> 
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                            </div>
+                                        <?php echo form_close();?>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <!-- ============================================================== -->
+                            <!-- data table  -->
+                            <!-- ============================================================== -->
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">Banner List</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="example" class="table table-striped table-bordered second" style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>No</th>
+                                                        <th>Nama foto</th>
+                                                        <th>Image</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <?php
+                                                            $i = 0; 
+                                                            foreach($banner_karir as $list){
+                                                                $i = $i + 1;
+                                                                ?>
+                                                            <tr>
+                                                                <td><?php echo $i; ?></td>
+                                                                <td><?php echo $list->image_name; ?></td>
+                                                                <td><img style="height:50px;border-radius:4px;" src="<?php echo base_url()?>/assets/banners/<?php echo $list->image_name;?>"></td>
+                                                                <th><a href="<?php echo base_url()?>banner/delete_banner/<?php echo $list->id; ?>" class="btn btn-danger btn-xs">Delete</a></th>
                                                             </tr>
                                                         <?php }
                                                     ?>

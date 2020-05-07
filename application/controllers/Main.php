@@ -31,6 +31,9 @@ class Main extends CI_Controller {
 		// }else {
 			$data['title_bar'] = "";
 			$data['header_page'] = "";
+			$query = "SELECT * FROM banner";
+			$query_result = $this->db->query($query)->result();
+			$data['banner'] = $query_result;
 			$this->load->view('frontview/header', $data);
 			$this->load->view('frontview/navbar', $data);
 			$this->load->view('frontview/page/index/section1', $data);
@@ -192,6 +195,24 @@ class Main extends CI_Controller {
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
 	$this->load->view('frontview/page/feed/feed', $data);
+	$this->load->view('frontview/footer', $data);
+  }
+
+  public function rekanan(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/rekanan/rekanan', $data);
+	$this->load->view('frontview/footer', $data);
+  }
+
+  public function prestasi(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/prestasi/prestasi', $data);
 	$this->load->view('frontview/footer', $data);
   }
 

@@ -41,7 +41,7 @@
                                 <h2>Standard Room</h2>
                                 <div class="room-price">
                                     <span>Start</span>
-                                    <h2>IDR 369K</h2>
+                                    <h2>IDR 350K</h2>
                                     <sub>/mlm</sub>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@
                                 <h2>Double Room</h2>
                                 <div class="room-price">
                                     <span>Start</span>
-                                    <h2>IDR 369K</h2>
+                                    <h2>IDR 350K</h2>
                                     <sub>/mlm</sub>
                                 </div>
                             </div>

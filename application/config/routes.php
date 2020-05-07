@@ -60,7 +60,7 @@ $route['rooms'] = 'main/rooms';
 $route['tentang'] = 'main/about';
 $route['feeds'] = 'main/feeds';
 
-//
+// main page
 $route['kontak'] = 'main/contact';
 $route['galeri'] = 'main/galeri';
 $route['karir'] = 'main/karir';
@@ -69,6 +69,9 @@ $route['fasilitas/layanan'] = 'main/layanan';
 $route['fasilitas/penunjang'] = 'main/penunjang';
 $route['profil/sejarah'] = 'main/sejarah';
 $route['profil/visimisi'] = 'main/visimisi';
+$route['profil/rekanan'] = 'main/rekanan';
+$route['profil/prestasi'] = 'main/prestasi';
+$route['profil/pmkp'] = 'main/pmkp';
 $route['artikel'] = 'main/artikel';
 $route['artikel/(:any)'] = 'blog/blog_content_detail/$1'; 
 
@@ -77,7 +80,11 @@ $route['pelanggan'] = 'pelanggan';
 $route['pelanggan/order'] = 'pelanggan/order';
 $route['pelanggan/testimoni'] = 'pelanggan/testimoni';
 
-
 // route admin
 $route['admin/karir'] = 'karir';
 $route['admin/kontak'] = 'kontak';
+$route['admin/galeri'] = 'galeri';
+$route['admin/flyer'] = 'flyer';
+$route['admin/galeri/video'] ='galeri/video';
+$route['admin/banner'] = 'banner';
+
