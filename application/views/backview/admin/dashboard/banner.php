@@ -24,7 +24,7 @@
                                 <div class="card">
 
                                         <!-- format uploads/uploads/#namapath/#namatable -->
-                                        <?php echo form_open_multipart('uploads/uploads/banners/banner'); ?>
+                                        <?php echo form_open_multipart('uploads/multiple/banners/banner/banner'); ?>
                                             <h5 class="card-header">Upload Image</h5>
                                             <div class="card-body">
                                                     <div class="row">
@@ -84,7 +84,7 @@
                                                                         <td><?php echo $i; ?></td>
                                                                         <td><?php echo $list->image_name; ?></td>
                                                                         <td><img style="height:50px;border-radius:4px;" src="<?php echo base_url()?>/assets/banners/<?php echo $list->image_name;?>"></td>
-                                                                        <th><a href="<?php echo base_url()?>banner/delete_banner/<?php echo $list->id; ?>" class="btn btn-danger btn-xs">Delete</a></th>
+                                                                        <th><a href="<?php echo base_url()?>uploads/delete/<?php echo $list->id; ?>/banner" class="btn btn-danger btn-xs">Delete</a></th>
                                                                     </tr>
                                                                 <?php }
                                                             ?>

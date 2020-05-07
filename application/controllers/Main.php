@@ -64,6 +64,11 @@ class Main extends CI_Controller {
   public function karir(){
 	$data['title_bar'] = "";
 	$data['header_page'] = "";
+
+	$query2="SELECT * FROM banner_karir order by id DESC";
+	$query_result2 = $this->db->query($query2)->result();
+
+	$data['banner_karir'] = $query_result2;
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
 	$this->load->view('frontview/page/karir/karir', $data);
@@ -138,6 +143,14 @@ class Main extends CI_Controller {
  public function galeri(){
 	$data['title_bar'] = "";
 	$data['header_page'] = "";
+	$query2="SELECT * FROM galeri order by id DESC";
+	$query_result2 = $this->db->query($query2)->result();
+	$data['galeri'] = $query_result2;
+
+	$query3="SELECT * FROM galeri_video order by id DESC";
+	$query_result3 = $this->db->query($query3)->result();
+	$data['galeri_video'] = $query_result3;
+	
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
 	$this->load->view('frontview/page/galeri/galeri', $data);

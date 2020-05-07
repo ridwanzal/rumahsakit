@@ -17,11 +17,11 @@ class Uploads extends CI_Controller {
     	date_default_timezone_set('Asia/Jakarta'); // default time zone indonesia
 	}
 
-	public function uploads($pathname, $tables){
+	public function multiple($pathname, $tables, $context){
         // echo $pathname;
         // echo $tables;
 		$config['upload_path']          = './assets/' .$pathname. '/';
-		$config['allowed_types']        = 'gif|jpg|png';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
 		$config['max_size']             = 100000;
 		$config['max_width']            = 8000;
 		$config['max_height']           = 100000;
@@ -46,12 +46,77 @@ class Uploads extends CI_Controller {
 			}
 		} // end of loop
 		
-		redirect(base_url('admin'));
+		switch($context){
+			case 'galeri' :
+				redirect(base_url('admin/galeri'));
+			break;
+			case 'karir' : 
+				redirect(base_url('admin/karir'));
+			break;
+			case 'banner' : 
+				redirect(base_url('admin/banner'));
+			break;
+ 		}
 		
-	}  
+	} 
 
-	public function uploads_caption($pathname, $tables){
-		
+	public function single($pathname, $tables, $context){
+		$caption = $this->input->post('caption', TRUE);
+		$config['upload_path']          = './assets/' .$pathname. '/';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
+		$config['max_size']             = 100000;
+		$config['max_width']            = 8000;
+		$config['max_height']           = 100000;
+		$image_file = "";
+		$this->load->library('upload',$config);
+		$foto = $_FILES['berkas'];
+		IF($foto != ''){
+			if(!$this->upload->do_upload('berkas')){
+				echo 'Gagal upload';
+			}else{
+				$image_file = $this->upload->data('file_name');
+			}
+	
+			$data = array(
+				'image_name' => $image_file,
+				'caption' => $caption
+			);
+	
+			$this->db->insert($tables, $data);
+			switch($context){
+				case 'galeri' :
+					redirect(base_url('admin/galeri'));
+				break;
+				case 'karir' : 
+					redirect(base_url('admin/karir'));
+				break;
+				case 'banner' : 
+					redirect(base_url('admin/banner'));
+				break;
+			 }
+		}else{
+			echo 'empty broh';
+		}
+	}
+
+	public function delete($id, $context){
+		switch($context){
+			case 'galeri' :
+				$this->db->where('id', $id);
+				$this->db->delete('galeri');
+				redirect(base_url('admin/galeri'));
+			break;
+			case 'karir' : 
+				$this->db->where('id', $id);
+				$this->db->delete('banner_karir');
+				redirect(base_url('admin/karir'));
+			break;
+			case 'banner' : 
+				$this->db->where('id', $id);
+				$this->db->delete('banner');
+				redirect(base_url('admin/banner'));
+			break;
+ 		}
 	}
 	
 }

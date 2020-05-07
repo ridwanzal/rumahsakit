@@ -106,7 +106,7 @@
                                 <div class="card">
 
                                         <!-- format uploads/uploads/#namapath/#namatable -->
-                                        <?php echo form_open_multipart('uploads/uploads/banners/banner'); ?>
+                                        <?php echo form_open_multipart('uploads/multiple/banners_karir/banner_karir/karir'); ?>
                                             <h5 class="card-header">Upload Banner / Flyer Karir</h5>
                                             <div class="card-body">
                                                     <div class="row">
@@ -157,8 +157,8 @@
                                                             <tr>
                                                                 <td><?php echo $i; ?></td>
                                                                 <td><?php echo $list->image_name; ?></td>
-                                                                <td><img style="height:50px;border-radius:4px;" src="<?php echo base_url()?>/assets/banners/<?php echo $list->image_name;?>"></td>
-                                                                <th><a href="<?php echo base_url()?>banner/delete_banner/<?php echo $list->id; ?>" class="btn btn-danger btn-xs">Delete</a></th>
+                                                                <td><img style="height:50px;border-radius:4px;" src="<?php echo base_url()?>/assets/banners_karir/<?php echo $list->image_name;?>"></td>
+                                                                <th><a href="<?php echo base_url()?>uploads/delete/<?php echo $list->id; ?>/karir" class="btn btn-danger btn-xs">Delete</a></th>
                                                             </tr>
                                                         <?php }
                                                     ?>

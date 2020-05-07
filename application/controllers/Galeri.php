@@ -19,12 +19,46 @@ class Galeri extends CI_Controller {
 	
 	public function index()
 	{
-        $data['title_bar'] = "";
-        $data['header_page'] = "";
-        $this->load->view('backview/header.php', $data);
-        $this->load->view('backview/admin/navbar.php', $data);
-        $this->load->view('backview/admin/dashboard/galeri.php', $data);
-        $this->load->view('backview/footer.php', $data);
-  	}
+		$data['title_bar'] = "";
+		$data['header_page'] = "";
+		
+		$query2="SELECT * FROM galeri order by id DESC";
+		$query_result2 = $this->db->query($query2)->result();
+		$data['galeri'] = $query_result2;
+
+		$query3="SELECT * FROM galeri_video order by id DESC";
+		$query_result3 = $this->db->query($query3)->result();
+		$data['galeri_video'] = $query_result3;
+
+		$this->load->view('backview/header.php', $data);
+		$this->load->view('backview/admin/navbar.php', $data);
+		$this->load->view('backview/admin/dashboard/galeri.php', $data);
+		$this->load->view('backview/footer.php', $data);
+	}
+	
+
+	public function youtube(){
+		$caption = $this->input->post('caption', TRUE);
+		$link = $this->input->post('link', TRUE);
+		$data = array(
+			'link' => $link,
+			'caption' => $caption,
+		);
+
+		$this->db->insert('galeri_video', $data);
+		$affect_row = $this->db->affected_rows();
+		if($affect_row > 0){
+			$this->session->set_flashdata('message', 'Berhasil menambahkan konten');
+			redirect(base_url('admin/galeri'));
+		}else{
+		$this->session->set_flashdata('error', 'Gagal menambahkan konten');
+		}
+	}
+
+	public function delete_youtube($id){
+		$this->db->where('id', $id);
+		$this->db->delete('galeri_video');
+		redirect(base_url('admin/galeri'));
+	}
 	
 }
