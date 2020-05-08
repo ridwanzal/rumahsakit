@@ -7,12 +7,12 @@
 	                <div class="row">
 	                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 	                        <div class="page-header">
-	                            <h3 class="mb-2">Karir</h3>
+	                            <h3 class="mb-2">Kelola Karir</h3>
 	                            <div class="page-breadcrumb">
 	                                <nav aria-label="breadcrumb">
 	                                    <ol class="breadcrumb">
 	                                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
-	                                        <li class="breadcrumb-item active" aria-current="page">Post Open Vacancy</li>
+	                                        <li class="breadcrumb-item active" aria-current="page">Kelola Karir</li>
 	                                    </ol>
 	                                </nav>
 	                            </div>
@@ -23,7 +23,7 @@
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="card">
                                         <?php echo form_open_multipart('karir/submit_post'); ?>
-                                            <h5 class="card-header">Input Open Vacancy</h5>
+                                            <h5 class="card-header">Post Lowongan Pekerjaan</h5>
                                             <div class="card-body">
                                                     <div class="form-group">
                                                         <label for="inputText3" class="col-form-label">Posisi/ Open Job Position </label>
@@ -87,7 +87,10 @@
                                                                 <td><?php echo $list->posisi; ?></td>
                                                                 <td><?php echo $list->date_created; ?></td>
                                                                 <td><?php echo $list->status; ?></td>
-                                                                <td><a href="" class="btn btn-primary">Lihat Detail</a></td>
+                                                                <td>
+                                                                    <a href="" class="btn btn-primary btn-xs">Lihat Detail</a>
+                                                                    <a href="<?php echo base_url()?>karir/delete/<?php echo $list->id; ?>" class="btn btn-danger btn-xs">Delete</a>
+                                                                </td>
                                                             </tr>
                                                         <?php }
                                                     ?>

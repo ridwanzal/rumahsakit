@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 08, 2020 at 11:30 PM
+-- Generation Time: May 07, 2020 at 03:47 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.2.21
 
@@ -74,8 +74,7 @@ CREATE TABLE `banner_karir` (
 --
 
 INSERT INTO `banner_karir` (`id`, `image_name`, `caption`, `date_created`) VALUES
-(22, 'blue_banner_karir1.png', '', '0000-00-00 00:00:00'),
-(23, 'blue_banner_karir2.png', '', '0000-00-00 00:00:00');
+(22, 'blue_banner_karir1.png', '', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -140,26 +139,6 @@ INSERT INTO `contact` (`id`, `nama`, `email`, `telepon`, `subject`, `pesan`) VAL
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contact_banner`
---
-
-CREATE TABLE `contact_banner` (
-  `id` int(11) NOT NULL,
-  `image_name` text NOT NULL,
-  `caption` text NOT NULL,
-  `date_created` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `contact_banner`
---
-
-INSERT INTO `contact_banner` (`id`, `image_name`, `caption`, `date_created`) VALUES
-(24, 'blue_banner_karir1.png', '', '0000-00-00 00:00:00');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `galeri`
 --
 
@@ -203,28 +182,6 @@ INSERT INTO `galeri_video` (`id`, `link`, `caption`, `date_created`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `jadwaldokter`
---
-
-CREATE TABLE `jadwaldokter` (
-  `id` int(11) NOT NULL,
-  `image_name` text NOT NULL,
-  `caption` text NOT NULL,
-  `date_created` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `jadwaldokter`
---
-
-INSERT INTO `jadwaldokter` (`id`, `image_name`, `caption`, `date_created`) VALUES
-(32, 'flyerblog.png', 'jadwal dokter1', '0000-00-00 00:00:00'),
-(34, 'flyerblog1.png', 'jadwal dokter2', '0000-00-00 00:00:00'),
-(35, 'flyerblog2.png', 'jadwal dokter3', '0000-00-00 00:00:00');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `karir_open`
 --
 
@@ -242,29 +199,7 @@ CREATE TABLE `karir_open` (
 
 INSERT INTO `karir_open` (`id`, `posisi`, `deskripsi`, `date_created`, `status`) VALUES
 (1, 'Perawat', '<p>Perawat dapat memberikan yang terbaik</p>\r\n\r\n<ul>\r\n <li>Umur maksimal 30 tahun</li>\r\n <li>Tidak dalam status bekerja di perusahaan/instansi</li>\r\n <li>Sehat jasmano dan rohani</li>\r\n</ul>\r\n', '2020-04-26 03:39:03', 'open'),
-(2, 'Perawat Pria', '<p>Spesifikasi</p>\r\n\r\n<ul>\r\n <li>Lulusan D3 Keperawatan</li>\r\n <li>Memiliki kendaraan pribadi</li>\r\n <li>Etos kerja yang tinggi</li>\r\n</ul>\r\n', '2020-04-26 04:34:32', 'open'),
-(3, 'Petugas Taman', '<p>Bertugas dalam menjaga kebersihaan taman di area rumah sakit</p>\r\n', '2020-05-08 11:29:28', 'open');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `rekanan`
---
-
-CREATE TABLE `rekanan` (
-  `id` int(11) NOT NULL,
-  `image_name` text NOT NULL,
-  `caption` text NOT NULL,
-  `date_created` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `rekanan`
---
-
-INSERT INTO `rekanan` (`id`, `image_name`, `caption`, `date_created`) VALUES
-(31, 'BNI-Life.png', 'BNI Life', '0000-00-00 00:00:00'),
-(32, 'BPJS-Kesehatan.png', 'BPJS Kesehatan', '0000-00-00 00:00:00');
+(2, 'Perawat Pria', '<p>Spesifikasi</p>\r\n\r\n<ul>\r\n <li>Lulusan D3 Keperawatan</li>\r\n <li>Memiliki kendaraan pribadi</li>\r\n <li>Etos kerja yang tinggi</li>\r\n</ul>\r\n', '2020-04-26 04:34:32', 'open');
 
 -- --------------------------------------------------------
 
@@ -325,12 +260,6 @@ ALTER TABLE `contact`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `contact_banner`
---
-ALTER TABLE `contact_banner`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `galeri`
 --
 ALTER TABLE `galeri`
@@ -343,21 +272,9 @@ ALTER TABLE `galeri_video`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `jadwaldokter`
---
-ALTER TABLE `jadwaldokter`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `karir_open`
 --
 ALTER TABLE `karir_open`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `rekanan`
---
-ALTER TABLE `rekanan`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -387,7 +304,7 @@ ALTER TABLE `banner_jadwal_dokter`
 -- AUTO_INCREMENT for table `banner_karir`
 --
 ALTER TABLE `banner_karir`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `blog`
@@ -402,12 +319,6 @@ ALTER TABLE `contact`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
--- AUTO_INCREMENT for table `contact_banner`
---
-ALTER TABLE `contact_banner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
-
---
 -- AUTO_INCREMENT for table `galeri`
 --
 ALTER TABLE `galeri`
@@ -420,22 +331,10 @@ ALTER TABLE `galeri_video`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `jadwaldokter`
---
-ALTER TABLE `jadwaldokter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
-
---
 -- AUTO_INCREMENT for table `karir_open`
 --
 ALTER TABLE `karir_open`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `rekanan`
---
-ALTER TABLE `rekanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`

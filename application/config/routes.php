@@ -63,6 +63,7 @@ $route['feeds'] = 'main/feeds';
 // main page
 $route['kontak'] = 'main/contact';
 $route['galeri'] = 'main/galeri';
+$route['jadwaldokter'] = 'main/jadwaldokter';
 $route['karir'] = 'main/karir';
 $route['pengunjung'] = 'main/pengunjung';
 $route['fasilitas/layanan'] = 'main/layanan';
@@ -87,4 +88,6 @@ $route['admin/galeri'] = 'galeri';
 $route['admin/flyer'] = 'flyer';
 $route['admin/galeri/video'] ='galeri/video';
 $route['admin/banner'] = 'banner';
+$route['admin/jadwaldokter'] = 'jadwaldokter';
+$route['admin/rekanan'] = 'rekanan';
 

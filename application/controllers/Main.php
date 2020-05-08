@@ -72,7 +72,12 @@ class Main extends CI_Controller {
 	$query2="SELECT * FROM banner_karir order by id DESC";
 	$query_result2 = $this->db->query($query2)->result();
 
+	$query3="SELECT * FROM karir_open order by id DESC";
+	$query_result3 = $this->db->query($query3)->result();
+
+
 	$data['banner_karir'] = $query_result2;
+	$data['karir_open'] = $query_result3;
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
 	$this->load->view('frontview/page/karir/karir', $data);
@@ -133,7 +138,6 @@ class Main extends CI_Controller {
 	$this->load->view('frontview/footer', $data);
  }
 
-
  public function penunjang(){
 	$data['title_bar'] = "";
 	$data['header_page'] = "";
@@ -142,7 +146,6 @@ class Main extends CI_Controller {
 	$this->load->view('frontview/page/layanan/penunjang', $data);
 	$this->load->view('frontview/footer', $data);
  }
-
 
  public function galeri(){
 	$data['title_bar'] = "";
@@ -158,6 +161,19 @@ class Main extends CI_Controller {
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
 	$this->load->view('frontview/page/galeri/galeri', $data);
+	$this->load->view('frontview/footer', $data);
+ }
+
+ public function jadwaldokter(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$query2="SELECT * FROM jadwaldokter order by id DESC";
+	$query_result2 = $this->db->query($query2)->result();
+	$data['jadwaldokter'] = $query_result2;
+
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/jadwaldokter/jadwaldokter', $data);
 	$this->load->view('frontview/footer', $data);
  }
 
@@ -218,6 +234,10 @@ class Main extends CI_Controller {
   public function rekanan(){
 	$data['title_bar'] = "";
 	$data['header_page'] = "";
+	$query2="SELECT * FROM rekanan order by id DESC";
+	$query_result2 = $this->db->query($query2)->result();
+	$data['rekanan'] = $query_result2;
+
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
 	$this->load->view('frontview/page/rekanan/rekanan', $data);
@@ -230,6 +250,15 @@ class Main extends CI_Controller {
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
 	$this->load->view('frontview/page/prestasi/prestasi', $data);
+	$this->load->view('frontview/footer', $data);
+  }
+
+  public function pmkp(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/pmkp/pmkp', $data);
 	$this->load->view('frontview/footer', $data);
   }
 

@@ -43,10 +43,10 @@
                                 LAMAN ADMIN 
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="<?php echo base_url(); ?>admin" ><i class="fa fa-fw fa-file"></i>Kelola Blog <span class="badge badge-success">6</span></a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin" ><i class="fa fa-fw fa-comments"></i>Kelola Blog <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="<?php echo base_url(); ?>admin/banner" ><i class="fa fa-fw fa-file"></i>Kelola Banner <span class="badge badge-success">6</span></a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/banner" ><i class="fa fa-fw fa-film"></i>Kelola Banner <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin/karir/" ><i class="fa fa-fw fa-rocket"></i>Kelola Karir <span class="badge badge-success">6</span></a>
@@ -55,7 +55,13 @@
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin/kontak" ><i class="fa fa-fw fa-user-circle"></i>Kelola Kontak <span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="<?php echo base_url(); ?>admin/galeri" ><i class="fa fa-fw fa-inbox"></i>Kelola Galeri <span class="badge badge-success">6</span></a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/galeri" ><i class="fa fa-fw fa-image"></i>Kelola Galeri <span class="badge badge-success">6</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/jadwaldokter" ><i class="fa fa-fw fa-folder-open"></i>Kelola Jadwal Dokter <span class="badge badge-success">6</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/rekanan" ><i class="fa fa-fw fa-magnet"></i>Kelola Rekanan<span class="badge badge-success">6</span></a>
                             </li>
                             <!-- <li class="nav-divider">
                                 MENU

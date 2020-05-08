@@ -6,7 +6,7 @@ use Sunra\PhpSimple\HtmlDomParser; // lib html parser
 use stringEncode\Encode; // lib html parser
 use PHPHtmlParser\Dom; // lib html parser
 use FastSimpleHTMLDom\Document; // lib html parser
-class Rekanan extends CI_Controller {
+class Jadwaldokter extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();		
@@ -22,13 +22,17 @@ class Rekanan extends CI_Controller {
 		$data['title_bar'] = "";
 		$data['header_page'] = "";
 		
-		$query2="SELECT * FROM rekanan order by id DESC";
+		$query2="SELECT * FROM jadwaldokter order by id DESC";
 		$query_result2 = $this->db->query($query2)->result();
-		$data['rekanan'] = $query_result2;
+		$data['galeri'] = $query_result2;
+
+		$query3="SELECT * FROM jadwaldokter order by id DESC";
+		$query_result3 = $this->db->query($query3)->result();
+		$data['jadwaldokter'] = $query_result3;
 
 		$this->load->view('backview/header.php', $data);
 		$this->load->view('backview/admin/navbar.php', $data);
-		$this->load->view('backview/admin/dashboard/rekanan.php', $data);
+		$this->load->view('backview/admin/dashboard/jadwaldokter.php', $data);
 		$this->load->view('backview/footer.php', $data);
 	}
 	

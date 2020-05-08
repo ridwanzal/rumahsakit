@@ -52,7 +52,7 @@
                 <a class="nav-link" href="<?php echo base_url();?>artikel">Artikel <span class="sr-only"></span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url();?>artikel">Jadwal Dokter <span class="sr-only"></span></a>
+                <a class="nav-link" href="<?php echo base_url();?>jadwaldokter">Jadwal Dokter <span class="sr-only"></span></a>
               </li>
               <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

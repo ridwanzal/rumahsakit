@@ -94,21 +94,31 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                                                                                        <tr>
-                                                        <td>1</td>
-                                                        <td>Perawat</td>
-                                                        <td>2020-04-26 03:39:03</td>
-                                                        <td>open</td>
-                                                        <td><a href="" class="btn btn-primary">Lihat Detail</a></td>
-                                                    </tr>
-                                                                                                            <tr>
-                                                        <td>2</td>
-                                                        <td>Perawat Pria</td>
-                                                        <td>2020-04-26 04:34:32</td>
-                                                        <td>open</td>
-                                                        <td><a href="" class="btn btn-primary">Lihat Detail</a></td>
-                                                    </tr>
-                                                                                                </tbody>
+                                                <?php
+                                                        function check_empty($value){
+                                                            if($value == '' || $value == '0'){
+                                                                echo '-';
+                                                            }else{
+                                                                echo $value;
+                                                            }
+                                                        }
+    
+                                                        $i = 0; 
+                                                        foreach($karir_open as $list){
+                                                            $i = $i + 1;
+                                                            ?>
+                                                        <tr>
+                                                            <td><?php echo $i; ?></td>
+                                                            <td><?php echo $list->posisi; ?></td>
+                                                            <td><?php echo $list->date_created; ?></td>
+                                                            <td><?php echo $list->status; ?></td>
+                                                            <td>
+                                                                <a href="" class="btn btn-primary btn-xs">Lihat Detail</a>
+                                                            </td>
+                                                        </tr>
+                                                    <?php }
+                                                ?>
+                                        </tbody>    
                                     </table>
                                 </div>
                     </div>

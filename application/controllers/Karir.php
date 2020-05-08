@@ -59,4 +59,10 @@ class Karir extends CI_Controller {
           }
       }
 
+      public function delete($id){
+        $this->db->where('id', $id);
+				$this->db->delete('karir_open');
+				redirect(base_url('admin/karir'));
+      }
+
 }
