@@ -91,7 +91,7 @@
             console.log(result);
             let decode_result = JSON.parse(result);
             let result_url;
-            let url_link = "<? echo base_url() ?>";
+            let url_link = "<?php echo base_url() ?>";
             let slug = decode_result
             console.log(decode_result);
             let image_path = "";
