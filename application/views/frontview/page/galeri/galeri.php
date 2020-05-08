@@ -32,9 +32,11 @@
                                                     <img class="img-fluid img-thumbnail" src="<?php echo base_url()?>/assets/galeri/<?php echo $list->image_name;?>" alt="">
                                                 </a>
                                             </div> -->
-                                            <div class="col-lg-3 col-md-4 col-xs-12">
+                                            <div class="col-lg-3 col-md-4 col-xs-12 image_container" style="cursor:pointer !important;" >
                                                 <div class="card" style="width: 17rem; cursor:pointer;">
-                                                    <img class="card-img-top"src="<?php echo base_url()?>/assets/galeri/<?php echo $list->image_name;?>" alt="/<?php echo $list->image_name;?>">
+                                                    <a  href="<?php echo base_url()?>assets/galeri/<?php echo $list->image_name;?>" data-toggle="lightbox">
+                                                        <img  style="cursor:pointer;" class="img-fluid" src="<?php echo base_url()?>assets/galeri/<?php echo $list->image_name;?>" alt="/<?php echo $list->image_name;?>">
+                                                    </a>
                                                     <div class="card-body">
                                                         <p class="card-text"><?php echo $list->caption;?></p>
                                                     </div>
@@ -48,13 +50,13 @@
                         <div class="row">
                                 <?php 
                                     foreach($galeri_video as $list){ ?>
-                                        <!-- <div class="col-lg-3 col-md-4 col-xs-12">
+                                        <!-- <div class="col-lg-6 col-md-6 col-xs-12">
                                             <a href="#" class="d-block mb-4 h-100">
                                                 <img class="img-fluid img-thumbnail" src="<?php echo base_url()?>/assets/galeri/<?php echo $list->image_name;?>" alt="">
                                             </a>
                                         </div> -->
-                                        <div class="col-lg-3 col-md-4 col-xs-12">
-                                            <iframe style="height:inherit" src="<?php echo $list->link;?>">
+                                        <div class="col-lg-6 col-md-6 col-xs-12">
+                                            <iframe style="width:100%;height:300px;" src="<?php echo $list->link;?>">
                                             </iframe>
                                         </div>
                                     <?php }

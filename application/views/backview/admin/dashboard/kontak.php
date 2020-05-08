@@ -75,6 +75,77 @@
                         <!-- end data table  -->
                         <!-- ============================================================== -->
                     </div>
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <!-- format uploads/uploads/#namapath/#namatable -->
+                                <?php echo form_open_multipart('uploads/multiple/banners_promosi/contact_banner/contact'); ?>
+                                    <h5 class="card-header">Upload Banner Promosi</h5>
+                                    <div class="card-body">
+                                            <div class="row">
+                                                    <div class="col-lg-1 col-md-1 col-xs-6">
+                                                    <img style="object-fit:cover;border-radius:10px;position:relative;top:6px;" width="50" height="50" id="img_thumb" src="<?php echo base_url() ?>assets/backview/images/image_default.png">
+                                                    </div>
+                                                    <div class="col-lg-11 col-md-11 col-xs-6" style="position: relative;left: -57px;">
+                                                        <div class="form-group">
+                                                            <label for="exampleFormControlFile1">Upload multiple images*</label>
+                                                            <input type="file" class="form-control" id="upload_thumb" name="berkas[]" multiple required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="submit" value="Upload" class="btn btn-sm btn-success"/> 
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                <?php echo form_close();?>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <!-- ============================================================== -->
+                        <!-- data table  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">Banner List</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example" class="table table-striped table-bordered second" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>No</th>
+                                                    <th>Nama foto</th>
+                                                    <th>Image</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php
+                                                        $i = 0; 
+                                                        foreach($contact_banner as $list){
+                                                            $i = $i + 1;
+                                                            ?>
+                                                        <tr>
+                                                            <td><?php echo $i; ?></td>
+                                                            <td><?php echo $list->image_name; ?></td>
+                                                            <td><img style="height:50px;border-radius:4px;" src="<?php echo base_url()?>/assets/banners_karir/<?php echo $list->image_name;?>"></td>
+                                                            <th><a href="<?php echo base_url()?>uploads/delete/<?php echo $list->id; ?>/karir" class="btn btn-danger btn-xs">Delete</a></th>
+                                                        </tr>
+                                                    <?php }
+                                                ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end data table  -->
+                        <!-- ============================================================== -->
+                    </div>
+                    
                 </div>
                 <!-- ============================================================== -->
                 <!-- footer -->

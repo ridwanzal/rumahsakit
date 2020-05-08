@@ -27,6 +27,11 @@ class Kontak extends CI_Controller {
         $query="SELECT * FROM contact order by id";
         $query_result = $this->db->query($query)->result();
         $data['kontak'] = $query_result;
+        
+        $query2="SELECT * FROM contact_banner order by id DESC";
+        $query_result2 = $this->db->query($query2)->result();
+        $data['contact_banner'] = $query_result2;
+
         $this->load->view('backview/header.php', $data);
         $this->load->view('backview/admin/navbar.php', $data);
         $this->load->view('backview/admin/dashboard/kontak.php', $data);

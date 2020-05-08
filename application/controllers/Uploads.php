@@ -56,6 +56,9 @@ class Uploads extends CI_Controller {
 			case 'banner' : 
 				redirect(base_url('admin/banner'));
 			break;
+			case  'contact' :
+				redirect(base_url('admin/kontak'));
+			break;
  		}
 		
 	} 
@@ -93,6 +96,9 @@ class Uploads extends CI_Controller {
 				case 'banner' : 
 					redirect(base_url('admin/banner'));
 				break;
+				case  'contact' :
+					redirect(base_url('admin/kontak'));
+				break;
 			 }
 		}else{
 			echo 'empty broh';
@@ -115,6 +121,11 @@ class Uploads extends CI_Controller {
 				$this->db->where('id', $id);
 				$this->db->delete('banner');
 				redirect(base_url('admin/banner'));
+			break;
+			case  'contact' :
+				$this->db->where('id', $id);
+				$this->db->delete('contact_banner');
+				redirect(base_url('admin/kontak'));
 			break;
  		}
 	}

@@ -75,9 +75,14 @@
 <script src="<?php echo base_url();?>/assets/frontview/js/jquery.nice-select.min.js"></script>
 <script src="<?php echo base_url();?>/assets/frontview/js/jquery.slicknav.js"></script>
 <script src="<?php echo base_url();?>/assets/frontview/js/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
 <script src="<?php echo base_url();?>/assets/frontview/js/main.js"></script>
 <script>
     $(document).ready(function(){
+        $('.image_container').on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
         $('#containerblog').hide();
         $('.loaderse').fadeIn(100);
         $.ajax({
@@ -126,10 +131,9 @@
 
     function shorten_text(text){
        let result = jQuery.trim(text).substring(0, 150)
-    .split(" ").slice(0, -1).join(" ") + "...";
-    return result;
+        .split(" ").slice(0, -1).join(" ") + "...";
+        return result;
     }
-    
 </script>
 </body>
 

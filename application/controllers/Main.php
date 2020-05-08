@@ -55,6 +55,10 @@ class Main extends CI_Controller {
   public function contact(){
 		$data['title_bar'] = "";
 		$data['header_page'] = "";
+		$query2="SELECT * FROM contact_banner order by id DESC";
+		$query_result2 = $this->db->query($query2)->result();
+
+		$data['contact_banner'] = $query_result2;
 		$this->load->view('frontview/header', $data);
 		$this->load->view('frontview/navbar', $data);
 		$this->load->view('frontview/page/contact/contact', $data);

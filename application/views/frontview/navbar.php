@@ -51,7 +51,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url();?>artikel">Artikel <span class="sr-only"></span></a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url();?>artikel">Jadwal Dokter <span class="sr-only"></span></a>
+              </li>
+              <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Informasi
                 </a>
@@ -60,7 +63,7 @@
                   <a class="dropdown-item" href="<?php echo base_url();?>">Hak dan Kewajiban Pasien</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>">Promosi</a>
                 </div>
-              </li> 
+              </li>  -->
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url();?>karir">Karir <span class="sr-only"></span></a>
               </li>
