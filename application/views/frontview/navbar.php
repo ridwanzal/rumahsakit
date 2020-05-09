@@ -1,6 +1,6 @@
 <body>
 <div class="container">
-    <div class="row">
+    <div class="row" id="navcontainer">
         <div class="col-lg-12 col-md-12 col-xs-12">
             <a href="<?php echo base_url();?>"><img src="<?php echo base_url()?>assets/frontview/img/logo3.png"  class="logo_main"></a>
             <div class="float-right infobar" >
@@ -15,6 +15,7 @@
 <section class="nav_container">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar_custom">
+          <span id="logo_mobile">RS. AR-Rasyid</span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -73,7 +74,7 @@
               </li>
             </ul>
             <form method="GET" action="<?php echo base_url(); ?>/blog/blog_content_list_search">
-                <div style:display:flex;>
+                <div style:display:flex; class="searchings">
                   <input name="keyword" style="padding-left:5px;" class="search_inputs" type="text" id="search_input" placeholder="Cari Informasi">
                   <input  class="search_btn" type="submit" value="Cari">
                 </div>

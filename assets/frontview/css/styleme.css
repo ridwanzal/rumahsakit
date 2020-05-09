@@ -205,7 +205,66 @@ body{
   /*
     mobile first view
   */
+  #logo_mobile{
+      display: none;
+  }
+
   @media (min-width: 320px) and (max-width: 480px) {
+    .carousel-caption{
+        display: none;
+    }
+
+    #tawkchat-minified-box{
+        display: none !important;
+    }
+
+    #tawkchat-minified-wrapper{
+        display: none !important;
+    }
+
+    #logo_mobile{
+        display: block;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    #navcontainer{
+        display: none;
+    }
+
+    .floatwa{
+        display: block;
+        top: 10px;
+    }
+
+    #wafloats{
+        display: block;
+        position: absolute;
+        top: 80px;
+        right: 10px;
+        bottom:40px;
+    }
+
+    .navbar-light .navbar-toggler-icon{
+        background-image : url('https://image.flaticon.com/icons/svg/847/847734.svg') !important;
+    }
+
+    .searchings{
+        padding-bottom: 19px;
+    }
+
+    .navbar-light .navbar-toggler-icon{
+        color : #ffffff !important;
+    }
+
+    .navbar-light .navbar-toggler{
+        border: 1px solid #2d527c;
+    }
+
+    .search_inputs{
+        width: 86.5%;
+    }
+
     .infobar {
         display: none;
     }

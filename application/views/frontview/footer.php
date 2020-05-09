@@ -65,7 +65,7 @@
         </div>
     </div>
 </section>
-<!-- <a style="right:130px;bottom:20px;" href="https://api.whatsapp.com/send?phone=++6281928529335&text=Assalamu'alaikum Wr Wb" class="floatwa" target="_blank"><i class="fa fa-whatsapp my-floatwa"></i></a> -->
+<a id="wafloats" href="https://api.whatsapp.com/send?phone=++6281928529335&text=Assalamu'alaikum Wr Wb" class="floatwa" target="_blank"><i class="fa fa-whatsapp my-floatwa"></i></a>
 
 <!-- Js Plugins -->
 <script src="<?php echo base_url();?>/assets/frontview/js/jquery-3.3.1.min.js"></script>
@@ -87,7 +87,7 @@
         tawkto();
         $('#search_submit').on('click', function(){
             let keyword = $('#search_input').val();
-            
+
         });
     });
 

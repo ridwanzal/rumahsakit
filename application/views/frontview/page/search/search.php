@@ -2,7 +2,7 @@
     <div class="container breadcrumbs_custom">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item">Total hasil pencarial : <?php echo sizeof($search_result); ?></li>
+            <li class="breadcrumb-item">Total hasil pencarian : <?php echo sizeof($search_result); ?></li>
           </ol>
         </nav>  
     </div>
