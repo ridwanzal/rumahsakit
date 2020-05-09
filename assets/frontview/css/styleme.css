@@ -308,7 +308,7 @@ body{
     }
 
     .section_four_two{
-        padding-top: 0px;
+        padding-top: -20px;
         padding-bottom: 40px;
     }
 
@@ -334,6 +334,15 @@ body{
     .breadcrumbs_custom{
         padding-top: 0px;
         padding-bottom: 0px;
+    }
+
+    .img_bar{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width:30%;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
     
 }
@@ -415,3 +424,4 @@ body{
 .navbar-expand-lg .navbar-nav .dropdown-menu{
     top : 50px !important;
 }
+

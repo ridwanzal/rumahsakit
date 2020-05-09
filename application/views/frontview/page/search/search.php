@@ -43,7 +43,6 @@
                                                                 <div class="btn-group">
                                                                     <small class="text-muted">9 mins</small>
                                                                 </div>
-                                                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                                             </div>
                                                             </div>
                                                         </div>

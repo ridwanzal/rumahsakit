@@ -12,7 +12,7 @@
                 <div class="card mb-4 ">
                     <div class="card-body">
                         <div class="row">
-                                <div class="col-lg-2 col-md-2">
+                                <div class="col-lg-2 col-md-2 col-xs-12 img_bar">
                                     <img src="https://image.flaticon.com/icons/svg/212/212295.svg" height="70px">
                                 </div>
                                 <div class="col-lg-10 col-md-10">
@@ -29,7 +29,7 @@
                 <div class="card mb-4 ">
                     <div class="card-body">
                         <div class="row">
-                                <div class="col-lg-2 col-md-2">
+                                <div class="col-lg-2 col-md-2 col-xs-12 img_bar" >
                                     <img src="https://image.flaticon.com/icons/svg/212/212289.svg" height="70px">
                                 </div>
                                 <div class="col-lg-10 col-md-10">
@@ -46,7 +46,7 @@
                 <div class="card mb-4 ">
                     <div class="card-body">
                         <div class="row">
-                                <div class="col-lg-2 col-md-2">
+                                <div class="col-lg-2 col-md-2 col-xs-12 img_bar">
                                     <img src="https://image.flaticon.com/icons/svg/212/212298.svg" height="70px">
                                 </div>
                                 <div class="col-lg-10 col-md-10">
@@ -63,7 +63,7 @@
                 <div class="card mb-4 ">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-lg-2 col-md-2">
+                            <div class="col-lg-2 col-md-2 col-xs-12 img_bar">
                                 <img src="https://image.flaticon.com/icons/svg/212/212286.svg" height="70px">
                             </div>
                             <div class="col-lg-10 col-md-10">
@@ -80,7 +80,7 @@
                 <div class="card mb-4 ">
                     <div class="card-body">
                         <div class="row">
-                                <div class="col-lg-2 col-md-2">
+                                <div class="col-lg-2 col-md-2 col-xs-12 img_bar">
                                     <img src="https://image.flaticon.com/icons/svg/212/212322.svg" height="70px">
                                 </div>
                                 <div class="col-lg-10 col-md-10">
@@ -97,7 +97,7 @@
                 <div class="card mb-4 ">
                     <div class="card-body">
                         <div class="row">
-                                <div class="col-lg-2 col-md-2">
+                                <div class="col-lg-2 col-md-2 col-xs-12 img_bar">
                                     <img src="https://image.flaticon.com/icons/svg/240/240411.svg" height="70px">
                                 </div>
                                 <div class="col-lg-10 col-md-10">

@@ -15,7 +15,7 @@
 <section class="nav_container">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar_custom">
-          <span id="logo_mobile">RS. AR-Rasyid</span>
+          <a href="<?php echo base_url();?>"><span id="logo_mobile">RS. AR-Rasyid</span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
