@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 09, 2020 at 06:12 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.2.27
+-- Host: localhost
+-- Generation Time: May 08, 2020 at 11:30 PM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.2.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -40,8 +40,8 @@ CREATE TABLE `banner` (
 --
 
 INSERT INTO `banner` (`id`, `image_name`, `caption`, `date_created`) VALUES
-(23, 'hospital1.jpg', '', '0000-00-00 00:00:00'),
-(24, 'hospital21.jpg', '', '0000-00-00 00:00:00');
+(21, 'hospital21.jpg', '', '0000-00-00 00:00:00'),
+(22, 'hospital1.jpg', '', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -233,43 +233,17 @@ CREATE TABLE `karir_open` (
   `posisi` text NOT NULL,
   `deskripsi` text NOT NULL,
   `date_created` datetime NOT NULL,
-  `status` enum('open','closed') NOT NULL,
-  `attachment` text NOT NULL
+  `status` enum('open','closed') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `karir_open`
 --
 
-INSERT INTO `karir_open` (`id`, `posisi`, `deskripsi`, `date_created`, `status`, `attachment`) VALUES
-(1, 'Perawat', '<p>Perawat dapat memberikan yang terbaik</p>\r\n\r\n<ul>\r\n <li>Umur maksimal 30 tahun</li>\r\n <li>Tidak dalam status bekerja di perusahaan/instansi</li>\r\n <li>Sehat jasmani dan rohani</li>\r\n</ul>\r\n', '2020-04-26 03:39:03', 'open', ''),
-(2, 'Perawat Pria', '<p>Spesifikasi</p>\r\n\r\n<ul>\r\n <li>Lulusan D3 Keperawatan</li>\r\n <li>Memiliki kendaraan pribadi</li>\r\n <li>Etos kerja yang tinggi</li>\r\n</ul>\r\n', '2020-04-26 04:34:32', 'open', ''),
-(3, 'Petugas Taman', '<p>Bertugas dalam menjaga kebersihaan taman di area rumah sakit</p>\r\n', '2020-05-08 11:29:28', 'open', ''),
-(4, 'Driver', '<p>Berikut beberapa persayaratan yang harus dimiliki, antara lain : </p>\r\n\r\n<ul>\r\n <li>Pria maksimal umur 45 tahun</li>\r\n <li>Memiliki SIM B</li>\r\n <li>Berpengalaman dalam berkendara jarak jauh</li>\r\n <li>Sehat</li>\r\n <li>Etos kerja yang baik</li>\r\n <li>Mampu bekerjasama dan berkomunikasi</li>\r\n</ul>\r\n', '2020-05-09 05:52:02', 'open', 'Pengukuran_Tingkat_Kematangan_Layanan_IT_pada_PT__Pupuk_Sriwidjaja_dengan_menggunakan_Framework_COBIT_5.docx');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `karir_open_pelamar`
---
-
-CREATE TABLE `karir_open_pelamar` (
-  `id` int(11) NOT NULL,
-  `id_karir_open` int(11) NOT NULL,
-  `nama` text NOT NULL,
-  `email` text NOT NULL,
-  `cv` text NOT NULL,
-  `date_created` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `karir_open_pelamar`
---
-
-INSERT INTO `karir_open_pelamar` (`id`, `id_karir_open`, `nama`, `email`, `cv`, `date_created`) VALUES
-(2, 4, 'Brekundaatamsa', 'brekunda@gmail.com', '', '2020-05-09 06:55:57'),
-(3, 3, 'barkedo@gmail.com', 'berkedo@gmail.com', '', '2020-05-09 06:57:02'),
-(4, 3, 'asdasd', 'adsasd', '', '2020-05-09 06:57:40');
+INSERT INTO `karir_open` (`id`, `posisi`, `deskripsi`, `date_created`, `status`) VALUES
+(1, 'Perawat', '<p>Perawat dapat memberikan yang terbaik</p>\r\n\r\n<ul>\r\n <li>Umur maksimal 30 tahun</li>\r\n <li>Tidak dalam status bekerja di perusahaan/instansi</li>\r\n <li>Sehat jasmano dan rohani</li>\r\n</ul>\r\n', '2020-04-26 03:39:03', 'open'),
+(2, 'Perawat Pria', '<p>Spesifikasi</p>\r\n\r\n<ul>\r\n <li>Lulusan D3 Keperawatan</li>\r\n <li>Memiliki kendaraan pribadi</li>\r\n <li>Etos kerja yang tinggi</li>\r\n</ul>\r\n', '2020-04-26 04:34:32', 'open'),
+(3, 'Petugas Taman', '<p>Bertugas dalam menjaga kebersihaan taman di area rumah sakit</p>\r\n', '2020-05-08 11:29:28', 'open');
 
 -- --------------------------------------------------------
 
@@ -381,12 +355,6 @@ ALTER TABLE `karir_open`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `karir_open_pelamar`
---
-ALTER TABLE `karir_open_pelamar`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `rekanan`
 --
 ALTER TABLE `rekanan`
@@ -407,7 +375,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `banner`
 --
 ALTER TABLE `banner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `banner_jadwal_dokter`
@@ -461,13 +429,7 @@ ALTER TABLE `jadwaldokter`
 -- AUTO_INCREMENT for table `karir_open`
 --
 ALTER TABLE `karir_open`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `karir_open_pelamar`
---
-ALTER TABLE `karir_open_pelamar`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `rekanan`
