@@ -1,3 +1,8 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 99.3%;
+}
+
 .imgslider{
     height: 900px;
     background-position: center;
@@ -50,6 +55,7 @@ body{
 
 .navmain > li{
     padding-right:25px;
+    font-size: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -60,9 +66,10 @@ body{
 
 .footer_last{
     background : #eee;
-    padding-top:20px;
-    padding-bottom: -5px;
+    padding-top:25px;
+    padding-bottom: 15px;
     border-top: 1px solid #eee;
+    font-size: 14px;
 }
 
 
@@ -111,6 +118,8 @@ body{
 
 .search_component_button{
     border : 1px solid #fff;
+    padding-bottom: 6px;
+    padding-top: 7px;
     color : #fff;
 }
 
@@ -167,8 +176,10 @@ body{
 }
 
 .blog_head{
+    line-height: 1.6;
     padding-top: 5px;
     padding-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
 }
 
 .loaderse {
@@ -300,3 +311,44 @@ body{
     background-color: #fff;
 }
 
+.form-control{
+    padding: 3px 3px 6px 8px !important;
+}
+
+.listfooters >  li {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#wa_navbar{
+    background:#03a84e;
+    border-radius:4px;
+    color:#fff;
+    margin-left:20px;
+    padding-right:20px;
+    padding-left:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    cursor:pointer;
+    position: relative;
+    top: 22px;
+}
+
+#wa_navbar:hover{
+    opacity: 0.9;
+}
+
+.search_btn{
+    background: #232f3c;
+    border: 2px solid #232f3c;
+    color: #fff;
+    position: relative;
+    right: 9px;
+}
+.search_inputs{
+
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    top : 50px !important;
+}

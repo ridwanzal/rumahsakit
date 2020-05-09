@@ -27,7 +27,7 @@
                                             <div class="card-body">
                                                     <div class="form-group">
                                                         <label for="inputText3" class="col-form-label">Posisi/ Open Job Position </label>
-                                                        <input id="inputText3" name="position" type="text" class="form-control" required>
+                                                        <input id="inputText3" name="position" type="text" class="form-control" placeholder="Posisi yang tersedia" required>
                                                     </div>  
                                                     <div class="form-group">
                                                         <label for="exampleFormControlTextarea1">Deskripsi</label>
@@ -41,7 +41,12 @@
                                                             <option value="2">Closed</option>
                                                         </select>
                                                     </div>
+                                                    <div class="form-group">
+                                                        <label for="inputText3" class="col-form-label">Attach File (optional) </label>
+                                                        <input name="berkas" type="file" class="form-control" required>
+                                                    </div>  
                                                     <input type="submit" value="Post" class="btn btn-sm btn-success" name="submit_blog" id="submit blog"/> 
+                                                    
                                             </div>
                                         <?php echo form_close();?>
                                 </div>

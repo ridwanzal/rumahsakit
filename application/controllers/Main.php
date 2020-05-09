@@ -75,7 +75,6 @@ class Main extends CI_Controller {
 	$query3="SELECT * FROM karir_open order by id DESC";
 	$query_result3 = $this->db->query($query3)->result();
 
-
 	$data['banner_karir'] = $query_result2;
 	$data['karir_open'] = $query_result3;
 	$this->load->view('frontview/header', $data);
@@ -83,6 +82,58 @@ class Main extends CI_Controller {
 	$this->load->view('frontview/page/karir/karir', $data);
 	$this->load->view('frontview/footer', $data);
  }
+
+ public function karirdetail($id){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+
+	$query2="SELECT * FROM banner_karir order by id DESC";
+	$query_result2 = $this->db->query($query2)->result();
+
+	$query3="SELECT * FROM karir_open where id = '$id' ";
+	$query_result3 = $this->db->query($query3)->result();
+
+	$data['banner_karir'] = $query_result2;
+	$data['karir_open'] = $query_result3;
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/karir/karirdetail', $data);
+	$this->load->view('frontview/footer', $data);
+ }
+
+ public function submit_lamaran(){
+	$id_karir_open = $this->input->post('id_karir_open', TRUE);
+	$nama = $this->input->post('nama', TRUE);
+	$email = $this->input->post('email', TRUE);
+	$cv = $this->input->post('cv', TRUE);
+
+	$image_file = "";
+	$config['upload_path'] = './assets/karir/cv/';
+	$config['allowed_types'] = 'pdf|doc|docx|txt|png|jpeg|jpg|';
+	$this->load->library('upload', $config);
+	if(!$this->upload->do_upload('berkas')){
+	  echo 'Gagal upload';
+	}else{
+	  $image_file = $this->upload->data('file_name');
+	}
+
+	$data = array(
+	  'id_karir_open' => $id_karir_open,
+	  'nama' => $nama,
+	  'email' => $email,
+	  'cv' => $image_file,
+	  'date_created' => date("Y-m-d h:i:s"),
+	);
+	$this->db->insert('karir_open_pelamar', $data);
+	$affect_row = $this->db->affected_rows();
+	if($affect_row > 0){
+	  $this->session->set_flashdata('message', 'Selamat, lamaran kamu berhasil dikirim');
+	  redirect(base_url('karir'));
+	}else{
+	  $this->session->set_flashdata('error', 'Gagal mengirim lamaran');
+	}
+  }
+
 
  public function pengunjung(){
 	$data['title_bar'] = "";
@@ -284,6 +335,10 @@ class Main extends CI_Controller {
 		$this->session->set_flashdata('allowlogin', 'Login untuk melanjutkan');
 		redirect(base_url('kontak'));
 	}
+  }
+
+  public function search(){
+	  $keyword = $this->input->get('keyword');
   }
 
 

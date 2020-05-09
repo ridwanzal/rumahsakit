@@ -42,21 +42,33 @@ class Karir extends CI_Controller {
         $posisi = $this->input->post('position', TRUE);
         $description = $this->input->post('description', TRUE);
         $status = $this->input->post('status', TRUE);
-        $data = array(
-            'posisi' => $posisi,
-            'deskripsi' => $description,
-            'date_created' => date("Y-m-d h:i:s"),
-            'status' => $status
-          );
 
-          $this->db->insert('karir_open', $data);
-          $affect_row = $this->db->affected_rows();
-          if($affect_row > 0){
-            $this->session->set_flashdata('message', 'Berhasil menambahkan konten');
-            redirect(base_url('admin/karir'));
-          }else{
-            $this->session->set_flashdata('error', 'Gagal menambahkan konten');
-          }
+        $image_file = "";
+        $config['upload_path'] = './assets/karir/attachment/';
+        $config['allowed_types'] = 'pdf|doc|docx|txt|png|jpeg|jpg|';
+        $this->load->library('upload', $config);
+        if(!$this->upload->do_upload('berkas')){
+          echo 'Gagal upload';
+        }else{
+          $image_file = $this->upload->data('file_name');
+        }
+
+        $data = array(
+          'posisi' => $posisi,
+          'deskripsi' => $description,
+          'date_created' => date("Y-m-d h:i:s"),
+          'attachment' => $image_file,
+          'status' => $status
+        );
+
+        $this->db->insert('karir_open', $data);
+        $affect_row = $this->db->affected_rows();
+        if($affect_row > 0){
+          $this->session->set_flashdata('message', 'Berhasil menambahkan konten');
+          redirect(base_url('admin/karir'));
+        }else{
+          $this->session->set_flashdata('error', 'Gagal menambahkan konten');
+        }
       }
 
       public function delete($id){

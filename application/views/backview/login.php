@@ -24,7 +24,6 @@
         </div>
         <div class="card-footer bg-white p-0  ">
             <div class="card-footer-item card-footer-item-bordered">
-            <p>Belum punya akun ? <a href="<?php echo base_url();?>register" class="text-secondary">Daftar disini.</a></p>
             </div>
         </div>
     </div>

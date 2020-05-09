@@ -7,6 +7,7 @@
                 <span><i class="lnr lnr-phone-handset"></i>&nbsp;&nbsp;<span>Fax : +1 (603)535-4592</span></span>
                 <span><i class="lnr lnr-phone-handset"></i>&nbsp;&nbsp;<span>Phone : +1 (603)535-4592</span></span>
                 <span><i class="lnr lnr-envelope"></i>&nbsp;&nbsp;<span> rs.ar.plm@gmail.com </span></span>
+                <a  href="https://api.whatsapp.com/send?phone=++6281928529335&text=Assalamu'alaikum Wr Wb" target="_blank"><span id="wa_navbar"><img src="https://image.flaticon.com/icons/svg/220/220236.svg" style="color:#ffffff;height:15px;">&nbsp;&nbsp;WhatsApp</span></a>
             </div>
         </div>
     </div>
@@ -71,9 +72,11 @@
                 <a class="nav-link" href="<?php echo base_url();?>kontak">Kontak <span class="sr-only"></span></a>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0" class="search_component">
-              <input class="form-control mr-sm-2 search_component" type="search" placeholder="Cari Informasi">
-              <button class="btn btn-outline-default my-2 my-sm-0 search_component_button" type="submit">Search</button>
+            <form method="GET" action="<?php echo base_url(); ?>/blog/blog_content_list_search">
+                <div style:display:flex;>
+                  <input name="keyword" style="padding-left:5px;" class="search_inputs" type="text" id="search_input" placeholder="Cari Informasi">
+                  <input  class="search_btn" type="submit" value="Cari">
+                </div>
             </form>
           </div>
         </nav>

@@ -1,4 +1,4 @@
-<?php
+  <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 /*Load all parser library*/
 require "vendor/autoload.php";
@@ -108,6 +108,22 @@ class Blog extends CI_Controller {
           $query_result = $this->db->query($query);
           $result = json_encode($query_result->result());
           echo $result;
+      }
+
+      public function blog_content_list_search(){
+        $keyword = $this->input->get('keyword');
+        $keyword_search = str_replace("'", "", $keyword);
+        $query="SELECT * FROM blog where title like '%$keyword_search%' ";
+        $query_result = $this->db->query($query)->result();
+        // echo '<pre>'; 
+        //   var_dump($query_result);die;
+        // echo '</pre>';
+        // echo $result;
+        $data['search_result'] = $query_result;
+        $this->load->view('frontview/header', $data);
+        $this->load->view('frontview/navbar', $data);
+        $this->load->view('frontview/page/search/search', $data);
+        $this->load->view('frontview/footer', $data);
       }
 
       public function blog_content_list_ex(){

@@ -25,7 +25,13 @@
                                     </div>
                                 <img class="d-block w-100 imgslider" src="<?php echo base_url(); ?>assets/frontview/img/hospital.jpg" alt="First slide">
                                 </div> -->
-                                
+                                <?php   
+                                    if($this->session->flashdata('message')){ ?>
+                                        <div class="alert alert-success alert-dismissible"><?php echo $this->session->flashdata('message') ?>
+                                        <a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                        </div>
+                                    <?php   }
+                                ?>
                                 <?php
                                     if(!isset($banner_karir)){ ?>
                                         <div class="carousel-item active">
@@ -113,7 +119,7 @@
                                                             <td><?php echo $list->date_created; ?></td>
                                                             <td><?php echo $list->status; ?></td>
                                                             <td>
-                                                                <a href="" class="btn btn-primary btn-xs">Lihat Detail</a>
+                                                                <a href="<?php echo base_url(); ?>karir/post/<?php echo $list->id; ?>" class="btn btn-primary btn-sm">Lihat Detail</a>
                                                             </td>
                                                         </tr>
                                                     <?php }

@@ -39,6 +39,11 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav flex-column">
+                             <li class="nav-item active">
+                                <a class="nav-link active" href="<?php echo base_url(); ?>" ><i class="fa fa-fw fa-comments"></i>Go to Main Page<span class="badge badge-success"></span></a>
+                            </li>
+                            <div style="border:0.1px solid #303456; margin-top:15px; margin-bottom:15px;">
+                            </div>
                             <li class="nav-divider">
                                 LAMAN ADMIN 
                             </li>
@@ -62,6 +67,11 @@
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin/rekanan" ><i class="fa fa-fw fa-magnet"></i>Kelola Rekanan<span class="badge badge-success">6</span></a>
+                            </li>
+                            <div style="border:0.1px solid #303456; margin-top:15px; margin-bottom:15px;">
+                            </div>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="<?php echo base_url(); ?>login/logout" ><i class="fa fa-fw fa-unlock"></i>Logout<span class="badge badge-success">6</span></a>
                             </li>
                             <!-- <li class="nav-divider">
                                 MENU
