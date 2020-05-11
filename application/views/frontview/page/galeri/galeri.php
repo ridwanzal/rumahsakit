@@ -13,7 +13,7 @@
 <section class="section_four_two">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-6">
+            <div class="col-lg-12 col-md-12 col-xs-12">
                 <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-bottom:10px;">
                 <li class="nav-item">
                     <a class="nav-link active" id="image-tab" data-toggle="tab" href="#image" role="tab" aria-controls="image" aria-selected="true">Foto</a>
@@ -33,7 +33,7 @@
                                                 </a>
                                             </div> -->
                                             <div class="col-lg-3 col-md-4 col-xs-12 image_container" style="cursor:pointer !important;" >
-                                                <div class="card" style="width: 17rem; cursor:pointer;">
+                                                <div class="card image_galeri_container" style="cursor:pointer;">
                                                     <a  href="<?php echo base_url()?>assets/galeri/<?php echo $list->image_name;?>" data-toggle="lightbox">
                                                         <img  style="cursor:pointer;" class="img-fluid" src="<?php echo base_url()?>assets/galeri/<?php echo $list->image_name;?>" alt="/<?php echo $list->image_name;?>">
                                                     </a>

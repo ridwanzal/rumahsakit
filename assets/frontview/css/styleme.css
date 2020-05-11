@@ -214,6 +214,10 @@ body{
   }
 
   @media (min-width: 320px) and (max-width: 480px) {
+    .image_galeri_container{
+        margin-top : 4px;
+        margin-bottom: 4px;
+    }
     .carousel-caption{
         display: none;
     }
@@ -424,4 +428,3 @@ body{
 .navbar-expand-lg .navbar-nav .dropdown-menu{
     top : 50px !important;
 }
-
