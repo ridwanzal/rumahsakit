@@ -35,7 +35,7 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Telepon * </label>
-                            <input name="telepon" type="number" class="form-control" id="exampleInputPassword1" placeholder="Masukkan email anda" required>
+                            <input name="telepon" type="number" class="form-control" id="exampleInputPassword1" placeholder="Masukkan no.telepon anda" required>
                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-success btn-sm" value="Submit">
