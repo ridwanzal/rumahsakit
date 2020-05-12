@@ -34,7 +34,7 @@
         .floatwa{position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;z-index:100;}.my-floatwa{margin-top:16px;}
     </style>
     <!-- Smartsupp Live Chat script -->
-    <script type="text/javascript">
+    <script type="text/javascript"> 
     var _smartsupp = _smartsupp || {};
     _smartsupp.key = 'd875578f8c67f208e5d98e81081808de68784061';
     window.smartsupp||(function(d) {
@@ -44,4 +44,17 @@
     c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
     })(document);
     </script>
+        <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5eb60609967ae56c5218227a/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 </head>
