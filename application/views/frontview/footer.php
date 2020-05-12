@@ -84,7 +84,7 @@
         imgviewer();
         fetchblog();
         lamar();
-        // tawkto();
+        tawkto();
         $('#search_submit').on('click', function(){
             let keyword = $('#search_input').val();
 
