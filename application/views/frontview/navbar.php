@@ -53,25 +53,25 @@
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url();?>artikel">Artikel <span class="sr-only"></span></a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url();?>jadwaldokter">Jadwal Dokter <span class="sr-only"></span></a>
-              </li>
-              <!-- <li class="nav-item dropdown">
+              </li> -->
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Informasi
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="<?php echo base_url();?>pengunjung">Pengunjung</a>
-                  <a class="dropdown-item" href="<?php echo base_url();?>">Hak dan Kewajiban Pasien</a>
-                  <a class="dropdown-item" href="<?php echo base_url();?>">Promosi</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>jadwaldokter">Jadwal Dokter </a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>daftarpasien">Daftar Pasien</a>
                 </div>
-              </li>  -->
+              </li> 
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url();?>karir">Karir <span class="sr-only"></span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url();?>kontak">Kontak <span class="sr-only"></span></a>
               </li>
+              
             </ul>
             <form method="GET" action="<?php echo base_url(); ?>/blog/blog_content_list_search">
                 <div style:display:flex; class="searchings">

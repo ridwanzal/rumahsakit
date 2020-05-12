@@ -33,7 +33,7 @@
                                                             </div>
                                                             <div class="col-lg-11 col-md-11 col-xs-6" style="position: relative;left: -57px;">
                                                                 <div class="form-group">
-                                                                    <label for="exampleFormControlFile1">Upload images*</label>
+                                                                    <label for="exampleFormControlFile1">Upload images or video</label>
                                                                     <input type="file" class="form-control" id="upload_thumb" name="berkas" required>
                                                                 </div>
                                                                 <div class="form-group"> 
@@ -84,7 +84,22 @@
                                                             <tr>
                                                                 <td><?php echo $i; ?></td>
                                                                 <td><?php echo $list->image_name; ?></td>
-                                                                <td><img style="height:50px;border-radius:4px;" src="<?php echo base_url()?>/assets/galeri/<?php echo $list->image_name;?>"></td>
+                                                                <td>
+                                                                    <?php
+                                                                        $getformat = explode('.', $list->image_name);
+                                                                        if($getformat[1] == 'webm' || $getformat[1] == 'mp4' || $getformat[1] == 'ogv'){
+                                                                            ?>         
+                                                                                <video style="height:80px;width:100px;border-radius:4px;" src="<?php echo base_url()?>/assets/galeri/<?php echo $list->image_name;?>" poster="" controls>
+                                                                                    This is fallback content to display for user agents that do not support the video tag.
+                                                                                </video>
+                                                                            <?php 
+                                                                        }else { 
+                                                                            ?>
+                                                                                <img style="height:80px;width:100px;border-radius:4px;" src="<?php echo base_url()?>/assets/galeri/<?php echo $list->image_name;?>">
+                                                                            <?php
+                                                                        }
+                                                                    ?>
+                                                                </td>
                                                                 <td><?php echo $list->caption;?></td>
                                                                 <th><a href="<?php echo base_url()?>uploads/delete/<?php echo $list->id; ?>/galeri" class="btn btn-danger btn-xs">Delete</a></th>
                                                             </tr>

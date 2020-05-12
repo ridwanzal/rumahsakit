@@ -64,6 +64,7 @@ $route['feeds'] = 'main/feeds';
 $route['kontak'] = 'main/contact';
 $route['galeri'] = 'main/galeri';
 $route['jadwaldokter'] = 'main/jadwaldokter';
+$route['daftarpasien'] = 'main/daftarpasien';
 $route['karir'] = 'main/karir';
 $route['karir/post/(:any)'] = 'main/karirdetail/$1';
 $route['pengunjung'] = 'main/pengunjung';
@@ -91,4 +92,5 @@ $route['admin/galeri/video'] ='galeri/video';
 $route['admin/banner'] = 'banner';
 $route['admin/jadwaldokter'] = 'jadwaldokter';
 $route['admin/rekanan'] = 'rekanan';
+$route['admin/pasien'] = 'pasien';
 

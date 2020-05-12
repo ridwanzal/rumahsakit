@@ -66,10 +66,10 @@ class Uploads extends CI_Controller {
 	public function single($pathname, $tables, $context){
 		$caption = $this->input->post('caption', TRUE);
 		$config['upload_path']          = './assets/' .$pathname. '/';
-		$config['allowed_types']        = 'gif|jpg|png|jpeg';
-		$config['max_size']             = 100000;
+		$config['allowed_types']        = 'gif|jpg|png|jpeg|mp4|webm|ogv';
+		$config['max_size']             = 1000000;
 		$config['max_width']            = 8000;
-		$config['max_height']           = 100000;
+		$config['max_height']           = 1000000;
 		$image_file = "";
 		$this->load->library('upload',$config);
 		$foto = $_FILES['berkas'];

@@ -68,6 +68,9 @@
                             <li class="nav-item ">
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin/rekanan" ><i class="fa fa-fw fa-magnet"></i>Kelola Rekanan<span class="badge badge-success">6</span></a>
                             </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/pasien" ><i class="fa fa-fw fa-users"></i>Kelola Pasien<span class="badge badge-success">6</span></a>
+                            </li>
                             <div style="border:0.1px solid #303456; margin-top:15px; margin-bottom:15px;">
                             </div>
                             <li class="nav-item ">
