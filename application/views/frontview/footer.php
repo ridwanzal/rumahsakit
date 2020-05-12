@@ -79,12 +79,12 @@
 <script src="<?php echo base_url();?>/assets/frontview/js/main.js"></script>
 <script>
     $(document).ready(function(){
+        tawkto();
         $('#containerblog').hide();
         $('.loaderse').fadeIn(100);
         imgviewer();
         fetchblog();
         lamar();
-        tawkto();
         $('#search_submit').on('click', function(){
             let keyword = $('#search_input').val();
 
