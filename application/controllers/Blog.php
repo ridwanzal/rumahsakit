@@ -136,6 +136,13 @@ class Blog extends CI_Controller {
           echo $result;
         }
       }
+
+
+      public function deletepost($id){
+        $this->db->where('blog_id', $id);
+        $this->db->delete('blog');
+        redirect(base_url('admin'));
+      }
   
 
 }

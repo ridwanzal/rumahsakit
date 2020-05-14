@@ -35,4 +35,11 @@ class Pasien extends CI_Controller {
       }
 
 
+      public function delete($id){
+        $this->db->where('id', $id);
+        $this->db->delete('daftarpasien');
+        redirect(base_url('admin/pasien'));
+      }
+
+
 }

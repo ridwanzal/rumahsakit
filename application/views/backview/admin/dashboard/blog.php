@@ -53,8 +53,8 @@
                                                         <label for="exampleFormControlTextarea1">Content</label>
                                                         <textarea class="form-control" id="editor" rows="3" name="blog_content"></textarea>
                                                     </div>
-                                                    <input type="submit" value="Simpan sebagai Draft" class="btn btn-sm btn-primary" name="submit_draft_blog" id="submit blog"/> 
-                                                    <input type="submit" value="Post" class="btn btn-sm btn-success" name="submit_blog" id="submit blog"/> 
+                                                    <!-- <input type="submit" value="Simpan sebagai Draft" class="btn btn-sm btn-primar y" name="submit_draft_blog" id="submit blog"/>  -->
+                                                    <input style="padding-left:20px;padding-right:20px;" type="submit" value="Post" class="btn btn-sm btn-success" name="submit_blog" id="submit blog"/> 
                                             </div>
                                         <?php echo form_close();?>
                                 </div>
@@ -80,6 +80,7 @@
                                                         <th>Author Id</th>
                                                         <th>Date Created</th>
                                                         <th>Category</th>
+                                                        <th>Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -103,6 +104,7 @@
                                                                 <td><?php echo $list->author_id; ?></td>
                                                                 <td><?php echo $list->date_created; ?></td>
                                                                 <td><?php echo $list->category; ?></td>
+                                                                <td><a href="<?php echo base_url()?>blog/deletepost/<?php echo $list->blog_id; ?>" class="btn btn-danger btn-xs">Delete</a></td>
                                                             </tr>
                                                         <?php }
                                                     ?>
