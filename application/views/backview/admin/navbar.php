@@ -5,7 +5,7 @@
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
                 <!-- <a class="navbar-brand" href="index.html">Concept</a> -->
-                <center><a href="<?php echo base_url();?>"><img style="height:35px;padding-left:20px;" src="<?php echo base_url();?>assets/frontview/img/logo3.png" alt=""></a></center>
+                <center><a href="<?php echo base_url();?>"><img style="height:40px;padding-left:20px;" src="<?php echo base_url();?>assets/frontview/img/logo3.svg" alt=""></a></center>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

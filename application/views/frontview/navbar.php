@@ -2,7 +2,7 @@
 <div class="container">
     <div class="row" id="navcontainer">
         <div class="col-lg-12 col-md-12 col-xs-12">
-            <a href="<?php echo base_url();?>"><img src="<?php echo base_url()?>assets/frontview/img/logo3.png"  class="logo_main"></a>
+            <a href="<?php echo base_url();?>"><img src="<?php echo base_url()?>assets/frontview/img/logo3.svg"  class="logo_main"></a>
             <div class="float-right infobar" >
                 <span><i class="lnr lnr-phone-handset"></i>&nbsp;&nbsp;<span>Fax : +1 (603)535-4592</span></span>
                 <span><i class="lnr lnr-phone-handset"></i>&nbsp;&nbsp;<span>Phone : +1 (603)535-4592</span></span>
