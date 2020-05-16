@@ -31,7 +31,7 @@
                                                             <div class="col-lg-1 col-md-1 col-xs-6">
                                                             <img style="object-fit:cover;border-radius:10px;position:relative;top:6px;" width="50" height="50" id="img_thumb" src="<?php echo base_url() ?>assets/backview/images/image_default.png">
                                                             </div>
-                                                            <div class="col-lg-11 col-md-11 col-xs-6" style="position: relative;left: -57px;">
+                                                            <div class="col-lg-11 col-md-11 col-xs-6 upload_component">
                                                                 <div class="form-group">
                                                                     <label for="exampleFormControlFile1">Upload multiple images*</label>
                                                                     <input type="file" class="form-control" id="upload_thumb" name="berkas[]" multiple required>

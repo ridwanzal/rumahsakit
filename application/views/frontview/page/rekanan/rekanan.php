@@ -30,8 +30,8 @@
                                                 </a>
                                             </div> -->
                                             <div class="col-lg-3 col-md-3 col-xs-12 image_container" style="cursor:pointer !important;" >
-                                                <div class="card" style="width:100%; margin-bottom:30px; cursor:pointer;">
-                                                    <a  href="<?php echo base_url()?>assets/rekanan/<?php echo $list->image_name;?>" data-toggle="lightbox">
+                                                <div class="card" style="width:100%;height:300px;" margin-bottom:30px; cursor:pointer;">
+                                                    <a  href="<?php echo $list->link;?>" target="_blank">
                                                         <img  style="cursor:pointer;width:100%;" src="<?php echo base_url()?>assets/rekanan/<?php echo $list->image_name;?>" alt="/<?php echo $list->image_name;?>">
                                                     </a>
                                                     <div class="card-body">

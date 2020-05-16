@@ -24,7 +24,7 @@
                                 <div class="card">
 
                                         <!-- format uploads/uploads/#namapath/#namatable -->
-                                        <?php echo form_open_multipart('uploads/single/rekanan/rekanan/rekanan'); ?>
+                                        <?php echo form_open_multipart('uploads/singlewithlink/rekanan/rekanan/rekanan'); ?>
                                             <h5 class="card-header">Upload Image</h5>
                                             <div class="card-body">
                                                     <div class="row">
@@ -38,6 +38,9 @@
                                                                 </div>
                                                                 <div class="form-group"> 
                                                                     <input type="text" placeholder="Caption Image" class="form-control" id="caption" name="caption"  required>
+                                                                </div>
+                                                                <div class="form-group"> 
+                                                                    <input type="text" placeholder="Link Web" class="form-control" id="link" name="link"  required>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <input type="submit" value="Upload" class="btn btn-sm btn-success"/> 
@@ -64,6 +67,7 @@
                                                         <th>Nama foto</th>
                                                         <th>Image</th>
                                                         <th>Caption</th>
+                                                        <th>Link</th>
                                                         <th>Action</th>
                                                     </tr>
                                                 </thead>
@@ -86,6 +90,7 @@
                                                                 <td><?php echo $list->image_name; ?></td>
                                                                 <td><img style="height:50px;border-radius:4px;" src="<?php echo base_url()?>/assets/rekanan/<?php echo $list->image_name;?>"></td>
                                                                 <td><?php echo $list->caption;?></td>
+                                                                <td><?php echo $list->link;?></td>
                                                                 <th><a href="<?php echo base_url()?>uploads/delete/<?php echo $list->id; ?>/rekanan" class="btn btn-danger btn-xs">Delete</a></th>
                                                             </tr>
                                                         <?php }

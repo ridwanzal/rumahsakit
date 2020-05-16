@@ -111,6 +111,57 @@ class Uploads extends CI_Controller {
 		}
 	}
 
+
+	public function singlewithlink($pathname, $tables, $context){
+		$caption = $this->input->post('caption', TRUE);
+		$link = $this->input->post('link', TRUE);
+		$config['upload_path']          = './assets/' .$pathname. '/';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg|mp4|webm|ogv';
+		$config['max_size']             = 1000000;
+		$config['max_width']            = 8000;
+		$config['max_height']           = 1000000;
+		$image_file = "";
+		$this->load->library('upload',$config);
+		$foto = $_FILES['berkas'];
+		IF($foto != ''){
+			if(!$this->upload->do_upload('berkas')){
+				echo 'Gagal upload';
+			}else{
+				$image_file = $this->upload->data('file_name');
+			}
+	
+			$data = array(
+				'image_name' => $image_file,
+				'caption' => $caption,
+				'link' => $link
+			);
+	
+			$this->db->insert($tables, $data);
+			switch($context){
+				case 'galeri' :
+					redirect(base_url('admin/galeri'));
+				break;
+				case 'karir' : 
+					redirect(base_url('admin/karir'));
+				break;
+				case 'banner' : 
+					redirect(base_url('admin/banner'));
+				break;
+				case  'contact' :
+					redirect(base_url('admin/kontak'));
+				break;
+				case  'jadwaldokter' :
+					redirect(base_url('admin/jadwaldokter'));
+				break;
+				case  'rekanan' :
+					redirect(base_url('admin/rekanan'));
+				break;
+			 }
+		}else{
+			echo 'empty broh';
+		}
+	}
+
 	public function delete($id, $context){	
 		switch($context){
 			case 'galeri' :

@@ -33,7 +33,8 @@ body{
     padding-left: 0;
     padding-right: 0;
     padding-bottom:5px;
-    background :  #2d527c !important;
+    /* background :  #2d527c !important; */
+    background :  #278c55 !important;
 }
 
 .infobar {
@@ -50,7 +51,8 @@ body{
 }
 
 .nav_container{
-    background :  #2d527c !important;
+    /* background :  #2d527c !important; */
+    background :  #278c55 !important;
 }
 
 .navmain > li{
@@ -147,7 +149,7 @@ body{
 .section_two{
     padding-top: 100px;
     padding-bottom: 100px;
-    background: #2d527c;
+    background: #278c55;
     border-bottom: 1px solid #f1f1f1;
 }
 
@@ -213,7 +215,18 @@ body{
       display: none;
   }
 
+  .upload_component{
+    position: relative;
+    left: -57px;
+}
+
   @media (min-width: 320px) and (max-width: 480px) {
+    .upload_component{
+        padding-top: 30px !important;
+        position: relative;
+        left: 0px;
+    }
+
     .image_galeri_container{
         margin-top : 4px;
         margin-bottom: 4px;
@@ -266,7 +279,7 @@ body{
     }
 
     .navbar-light .navbar-toggler{
-        border: 1px solid #2d527c;
+        border: 1px solid #278c55;
     }
 
     .search_inputs{
@@ -428,3 +441,8 @@ body{
 .navbar-expand-lg .navbar-nav .dropdown-menu{
     top : 50px !important;
 }
+
+/* .upload_component{
+    position: relative;
+    left: 0px;
+} */
