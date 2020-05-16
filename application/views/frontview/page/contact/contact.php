@@ -117,5 +117,11 @@
                 </div>
             </div>
         </form>
+        <br/>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <div style="border-radius:5px;" class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="302" id="gmap_canvas" src="https://maps.google.com/maps?q=%20Jln.%20H.M%20Saleh%20No%202%20KM%207%2C%20Palembang%20Sukarami%2C%20Sumatera%20Selatan%2C%20Indonesia%2030153&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:402px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:502px;width:100%;}</style></div>
+            </div>
+        </div>
     </div>
 </section>
