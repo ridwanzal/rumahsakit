@@ -1,6 +1,6 @@
 <body>
 <div class="container">
-    <div class="row" id="navcontainer">
+    <div class="row" id="navcontainer" style="padding-bottom:6px;">
         <div class="col-lg-12 col-md-12 col-xs-12">
             <a href="<?php echo base_url();?>"><img src="<?php echo base_url()?>assets/frontview/img/logo3.svg"  class="logo_main"></a>
             <div class="float-right infobar" >
