@@ -30,6 +30,10 @@
                             <?php   }
                         ?>
                         <div class="form-group">
+                            <label for="exampleInputEmail1">NIK *</label>
+                            <input name="nik" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="" placeholder="Masukkan nama anda" required>
+                        </div>
+                        <div class="form-group">
                             <label for="exampleInputEmail1">Nama *</label>
                             <input name="nama" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan nama anda" required>
                         </div>

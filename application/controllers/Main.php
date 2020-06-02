@@ -352,8 +352,10 @@ class Main extends CI_Controller {
   public function submit_pasien(){
 	$nama = $this->input->post('nama', TRUE);
 	$telepon = $this->input->post('telepon', TRUE);
+	$nik = $this->input->post('nik', TRUE);
 		
 	$data = array(
+		'nik' => $nik,
 		'nama' => $nama,
 		'no_telepon' => $telepon,
 	);

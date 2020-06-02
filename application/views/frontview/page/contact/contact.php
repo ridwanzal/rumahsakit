@@ -102,10 +102,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Isi Pesan *</label>
+                        <label for="exampleFormControlTextarea1">Isi Pesan</label>
                         <textarea name="pesan" class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Isi Pesan"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Kritik dan Saran</label>
+                        <textarea name="kritiksaran" class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Berikan Kritik dan Saran"></textarea>
                     </div>
                 </div>
             </div>

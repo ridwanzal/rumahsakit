@@ -33,7 +33,7 @@
                                                             </div>
                                                             <div class="col-lg-11 col-md-11 col-xs-6 upload_component" >
                                                                 <div class="form-group">
-                                                                    <label for="exampleFormControlFile1">Upload images or video</label>
+                                                                    <label for="exampleFormControlFile1">Upload images or video (best fit 1200px * 1200px)</label>
                                                                     <input type="file" class="form-control" id="upload_thumb" name="berkas" required>
                                                                 </div>
                                                                 <div class="form-group"> 

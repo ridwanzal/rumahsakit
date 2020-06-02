@@ -44,13 +44,15 @@ class Kontak extends CI_Controller {
         $telepon = $this->input->post('telepon', TRUE);
         $subject = $this->input->post('subject', TRUE);
         $pesan = $this->input->post('pesan', TRUE);
+        $kritiksaran = $this->input->post('kritiksaran', TRUE);
             
         $data = array(
             'nama' => $nama,
             'email' => $email,
             'telepon' => $telepon,
             'subject' => $subject,
-            'pesan' => $pesan
+            'pesan' => $pesan,
+            'kritiksaran' => $kritiksaran
         );
     
         $this->db->insert('contact', $data);
