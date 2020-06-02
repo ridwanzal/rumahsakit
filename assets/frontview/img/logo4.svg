@@ -15,7 +15,7 @@
    version="1.1"
    id="svg2118"
    inkscape:version="0.92.5 (0.92.5+68)"
-   sodipodi:docname="logoadmin.svg">
+   sodipodi:docname="logo4.svg">
   <defs
      id="defs2112" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="132.43563"
-     inkscape:cy="93.884461"
+     inkscape:zoom="2.8"
+     inkscape:cx="82.975346"
+     inkscape:cy="50.198246"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,127 +53,106 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(71.325974,-123.99307)">
+    <path
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.31282043px;line-height:1;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0.20200787px;word-spacing:0.00342788px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:upright;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.03533673;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.42241743;paint-order:normal"
+       d="M 24.853516 130.22461 C 20.514191 130.22461 17.861328 132.76798 17.861328 135.83594 C 17.861328 142.7733 28.474609 140.53548 28.474609 143.79688 C 28.474609 144.84717 27.423421 145.8418 25.267578 145.8418 C 22.724791 145.8418 20.707238 144.70783 19.408203 143.35352 L 17.279297 146.33984 C 18.992916 148.08111 21.536426 149.26953 25.074219 149.26953 C 30.049241 149.26953 32.453125 146.7255 32.453125 143.35352 C 32.453125 136.47141 21.867188 138.43364 21.867188 135.50391 C 21.867188 134.39836 22.808161 133.65234 24.494141 133.65234 C 26.373594 133.65234 28.362964 134.28798 29.855469 135.66992 L 32.039062 132.79492 C 30.214889 131.10891 27.78325 130.22461 24.853516 130.22461 z M 66.193359 130.22461 C 61.854035 130.22461 59.201172 132.76798 59.201172 135.83594 C 59.201172 142.7733 69.814453 140.53548 69.814453 143.79688 C 69.814453 144.84717 68.763264 145.8418 66.607422 145.8418 C 64.064635 145.8418 62.047082 144.70783 60.748047 143.35352 L 58.621094 146.33984 C 60.334713 148.08111 62.87627 149.26953 66.414062 149.26953 C 71.389085 149.26953 73.794922 146.7255 73.794922 143.35352 C 73.794922 136.47141 63.208984 138.43364 63.208984 135.50391 C 63.208984 134.39836 64.148005 133.65234 65.833984 133.65234 C 67.713438 133.65234 69.702807 134.28798 71.195312 135.66992 L 73.378906 132.79492 C 71.554732 131.10891 69.123094 130.22461 66.193359 130.22461 z M 235.89648 130.22461 C 231.55716 130.22461 228.9043 132.76798 228.9043 135.83594 C 228.9043 142.7733 239.51758 140.53548 239.51758 143.79688 C 239.51758 144.84717 238.46639 145.8418 236.31055 145.8418 C 233.76776 145.8418 231.75021 144.70783 230.45117 143.35352 L 228.32422 146.33984 C 230.03784 148.08111 232.57939 149.26953 236.11719 149.26953 C 241.09221 149.26953 243.49805 146.7255 243.49805 143.35352 C 243.49805 136.47141 232.91211 138.43364 232.91211 135.50391 C 232.91211 134.39836 233.85113 133.65234 235.53711 133.65234 C 237.41656 133.65234 239.40593 134.28798 240.89844 135.66992 L 243.08203 132.79492 C 241.25786 131.10891 238.82622 130.22461 235.89648 130.22461 z M 0 130.50195 L 0 148.9375 L 3.9238281 148.9375 L 3.9238281 142.38672 L 6.7988281 142.38672 L 10.419922 148.9375 L 14.925781 148.9375 L 10.779297 141.91602 C 12.769309 141.44614 14.814453 139.70475 14.814453 136.44336 C 14.814453 133.01612 12.464872 130.50195 8.6230469 130.50195 L 0 130.50195 z M 51.542969 130.50195 L 51.542969 148.9375 L 55.46875 148.9375 L 55.46875 130.50195 L 51.542969 130.50195 z M 77.201172 130.50195 L 77.201172 148.9375 L 88.919922 148.9375 L 88.919922 145.48242 L 81.125 145.48242 L 81.125 130.50195 L 77.201172 130.50195 z M 97.599609 130.50195 L 90.46875 148.9375 L 94.945312 148.9375 L 96.107422 145.81445 L 104.01172 145.81445 L 105.14453 148.9375 L 109.62305 148.9375 L 102.51953 130.50195 L 97.599609 130.50195 z M 112.08789 130.50195 L 112.08789 148.9375 L 116.01367 148.9375 L 116.01367 136.0293 L 121.20898 148.9375 L 122.92383 148.9375 L 128.11914 136.0293 L 128.11914 148.9375 L 132.07227 148.9375 L 132.07227 130.50195 L 126.54297 130.50195 L 122.06641 141.64062 L 117.58789 130.50195 L 112.08789 130.50195 z M 149.51367 130.50195 L 142.38281 148.9375 L 146.85938 148.9375 L 148.01953 145.81445 L 155.92578 145.81445 L 157.05859 148.9375 L 161.53516 148.9375 L 154.43359 130.50195 L 149.51367 130.50195 z M 164.00195 130.50195 L 164.00195 148.9375 L 167.92578 148.9375 L 167.92578 142.38672 L 170.80078 142.38672 L 174.42188 148.9375 L 178.92773 148.9375 L 174.78125 141.91602 C 176.77126 141.44614 178.81641 139.70475 178.81641 136.44336 C 178.81641 133.01612 176.46682 130.50195 172.625 130.50195 L 164.00195 130.50195 z M 191.60156 130.50195 L 191.60156 148.9375 L 195.52734 148.9375 L 195.52734 142.38672 L 198.40234 142.38672 L 202.02148 148.9375 L 206.52734 148.9375 L 202.38086 141.91602 C 204.37087 141.44614 206.41602 139.70475 206.41602 136.44336 C 206.41602 133.01612 204.06838 130.50195 200.22656 130.50195 L 191.60156 130.50195 z M 215.29492 130.50195 L 208.16406 148.9375 L 212.64062 148.9375 L 213.80273 145.81445 L 221.70703 145.81445 L 222.83984 148.9375 L 227.31836 148.9375 L 220.21484 130.50195 L 215.29492 130.50195 z M 244.67188 130.50195 L 251.77539 141.39062 L 251.77539 148.9375 L 255.69922 148.9375 L 255.69922 141.39062 L 262.74805 130.50195 L 258.26953 130.50195 L 253.73633 137.9082 L 249.14844 130.50195 L 244.67188 130.50195 z M 265.21094 130.50195 L 265.21094 148.9375 L 269.13672 148.9375 L 269.13672 130.50195 L 265.21094 130.50195 z M 273.5332 130.50195 L 273.5332 148.9375 L 280.80078 148.9375 C 286.57733 148.9375 290.58594 145.28787 290.58594 139.73242 C 290.58594 134.17701 286.57733 130.50195 280.80078 130.50195 L 273.5332 130.50195 z M 3.9238281 133.95703 L 8.0429688 133.95703 C 9.618393 133.95703 10.806641 134.89557 10.806641 136.44336 C 10.806641 137.99115 9.618393 138.93164 8.0429688 138.93164 L 3.9238281 138.93164 L 3.9238281 133.95703 z M 167.92578 133.95703 L 172.04492 133.95703 C 173.62035 133.95703 174.80859 134.89557 174.80859 136.44336 C 174.80859 137.99115 173.62035 138.93164 172.04492 138.93164 L 167.92578 138.93164 L 167.92578 133.95703 z M 195.52734 133.95703 L 199.64453 133.95703 C 201.21996 133.95703 202.4082 134.89557 202.4082 136.44336 C 202.4082 137.99115 201.21996 138.93164 199.64453 138.93164 L 195.52734 138.93164 L 195.52734 133.95703 z M 277.45703 133.95703 L 280.80078 133.95703 C 284.58733 133.95703 286.57812 136.47103 286.57812 139.73242 C 286.57812 142.85563 284.44913 145.48242 280.80078 145.48242 L 277.45703 145.48242 L 277.45703 133.95703 z M 100.05859 134.42578 L 102.93359 142.35938 L 97.185547 142.35938 L 100.05859 134.42578 z M 151.97266 134.42578 L 154.84766 142.35938 L 149.09766 142.35938 L 151.97266 134.42578 z M 217.75391 134.42578 L 220.62891 142.35938 L 214.87891 142.35938 L 217.75391 134.42578 z M 181.53125 140.75586 L 181.53125 143.74023 L 188.16406 143.74023 L 188.16406 140.75586 L 181.53125 140.75586 z M 37.574219 144.76367 C 36.358103 144.76367 35.333984 145.78581 35.333984 147.00195 C 35.333984 148.21805 36.358103 149.24023 37.574219 149.24023 C 38.790335 149.24023 39.8125 148.21805 39.8125 147.00195 C 39.8125 145.78581 38.790335 144.76367 37.574219 144.76367 z "
+       transform="matrix(0.26458333,0,0,0.26458333,-71.325974,123.99307)"
+       id="path851" />
+    <path
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.62734795px;line-height:1;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0.18307254px;word-spacing:0.00310656px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:upright;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.78999269;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.42241743;paint-order:normal"
+       d="M 54.451172 170.46094 C 49.491619 170.46094 46.160156 174.16705 46.160156 179.10156 C 46.160156 184.03608 49.491619 187.74414 54.451172 187.74414 C 59.385678 187.74414 62.742188 184.03608 62.742188 179.10156 C 62.742188 174.16705 59.385678 170.46094 54.451172 170.46094 z M 243.6875 170.46094 C 238.92833 170.46094 235.0957 173.91658 235.0957 179.10156 C 235.0957 184.28655 238.92833 187.76953 243.6875 187.76953 C 246.41776 187.76953 248.69701 186.61701 250.25 184.88867 L 250.25 178.85156 L 242.43555 178.85156 L 242.43555 180.70508 L 248.17188 180.70508 L 248.17188 184.11133 C 247.34528 184.93791 245.69136 185.91602 243.6875 185.91602 C 240.03046 185.91602 237.25 183.05918 237.25 179.10156 C 237.25 175.11889 240.03046 172.31445 243.6875 172.31445 C 245.69136 172.31445 247.46946 173.26652 248.52148 174.61914 L 250.17578 173.5918 C 248.69793 171.7633 246.64319 170.46094 243.6875 170.46094 z M 32.445312 170.73633 L 32.445312 187.44336 L 34.525391 187.44336 L 34.525391 181.83203 L 36.203125 179.92969 L 42.541016 187.44336 L 45.121094 187.44336 L 37.556641 178.67578 L 44.519531 170.73633 L 41.914062 170.73633 L 34.525391 179.37695 L 34.525391 170.73633 L 32.445312 170.73633 z M 64.869141 170.73633 L 64.869141 172.58984 L 70.154297 172.58984 L 70.154297 187.44336 L 72.232422 187.44336 L 72.232422 172.58984 L 77.542969 172.58984 L 77.542969 170.73633 L 64.869141 170.73633 z M 84.318359 170.73633 L 77.605469 187.44336 L 79.986328 187.44336 L 81.462891 183.73633 L 89.779297 183.73633 L 91.257812 187.44336 L 93.636719 187.44336 L 86.898438 170.73633 L 84.318359 170.73633 z M 103.67383 170.73633 L 103.67383 187.44336 L 105.75391 187.44336 L 105.75391 180.80469 L 110.38867 180.80469 C 113.69504 180.80469 115.62305 178.50174 115.62305 175.77148 C 115.62305 173.04123 113.74513 170.73633 110.38867 170.73633 L 103.67383 170.73633 z M 122.16992 170.73633 L 115.45508 187.44336 L 117.83594 187.44336 L 119.3125 183.73633 L 127.62891 183.73633 L 129.10742 187.44336 L 131.48633 187.44336 L 124.74805 170.73633 L 122.16992 170.73633 z M 134.36328 170.73633 L 134.36328 187.44336 L 144.20703 187.44336 L 144.20703 185.58984 L 136.44141 185.58984 L 136.44141 170.73633 L 134.36328 170.73633 z M 147.82422 170.73633 L 147.82422 187.44336 L 158.76953 187.44336 L 158.76953 185.58984 L 149.90234 185.58984 L 149.90234 179.82812 L 158.59375 179.82812 L 158.59375 177.97461 L 149.90234 177.97461 L 149.90234 172.58984 L 158.76953 172.58984 L 158.76953 170.73633 L 147.82422 170.73633 z M 162.75195 170.73633 L 162.75195 187.44336 L 164.83203 187.44336 L 164.83203 173.69141 L 170.49219 187.44336 L 171.34375 187.44336 L 177.0293 173.69141 L 177.0293 187.44336 L 179.10938 187.44336 L 179.10938 170.73633 L 176.12695 170.73633 L 170.91797 183.31055 L 165.73242 170.73633 L 162.75195 170.73633 z M 183.69727 170.73633 L 183.69727 187.44336 L 191.3125 187.44336 C 194.36839 187.44336 196.14648 185.61569 196.14648 182.93555 C 196.14648 180.93168 194.66905 179.1017 192.89062 178.82617 C 194.41857 178.50038 195.82031 177.09817 195.82031 174.99414 C 195.82031 172.4893 194.04231 170.73633 191.13672 170.73633 L 183.69727 170.73633 z M 205.12695 170.73633 L 198.41406 187.44336 L 200.79492 187.44336 L 202.27148 183.73633 L 210.58789 183.73633 L 212.06641 187.44336 L 214.44531 187.44336 L 207.70703 170.73633 L 205.12695 170.73633 z M 217.32227 170.73633 L 217.32227 187.44336 L 219.40039 187.44336 L 219.40039 174.11719 L 229.14453 187.44336 L 231.14844 187.44336 L 231.14844 170.73633 L 229.06836 170.73633 L 229.06836 183.78711 L 219.45117 170.73633 L 217.32227 170.73633 z M 54.451172 172.31445 C 58.183361 172.31445 60.587891 175.19402 60.587891 179.10156 C 60.587891 182.98404 58.183361 185.89062 54.451172 185.89062 C 50.693936 185.89062 48.314453 182.98404 48.314453 179.10156 C 48.314453 175.19402 50.693936 172.31445 54.451172 172.31445 z M 105.75391 172.58984 L 110.13672 172.58984 C 112.11553 172.58984 113.46875 173.89287 113.46875 175.77148 C 113.46875 177.65014 112.11553 178.95117 110.13672 178.95117 L 105.75391 178.95117 L 105.75391 172.58984 z M 185.77734 172.58984 L 190.78711 172.58984 C 192.66573 172.58984 193.66797 173.79203 193.66797 175.29492 C 193.66797 176.82287 192.66573 177.97461 190.78711 177.97461 L 185.77734 177.97461 L 185.77734 172.58984 z M 85.621094 172.89062 L 89.154297 181.88281 L 82.064453 181.88281 L 85.621094 172.89062 z M 123.4707 172.89062 L 127.00391 181.88281 L 119.91406 181.88281 L 123.4707 172.89062 z M 206.42969 172.89062 L 209.96094 181.88281 L 202.87305 181.88281 L 206.42969 172.89062 z M 185.77734 179.82812 L 190.88672 179.82812 C 192.94068 179.82812 193.99219 181.18103 193.99219 182.70898 C 193.99219 184.4874 192.84048 185.58984 190.88672 185.58984 L 185.77734 185.58984 L 185.77734 179.82812 z "
+       transform="matrix(0.26458333,0,0,0.26458333,-71.325974,123.99307)"
+       id="path904" />
     <g
-       transform="translate(104.81522,99.94304)"
-       id="g2054">
+       transform="translate(74.63922,295.17237)"
+       id="g1931-6">
+      <rect
+         y="-167.72215"
+         x="-107.91592"
+         height="2.108089"
+         width="0.31733283"
+         id="rect940-6-1"
+         style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.20000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill" />
+      <path
+         transform="matrix(0.35367595,0,0,0.35367595,205.16903,-59.109089)"
+         d="m -884.76758,-303.12305 a 1.2466224,1.2466224 0 0 0 -0.50586,0.12891 c -11.83152,5.86679 -19.17005,13.19511 -21.76953,22.68359 -1.75806,6.41716 -1.34187,13.72747 1.10938,22.10938 1.36467,4.66639 3.35506,9.67022 5.96679,15.0664 a 1.2466224,1.2466224 0 0 0 1.1211,0.70313 h 28.25195 a 1.2466224,1.2466224 0 0 0 1.12109,-0.70313 c 2.61177,-5.39623 4.60202,-10.40004 5.9668,-15.0664 2.45145,-8.38194 2.86709,-15.69233 1.10938,-22.10938 -2.59899,-9.48841 -9.93602,-16.81678 -21.76758,-22.68359 a 1.2466224,1.2466224 0 0 0 -0.60352,-0.12891 z"
+         id="path903-2-8"
+         style="opacity:1;vector-effect:none;fill:#5fba48;fill-opacity:1;stroke:none;stroke-width:0.56548941;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         inkscape:original="M -884.71875 -301.87695 C -896.36646 -296.10131 -903.3542 -289.05344 -905.83984 -279.98047 C -907.52094 -273.84423 -907.14351 -266.78202 -904.73633 -258.55078 C -903.39588 -253.96722 -901.43385 -249.0252 -898.8457 -243.67773 L -870.59375 -243.67773 C -868.00557 -249.02523 -866.04369 -253.96721 -864.70312 -258.55078 C -862.29575 -266.78199 -861.91882 -273.84425 -863.59961 -279.98047 C -866.0848 -289.05344 -873.07104 -296.10131 -884.71875 -301.87695 z "
+         inkscape:radius="1.2464978"
+         sodipodi:type="inkscape:offset" />
+      <path
+         inkscape:connector-curvature="0"
+         id="rect876-9-7"
+         d="m -107.7486,-165.89803 c -4.11951,2.0427 -6.59091,4.53537 -7.47002,7.74425 h 14.93936 c -0.87896,-3.20888 -3.34981,-5.70155 -7.46934,-7.74425 z"
+         style="opacity:1;vector-effect:none;fill:#005de7;fill-opacity:1;stroke:none;stroke-width:0.20000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill" />
+      <path
+         inkscape:connector-curvature="0"
+         id="rect885-1-9"
+         d="m -115.21862,-158.15378 c -0.59456,2.17024 -0.46109,4.66798 0.39029,7.57918 h 14.15877 c 0.851431,-2.91118 0.984751,-5.40895 0.3903,-7.57918 z"
+         style="opacity:1;vector-effect:none;fill:#5fba48;fill-opacity:1;stroke:none;stroke-width:0.20000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path898-2-2"
+         d="m -114.82833,-150.5746 c 0.47409,1.62107 1.168,3.36896 2.08336,5.26022 h 9.99205 c 0.91537,-1.89127 1.60923,-3.63912 2.08336,-5.26022 z"
+         style="fill:#ee1a27;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         id="text914-7-0"
+         y="-159.45284"
+         x="-113.04242"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.84671652px;line-height:0;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:upright;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.42241743;paint-order:normal"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:splekta;-inkscape-font-specification:splekta;fill:#ffffff;stroke-width:0.20000003"
+           y="-159.45284"
+           x="-113.04242"
+           id="tspan912-0-2"
+           sodipodi:role="line">RUMAH SAKIT</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.31282043px;line-height:1;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:upright;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.27393284;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.42241743;paint-order:normal"
-         x="-176.62384"
-         y="63.456287"
-         id="text1458"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.91567826px;line-height:0;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:upright;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.20000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.42241743;paint-order:normal"
+         x="-114.72565"
+         y="-153.68243"
+         id="text918-9-3"><tspan
            sodipodi:role="line"
-           id="tspan1454"
-           x="-176.62384"
-           y="63.456287"
-           style="letter-spacing:0.20200787px;word-spacing:0.00342788px;fill:#000000;stroke-width:0.27393284">RS. ISLAM AR-RASYID</tspan><tspan
-           sodipodi:role="line"
-           x="-176.62384"
-           y="70.769104"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova';letter-spacing:0.20200787px;word-spacing:0.00342788px;fill:#cccccc;stroke-width:0.27393284"
-           id="tspan1456" /></text>
-      <text
-         id="text1462"
-         y="73.644402"
-         x="-168.07347"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.62734795px;line-height:1;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:upright;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.2090189;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.42241743;paint-order:normal"
-         xml:space="preserve"><tspan
-           id="tspan1460"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova';letter-spacing:0.18307254px;word-spacing:0.00310656px;fill:#999999;stroke-width:0.2090189"
-           y="73.644402"
-           x="-168.07347"
-           sodipodi:role="line">KOTA PALEMBANG</tspan></text>
-      <g
-         id="g1931-6"
-         transform="translate(-30.176,195.22933)">
-        <rect
-           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.20000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
-           id="rect940-6-1"
-           width="0.31733283"
-           height="2.108089"
-           x="-107.91592"
-           y="-167.72215" />
-        <path
-           sodipodi:type="inkscape:offset"
-           inkscape:radius="1.2464978"
-           inkscape:original="M -884.71875 -301.87695 C -896.36646 -296.10131 -903.3542 -289.05344 -905.83984 -279.98047 C -907.52094 -273.84423 -907.14351 -266.78202 -904.73633 -258.55078 C -903.39588 -253.96722 -901.43385 -249.0252 -898.8457 -243.67773 L -870.59375 -243.67773 C -868.00557 -249.02523 -866.04369 -253.96721 -864.70312 -258.55078 C -862.29575 -266.78199 -861.91882 -273.84425 -863.59961 -279.98047 C -866.0848 -289.05344 -873.07104 -296.10131 -884.71875 -301.87695 z "
-           style="opacity:1;vector-effect:none;fill:#5fba48;fill-opacity:1;stroke:none;stroke-width:0.56548941;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
-           id="path903-2-8"
-           d="m -884.76758,-303.12305 a 1.2466224,1.2466224 0 0 0 -0.50586,0.12891 c -11.83152,5.86679 -19.17005,13.19511 -21.76953,22.68359 -1.75806,6.41716 -1.34187,13.72747 1.10938,22.10938 1.36467,4.66639 3.35506,9.67022 5.96679,15.0664 a 1.2466224,1.2466224 0 0 0 1.1211,0.70313 h 28.25195 a 1.2466224,1.2466224 0 0 0 1.12109,-0.70313 c 2.61177,-5.39623 4.60202,-10.40004 5.9668,-15.0664 2.45145,-8.38194 2.86709,-15.69233 1.10938,-22.10938 -2.59899,-9.48841 -9.93602,-16.81678 -21.76758,-22.68359 a 1.2466224,1.2466224 0 0 0 -0.60352,-0.12891 z"
-           transform="matrix(0.35367595,0,0,0.35367595,205.16903,-59.109089)" />
-        <path
-           style="opacity:1;vector-effect:none;fill:#005de7;fill-opacity:1;stroke:none;stroke-width:0.20000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
-           d="m -107.7486,-165.89803 c -4.11951,2.0427 -6.59091,4.53537 -7.47002,7.74425 h 14.93936 c -0.87896,-3.20888 -3.34981,-5.70155 -7.46934,-7.74425 z"
-           id="rect876-9-7"
-           inkscape:connector-curvature="0" />
-        <path
-           style="opacity:1;vector-effect:none;fill:#5fba48;fill-opacity:1;stroke:none;stroke-width:0.20000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
-           d="m -115.21862,-158.15378 c -0.59456,2.17024 -0.46109,4.66798 0.39029,7.57918 h 14.15877 c 0.851431,-2.91118 0.984751,-5.40895 0.3903,-7.57918 z"
-           id="rect885-1-9"
-           inkscape:connector-curvature="0" />
-        <path
-           style="fill:#ee1a27;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           d="m -114.82833,-150.5746 c 0.47409,1.62107 1.168,3.36896 2.08336,5.26022 h 9.99205 c 0.91537,-1.89127 1.60923,-3.63912 2.08336,-5.26022 z"
-           id="path898-2-2"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="ccccc" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.84671652px;line-height:0;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:upright;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.42241743;paint-order:normal"
-           x="-113.04242"
-           y="-159.45284"
-           id="text914-7-0"><tspan
-             sodipodi:role="line"
-             id="tspan912-0-2"
-             x="-113.04242"
-             y="-159.45284"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:splekta;-inkscape-font-specification:splekta;fill:#ffffff;stroke-width:0.20000003">RUMAH SAKIT</tspan></text>
-        <text
-           id="text918-9-3"
-           y="-153.68243"
+           id="tspan916-3-7"
            x="-114.72565"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.91567826px;line-height:0;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:upright;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.20000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.42241743;paint-order:normal"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:splekta;-inkscape-font-specification:splekta;fill:#000000;stroke-width:0.20000003"
-             y="-153.68243"
-             x="-114.72565"
-             id="tspan916-3-7"
-             sodipodi:role="line">AR-RASYID</tspan></text>
-        <text
-           id="text926-6-5"
-           y="-147.40887"
+           y="-153.68243"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:splekta;-inkscape-font-specification:splekta;fill:#000000;stroke-width:0.20000003">AR-RASYID</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.84671652px;line-height:0;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:upright;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.42241743;paint-order:normal"
+         x="-112.53975"
+         y="-147.40887"
+         id="text926-6-5"><tspan
+           sodipodi:role="line"
+           id="tspan924-0-9"
            x="-112.53975"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.84671652px;line-height:0;font-family:'Proxima Nova';-inkscape-font-specification:'Proxima Nova Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:upright;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.42241743;paint-order:normal"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:splekta;-inkscape-font-specification:splekta;fill:#ffffff;stroke-width:0.20000003"
-             y="-147.40887"
-             x="-112.53975"
-             id="tspan924-0-9"
-             sodipodi:role="line">PALEMBANG</tspan></text>
-        <path
-           style="opacity:1;vector-effect:none;fill:#ebd01d;fill-opacity:1;stroke:none;stroke-width:0.20000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
-           d="m -107.59826,-171.1793 a 1.9872596,1.9872596 0 0 0 -1.98722,1.98722 1.9872596,1.9872596 0 0 0 1.98722,1.98724 1.9872596,1.9872596 0 0 0 1.90582,-1.42929 1.4286786,1.4286786 0 0 1 -1.31496,0.87066 1.4286786,1.4286786 0 0 1 -1.42861,-1.42861 1.4286786,1.4286786 0 0 1 1.42861,-1.42861 1.4286786,1.4286786 0 0 1 1.31995,0.88529 1.9872596,1.9872596 0 0 0 -1.91081,-1.4439 z"
-           id="path942-6-2"
-           inkscape:connector-curvature="0" />
-        <path
-           sodipodi:type="star"
-           style="opacity:1;vector-effect:none;fill:#ebd01d;fill-opacity:1;stroke:none;stroke-width:0.51246995;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
-           id="path947-2-2"
-           sodipodi:sides="5"
-           sodipodi:cx="-143.72545"
-           sodipodi:cy="-88.15773"
-           sodipodi:r1="2.7058976"
-           sodipodi:r2="0.96060401"
-           sodipodi:arg1="0.52359878"
-           sodipodi:arg2="1.1519173"
-           inkscape:flatsided="false"
-           inkscape:rounded="0"
-           inkscape:randomized="0"
-           d="m -141.38207,-86.804781 -1.95267,-0.475394 -0.9533,1.769212 -0.15128,-2.003998 -1.9772,-0.359926 1.85916,-0.763145 -0.26868,-1.991659 1.30031,1.532348 1.81116,-0.870986 -1.05554,1.710188 z"
-           inkscape:transform-center-x="-0.22723282"
-           inkscape:transform-center-y="-0.38291596"
-           transform="matrix(0.37444942,0.15186361,-0.16791692,0.33865103,-68.100957,-117.47516)" />
-      </g>
+           y="-147.40887"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:splekta;-inkscape-font-specification:splekta;fill:#ffffff;stroke-width:0.20000003">PALEMBANG</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path942-6-2"
+         d="m -107.59826,-171.1793 a 1.9872596,1.9872596 0 0 0 -1.98722,1.98722 1.9872596,1.9872596 0 0 0 1.98722,1.98724 1.9872596,1.9872596 0 0 0 1.90582,-1.42929 1.4286786,1.4286786 0 0 1 -1.31496,0.87066 1.4286786,1.4286786 0 0 1 -1.42861,-1.42861 1.4286786,1.4286786 0 0 1 1.42861,-1.42861 1.4286786,1.4286786 0 0 1 1.31995,0.88529 1.9872596,1.9872596 0 0 0 -1.91081,-1.4439 z"
+         style="opacity:1;vector-effect:none;fill:#ebd01d;fill-opacity:1;stroke:none;stroke-width:0.20000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill" />
+      <path
+         transform="matrix(0.37444942,0.15186361,-0.16791692,0.33865103,-68.100957,-117.47516)"
+         inkscape:transform-center-y="-0.38291596"
+         inkscape:transform-center-x="-0.22723282"
+         d="m -141.38207,-86.804781 -1.95267,-0.475394 -0.9533,1.769212 -0.15128,-2.003998 -1.9772,-0.359926 1.85916,-0.763145 -0.26868,-1.991659 1.30031,1.532348 1.81116,-0.870986 -1.05554,1.710188 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="1.1519173"
+         sodipodi:arg1="0.52359878"
+         sodipodi:r2="0.96060401"
+         sodipodi:r1="2.7058976"
+         sodipodi:cy="-88.15773"
+         sodipodi:cx="-143.72545"
+         sodipodi:sides="5"
+         id="path947-2-2"
+         style="opacity:1;vector-effect:none;fill:#ebd01d;fill-opacity:1;stroke:none;stroke-width:0.51246995;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         sodipodi:type="star" />
     </g>
   </g>
 </svg>
