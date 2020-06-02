@@ -88,7 +88,7 @@
                                                     </div>
                                                     <div class="col-lg-11 col-md-11 col-xs-6 upload_component">
                                                         <div class="form-group">
-                                                            <label for="exampleFormControlFile1">Upload multiple images*</label>
+                                                            <label for="exampleFormControlFile1">Upload multiple images* (best fit 1338px  * 371px)</label>
                                                             <input type="file" class="form-control" id="upload_thumb" name="berkas[]" multiple required>
                                                         </div>
                                                         <div class="form-group">
