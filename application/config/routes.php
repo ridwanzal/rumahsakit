@@ -93,4 +93,6 @@ $route['admin/banner'] = 'banner';
 $route['admin/jadwaldokter'] = 'jadwaldokter';
 $route['admin/rekanan'] = 'rekanan';
 $route['admin/pasien'] = 'pasien';
+$route['admin/layanan'] = 'layanan';
+$route['admin/penunjang'] = 'layananpenunjang';
 

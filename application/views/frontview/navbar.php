@@ -7,7 +7,7 @@
                 <span><i class="lnr lnr-phone-handset"></i>&nbsp;&nbsp;<span>Fax : +1 (603)535-4592</span></span>
                 <span><i class="lnr lnr-phone-handset"></i>&nbsp;&nbsp;<span>Phone : +1 (603)535-4592</span></span>
                 <span><i class="lnr lnr-envelope"></i>&nbsp;&nbsp;<span> rs.ar.plm@gmail.com </span></span>
-                <a  href="https://api.whatsapp.com/send?phone=++6281928529335&text=Assalamu'alaikum Wr Wb" target="_blank"><span id="wa_navbar"><img src="https://image.flaticon.com/icons/svg/220/220236.svg" style="color:#ffffff;height:15px;">&nbsp;&nbsp;WhatsApp</span></a>
+                <a  href="https://api.whatsapp.com/send?phone=++6281928529335&text=Assalamu'alaikum Wr Wb" target="_blank"><span id="wa_navbar"><img src="https://image.flaticon.com/icons/svg/220/220236.svg" style="color:#ffffff;height:15px;top:-2px;position: relative;">&nbsp;&nbsp;WhatsApp</span></a>
             </div>
         </div>
     </div>
