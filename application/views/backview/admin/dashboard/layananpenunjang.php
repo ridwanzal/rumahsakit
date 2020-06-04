@@ -87,7 +87,7 @@
                                                                 <td><?php echo $i; ?></td>
                                                                 <td><?php echo $list->nama; ?></td>
                                                                 <td><?php echo $list->deskripsi; ?></td>
-                                                                <td><img style="height:50px;border-radius:4px;" src="<?php echo base_url()?>/assets/penunjang/thumb/<?php echo $list->thumb;?>"></td>
+                                                                <td><img style="height:50px;border-radius:4px;" src="<?php echo base_url()?>/assets/layananpenunjang/thumb/<?php echo $list->thumb;?>"></td>
                                                                 <td><a href="<?php echo base_url()?>layananpenunjang/delete/<?php echo $list->id; ?>" class="btn btn-danger btn-xs">Delete</a></td>
                                                             </tr>
                                                         <?php }

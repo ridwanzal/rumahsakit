@@ -7,8 +7,8 @@
         </div>
         <br/>
         <br/>
-        <div class="row">
-            <div class="col-md-4">
+        <div class="row layanan_container">
+            <!-- <div class="col-md-4">
                 <div class="card mb-4 ">
                     <div class="card-body">
                         <div class="row">
@@ -177,7 +177,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

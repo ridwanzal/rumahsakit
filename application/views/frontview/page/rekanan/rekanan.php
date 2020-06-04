@@ -29,13 +29,13 @@
                                                     <img class="img-fluid img-thumbnail" src="<?php echo base_url()?>/assets/galeri/<?php echo $list->image_name;?>" alt="">
                                                 </a>
                                             </div> -->
-                                            <div class="col-lg-3 col-md-3 col-xs-12 image_container" style="cursor:pointer !important;" >
-                                                <div class="card" style="width:100%;height:300px;" margin-bottom:30px; cursor:pointer;">
+                                            <div class="col-lg-2 col-md-2 col-xs-6 image_container" style="cursor:pointer !important;padding-bottom:30px;" >
+                                                <div class="card" style="width:100%;height:250px;backround-size:cover;padding:10px;" margin-bottom:30px; cursor:pointer;">
                                                     <a  href="<?php echo $list->link;?>" target="_blank">
-                                                        <img  style="cursor:pointer;width:100%;" src="<?php echo base_url()?>assets/rekanan/<?php echo $list->image_name;?>" alt="/<?php echo $list->image_name;?>">
+                                                        <img  style="cursor:pointer;width:100%;background-size:cover;" src="<?php echo base_url()?>assets/rekanan/<?php echo $list->image_name;?>" alt="/<?php echo $list->image_name;?>">
                                                     </a>
-                                                    <div class="card-body">
-                                                        <p class="card-text"><?php echo $list->caption;?></p>
+                                                    <div class="card-body" style="position:absolute;bottom:10px;">
+                                                        <p class="card-text" style="font-size:13px;"><?php echo $list->caption;?></p>
                                                     </div>
                                                 </div>
                                             </div>

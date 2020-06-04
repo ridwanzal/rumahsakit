@@ -42,6 +42,8 @@ class Karir extends CI_Controller {
         $posisi = $this->input->post('position', TRUE);
         $description = $this->input->post('description', TRUE);
         $status = $this->input->post('status', TRUE);
+        $type = $this->input->post('type', TRUE);
+        $link = $this->input->post('link', TRUE);
 
         $image_file = "";
         $config['upload_path'] = './assets/karir/attachment/';
@@ -58,7 +60,9 @@ class Karir extends CI_Controller {
           'deskripsi' => $description,
           'date_created' => date("Y-m-d h:i:s"),
           'attachment' => $image_file,
-          'status' => $status
+          'status' => $status,
+          'type' => $type,
+          'link' => $link
         );
 
         $this->db->insert('karir_open', $data);

@@ -39,11 +39,16 @@ class Layanan extends CI_Controller {
           $author_id = $this->session->userdata('id_user');
           $submit = $this->input->post('submit_layanan');
           $category = $this->input->post('blog_category');
+           //Buat slug
+          $string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $title); //filter karakter unik dan replace dengan kosong ('')
+          $trim=trim($string); // hilangkan spasi berlebihan dengan fungsi trim
+          $pre_slug=strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
+          $slug=$pre_slug; // tambahkan ektensi .html pada slug
           $foto = $_FILES['upload_thumb'];
           $image_path = "";
           if($submit && !$foto == ''){
             $config['upload_path'] = './assets/layanan/thumb/';
-            $config['allowed_types'] = 'jpg|png|gif';
+            $config['allowed_types'] = 'jpg|png|gif|svg|pdf|tif';
             $this->load->library('upload', $config);
             if(!$this->upload->do_upload('upload_thumb')){
               echo 'Gagal upload';
@@ -54,21 +59,23 @@ class Layanan extends CI_Controller {
             $data = array(
               'nama' => $title,
               'thumb' => $image_path,
+              'slug' => $slug,
               'deskripsi' => $content
             );
     
             $this->db->insert('layanan', $data);
             $affect_row = $this->db->affected_rows();
+            // var_dump($affect_row);exit;
             if($affect_row > 0){
               $this->session->set_flashdata('message', 'Berhasil menambahkan konten');
             }else{
               $this->session->set_flashdata('error', 'Gagal menambahkan konten');
             }
             redirect(base_url("admin/layanan"));
+
     
           }
       }
-
 
       public function daftar_layanan(){
           $query="SELECT * FROM layanan order by id DESC";
@@ -76,6 +83,26 @@ class Layanan extends CI_Controller {
           $result = json_encode($query_result->result());
           echo $result;
       }
+
+
+      public function layanan_detail($slug){
+        $query = "SELECT * FROM layanan where slug='$slug'";
+        $query_result = $this->db->query($query);
+        $query_resulat_array = $this->db->query($query)->result();
+        if($query_result->num_rows() > 0 ){
+          $x['layanandetail']= $query_result;
+          $x['title_bar'] = $query_resulat_array[0]->nama;
+          $x['header_page'] = "";
+          $x['keyword'] = $query_resulat_array[0]->nama;
+          $x['description'] = $query_resulat_array[0]->nama;
+          $this->load->view('frontview/header', $x);
+          $this->load->view('frontview/navbar', $x);
+          $this->load->view('frontview/page/layanan/layanandetail', $x);
+          $this->load->view('frontview/footer', $x);
+        }else{
+          redirect(base_url());
+        }
+      } 
 
       public function delete($id){
         $this->db->where('id', $id);

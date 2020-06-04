@@ -86,7 +86,7 @@
                                             </a>
                                         </div> -->
                                         <div class="col-lg-6 col-md-6 col-xs-12">
-                                            <iframe style="width:100%;height:300px;" src="<?php echo $list->link;?>">
+                                            <iframe style="width:100%;height:350px;" src="<?php echo $list->link;?>">
                                             </iframe>
                                         </div>
                                     <?php }

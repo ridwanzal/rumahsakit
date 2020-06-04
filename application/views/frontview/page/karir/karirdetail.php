@@ -36,7 +36,17 @@
                 ?>
             </div>
             <div class="col-lg-6 col-md-6 col-xs-12">
-                 <button id="kliklamar" class="btn btn-primary btn-sm" style="float:right;">Lamar</button>
+                 <?php
+                    if($karir_open[0]->type == 'manual'){
+                        ?>
+                            <button id="kliklamar" class="btn btn-primary btn-sm" style="float:right;">Lamar</button>
+                        <?php
+                    }else{
+                        ?>
+                            <a target="_blank" href="<?php echo $karir_open[0]->link?>"><button class="btn btn-success btn-sm" style="float:right;">Lamar via Google Form</button></a>
+                        <?php
+                    }
+                 ?>
             </div>
         </div>
         <section id="lamar" style="display:none;margin-top:25px;">

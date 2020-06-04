@@ -77,6 +77,8 @@ $route['profil/prestasi'] = 'main/prestasi';
 $route['profil/pmkp'] = 'main/pmkp';
 $route['artikel'] = 'main/artikel';
 $route['artikel/(:any)'] = 'blog/blog_content_detail/$1'; 
+$route['layanan/list/(:any)'] = 'layanan/layanan_detail/$1'; 
+$route['layanan_penunjang/list/(:any)'] = 'layananpenunjang/layanan_detail/$1'; 
 
 // route pelanggan
 $route['pelanggan'] = 'pelanggan';

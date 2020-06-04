@@ -41,14 +41,13 @@
                                                         <label for="exampleFormControlTextarea1">Content</label>
                                                         <textarea class="form-control" id="editor" rows="3" name="deskripsi"></textarea>
                                                     </div>
-                                                    <!-- <input type="submit" value="Simpan sebagai Draft" class="btn btn-sm btn-primar y" name="submit_draft_blog" id="submit blog"/>  -->
                                                     <input style="padding-left:20px;padding-right:20px;" type="submit" value="Tambah" class="btn btn-sm btn-success" name="submit_layanan" id="submit blog"/> 
                                             </div>
                                         <?php echo form_close();?>
                                 </div>
                             </div>
                         </div> 
-                        <div class="row" style=''>
+                        <div class="row">
                             <!-- ============================================================== -->
                             <!-- data table  -->
                             <!-- ============================================================== -->

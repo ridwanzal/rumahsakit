@@ -67,7 +67,7 @@
                                                         <th>Nama foto</th>
                                                         <th>Image</th>
                                                         <th>Caption</th>
-                                                        <th>Link</th>
+                                                        <th style="display:none;">Link</th>
                                                         <th>Action</th>
                                                     </tr>
                                                 </thead>
@@ -90,7 +90,7 @@
                                                                 <td><?php echo $list->image_name; ?></td>
                                                                 <td><img style="height:50px;border-radius:4px;" src="<?php echo base_url()?>/assets/rekanan/<?php echo $list->image_name;?>"></td>
                                                                 <td><?php echo $list->caption;?></td>
-                                                                <td><?php echo $list->link;?></td>
+                                                                <td width="20%" style="display:none;overflow: hidden;text-overflow: ellipsis;"><?php echo $list->link;?></td>
                                                                 <th><a href="<?php echo base_url()?>uploads/delete/<?php echo $list->id; ?>/rekanan" class="btn btn-danger btn-xs">Delete</a></th>
                                                             </tr>
                                                         <?php }

@@ -45,6 +45,18 @@
                                                         <label for="inputText3" class="col-form-label">Attach File (optional) </label>
                                                         <input name="berkas" type="file" class="form-control" required>
                                                     </div>  
+                                                    <div class="form-group">
+                                                    <label for="inputText3" class="col-form-label">Mekanisme Pelamaran</label>
+                                                        <select class="form-control" id="lamar_mekanisme" name="type"  required>
+                                                            <option value="">Pilih Mekanisme Pelamaran *</option>
+                                                            <option value="manual">Manual</option>
+                                                            <option value="google">Google Form</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group" id="link_googleform" style="display:none;">
+                                                        <label for="inputText3" class="col-form-label">Link Information</label>
+                                                        <input name="link" type="text" class="form-control">
+                                                    </div>  
                                                     <input type="submit" value="Post" class="btn btn-sm btn-success" name="submit_blog" id="submit blog"/> 
                                                     
                                             </div>
@@ -209,6 +221,16 @@
 </div>
 
 <script>
+        $(document).ready(function(){
+            $('#lamar_mekanisme').on('change', function(){
+                let data = $('#lamar_mekanisme').val();
+                if(data == "google"){
+                    $('#link_googleform').show();
+                }else{
+                    $('#link_googleform').hide();
+                }
+            });
+        });
         $('#karir_table').DataTable({
                 "dom": 'Bfrtip',
                 "buttons": [
