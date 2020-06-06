@@ -19,16 +19,6 @@ class Main extends CI_Controller {
 	
 	public function index()
 	{
-		// $check_level = $this->session->userdata('role');
-		// if($check_level == 'admin'){
-			
-		// }else if($check_level == 'pelanggan'){
-		// 	$data['title_bar'] = "";
-		// 	$data['header_page'] = "";
-		// 	$this->load->view('backview//header', $data);
-		// 	$this->load->view('backview/pelanggan/navbar', $data);
-		// 	$this->load->view('backview/footer', $data);
-		// }else {
 			$data['title_bar'] = "";
 			$data['header_page'] = "";
 			$query = "SELECT * FROM banner";

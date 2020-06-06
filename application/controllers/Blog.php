@@ -19,68 +19,71 @@ class Blog extends CI_Controller {
       }
       
       public function submit_blog(){
-          // $thumbnail = $this->input->post('blog_thumb', TRUE);
-          $title = $this->input->post('blog_title', TRUE);
-          $content = $this->input->post('blog_content', TRUE);
-          $author_id = $this->session->userdata('id_user');
-          $submit = $this->input->post('submit_blog');
-          $submit_draft = $this->input->post('submit_draft_blog');
-          $category = $this->input->post('blog_category');
-          //Buat slug
-          $string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $title); //filter karakter unik dan replace dengan kosong ('')
-          $trim=trim($string); // hilangkan spasi berlebihan dengan fungsi trim
-          $pre_slug=strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
-          $slug=$pre_slug; // tambahkan ektensi .html pada slug
-          $foto = $_FILES['upload_thumb'];
-          $image_path = "";
-          if($submit && !$foto == ''){
-            $config['upload_path'] = './assets/blog/thumb_img/';
-            $config['allowed_types'] = 'jpg|png|gif';
-            $this->load->library('upload', $config);
-            if(!$this->upload->do_upload('upload_thumb')){
-              echo 'Gagal upload';
-            }else{
-              $image_path = $this->upload->data('file_name');
-            }
-            
-            $data = array(
-              'title' => $title,
-              'slug' => $slug,
-              'author_id' => $author_id,
-              'image_path' => $image_path,
-              'content' => $content,
-              'category' => $category,
-              'type' => 1
-            );
-    
-            $this->db->insert('blog', $data);
-            $affect_row = $this->db->affected_rows();
-            if($affect_row > 0){
-              $this->session->set_flashdata('message', 'Berhasil menambahkan konten');
-            }else{
-              $this->session->set_flashdata('error', 'Gagal menambahkan konten');
-            }
-            redirect(base_url("admin"));
-    
-          }else if($submit_draft){
-            $data = array(
-              'title' => $title,
-              'slug' => $slug,
-              'author_id' => $author_id,
-              'image_path' => $image_path,
-              'content' => $content,
-              'category' => $category,
-              'type' => 2
-            );
-    
-            $this->db->insert('blog', $data);
-            $affect_row = $this->db->affected_rows();
-            if($affect_row > 0){
-              $this->session->set_flashdata('message', 'Berhasil menambahkan konten');
-            }else{
-              $this->session->set_flashdata('error', 'Gagal menambahkan konten');
-            }
-            redirect(base_url("admin"));
+          $login_status = $this->session->userdata('status');
+          if($login_status == 'login'){
+              // $thumbnail = $this->input->post('blog_thumb', TRUE);
+              $title = $this->input->post('blog_title', TRUE);
+              $content = $this->input->post('blog_content', TRUE);
+              $author_id = $this->session->userdata('id_user');
+              $submit = $this->input->post('submit_blog');
+              $submit_draft = $this->input->post('submit_draft_blog');
+              $category = $this->input->post('blog_category');
+              //Buat slug
+              $string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $title); //filter karakter unik dan replace dengan kosong ('')
+              $trim=trim($string); // hilangkan spasi berlebihan dengan fungsi trim
+              $pre_slug=strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
+              $slug=$pre_slug; // tambahkan ektensi .html pada slug
+              $foto = $_FILES['upload_thumb'];
+              $image_path = "";
+              if($submit && !$foto == ''){
+                $config['upload_path'] = './assets/blog/thumb_img/';
+                $config['allowed_types'] = 'jpg|png|gif';
+                $this->load->library('upload', $config);
+                if(!$this->upload->do_upload('upload_thumb')){
+                  echo 'Gagal upload';
+                }else{
+                  $image_path = $this->upload->data('file_name');
+                }
+                
+                $data = array(
+                  'title' => $title,
+                  'slug' => $slug,
+                  'author_id' => $author_id,
+                  'image_path' => $image_path,
+                  'content' => $content,
+                  'category' => $category,
+                  'type' => 1
+                );
+        
+                $this->db->insert('blog', $data);
+                $affect_row = $this->db->affected_rows();
+                if($affect_row > 0){
+                  $this->session->set_flashdata('message', 'Berhasil menambahkan konten');
+                }else{
+                  $this->session->set_flashdata('error', 'Gagal menambahkan konten');
+                }
+                redirect(base_url("admin"));
+        
+              }else if($submit_draft){
+                $data = array(
+                  'title' => $title,
+                  'slug' => $slug,
+                  'author_id' => $author_id,
+                  'image_path' => $image_path,
+                  'content' => $content,
+                  'category' => $category,
+                  'type' => 2
+                );
+        
+                $this->db->insert('blog', $data);
+                $affect_row = $this->db->affected_rows();
+                if($affect_row > 0){
+                  $this->session->set_flashdata('message', 'Berhasil menambahkan konten');
+                }else{
+                  $this->session->set_flashdata('error', 'Gagal menambahkan konten');
+                }
+                redirect(base_url("admin"));
+              }
           }
       }
 
@@ -139,9 +142,12 @@ class Blog extends CI_Controller {
 
 
       public function deletepost($id){
-        $this->db->where('blog_id', $id);
-        $this->db->delete('blog');
-        redirect(base_url('admin'));
+        $login_status = $this->session->userdata('status');
+        if($login_status == 'login'){
+          $this->db->where('blog_id', $id);
+          $this->db->delete('blog');
+          redirect(base_url('admin'));
+        }
       }
   
 

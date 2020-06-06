@@ -14,7 +14,11 @@ class Galeri extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->load->helper('form');
 		$this->load->library('form_validation');
-    	date_default_timezone_set('Asia/Jakarta'); // default time zone indonesia
+		date_default_timezone_set('Asia/Jakarta'); // default time zone indonesia
+		$login_status = $this->session->userdata('status');
+        if(!$login_status == 'login'){
+              redirect(base_url('login'));
+        }
 	}
 	
 	public function index()
@@ -51,7 +55,7 @@ class Galeri extends CI_Controller {
 			$this->session->set_flashdata('message', 'Berhasil menambahkan konten');
 			redirect(base_url('admin/galeri'));
 		}else{
-		$this->session->set_flashdata('error', 'Gagal menambahkan konten');
+			$this->session->set_flashdata('error', 'Gagal menambahkan konten');
 		}
 	}
 

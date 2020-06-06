@@ -15,7 +15,6 @@ class Layanan extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         date_default_timezone_set('Asia/Jakarta'); // default time zone indonesia
-        $login_status = $this->session->userdata('status');
       }
 
       public function index(){
@@ -33,47 +32,48 @@ class Layanan extends CI_Controller {
       }
       
       public function submit_layanan(){
-          // $thumbnail = $this->input->post('blog_thumb', TRUE);
-          $title = $this->input->post('nama', TRUE);
-          $content = $this->input->post('deskripsi', TRUE);
-          $author_id = $this->session->userdata('id_user');
-          $submit = $this->input->post('submit_layanan');
-          $category = $this->input->post('blog_category');
-           //Buat slug
-          $string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $title); //filter karakter unik dan replace dengan kosong ('')
-          $trim=trim($string); // hilangkan spasi berlebihan dengan fungsi trim
-          $pre_slug=strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
-          $slug=$pre_slug; // tambahkan ektensi .html pada slug
-          $foto = $_FILES['upload_thumb'];
-          $image_path = "";
-          if($submit && !$foto == ''){
-            $config['upload_path'] = './assets/layanan/thumb/';
-            $config['allowed_types'] = 'jpg|png|gif|svg|pdf|tif';
-            $this->load->library('upload', $config);
-            if(!$this->upload->do_upload('upload_thumb')){
-              echo 'Gagal upload';
-            }else{
-              $image_path = $this->upload->data('file_name');
-            }
-                
-            $data = array(
-              'nama' => $title,
-              'thumb' => $image_path,
-              'slug' => $slug,
-              'deskripsi' => $content
-            );
-    
-            $this->db->insert('layanan', $data);
-            $affect_row = $this->db->affected_rows();
-            // var_dump($affect_row);exit;
-            if($affect_row > 0){
-              $this->session->set_flashdata('message', 'Berhasil menambahkan konten');
-            }else{
-              $this->session->set_flashdata('error', 'Gagal menambahkan konten');
-            }
-            redirect(base_url("admin/layanan"));
-
-    
+          $login_status = $this->session->userdata('status');
+          if($login_status == 'login'){
+              // $thumbnail = $this->input->post('blog_thumb', TRUE);
+              $title = $this->input->post('nama', TRUE);
+              $content = $this->input->post('deskripsi', TRUE);
+              $author_id = $this->session->userdata('id_user');
+              $submit = $this->input->post('submit_layanan');
+              $category = $this->input->post('blog_category');
+              //Buat slug
+              $string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $title); //filter karakter unik dan replace dengan kosong ('')
+              $trim=trim($string); // hilangkan spasi berlebihan dengan fungsi trim
+              $pre_slug=strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
+              $slug=$pre_slug; // tambahkan ektensi .html pada slug
+              $foto = $_FILES['upload_thumb'];
+              $image_path = "";
+              if($submit && !$foto == ''){
+                $config['upload_path'] = './assets/layanan/thumb/';
+                $config['allowed_types'] = 'jpg|png|gif|svg|pdf|tif';
+                $this->load->library('upload', $config);
+                if(!$this->upload->do_upload('upload_thumb')){
+                  echo 'Gagal upload';
+                }else{
+                  $image_path = $this->upload->data('file_name');
+                }
+                    
+                $data = array(
+                  'nama' => $title,
+                  'thumb' => $image_path,
+                  'slug' => $slug,
+                  'deskripsi' => $content
+                );
+        
+                $this->db->insert('layanan', $data);
+                $affect_row = $this->db->affected_rows();
+                // var_dump($affect_row);exit;
+                if($affect_row > 0){
+                  $this->session->set_flashdata('message', 'Berhasil menambahkan konten');
+                }else{
+                  $this->session->set_flashdata('error', 'Gagal menambahkan konten');
+                }
+                redirect(base_url("admin/layanan"));
+              }
           }
       }
 
@@ -105,9 +105,12 @@ class Layanan extends CI_Controller {
       } 
 
       public function delete($id){
-        $this->db->where('id', $id);
-        $this->db->delete('layanan');
-        redirect(base_url('admin/layanan'));
+        $login_status = $this->session->userdata('status');
+        if($login_status == 'login'){
+          $this->db->where('id', $id);
+          $this->db->delete('layanan');
+          redirect(base_url('admin/layanan'));
+        }
       }
   
 
