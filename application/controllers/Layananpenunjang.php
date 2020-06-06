@@ -15,7 +15,6 @@ class Layananpenunjang extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         date_default_timezone_set('Asia/Jakarta'); // default time zone indonesia
-        $login_status = $this->session->userdata('status');
       }
 
       public function index(){
