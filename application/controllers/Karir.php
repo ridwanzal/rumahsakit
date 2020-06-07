@@ -65,6 +65,17 @@ class Karir extends CI_Controller {
           'link' => $link
         );
 
+        $data2= array(
+          'pesan' =>  'User baru melakukan pendaftaran melalui form dengan posisi ' . $posisi,
+          'date_created' => date("Y-m-d h:i:sa"),
+          'status' => 'unread',
+          'type' => 'kontak',
+          'link' => '/admin/karir'
+        );
+
+        $this->db->insert('notifikasi', $data2);
+        $check2 = $this->db->affected_rows() > 0;
+
         $this->db->insert('karir_open', $data);
         $affect_row = $this->db->affected_rows();
         if($affect_row > 0){

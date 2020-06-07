@@ -15,10 +15,6 @@ class Kontak extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         date_default_timezone_set('Asia/Jakarta'); // default time zone indonesia
-        $login_status = $this->session->userdata('status');
-        if(!$login_status == 'login'){
-              redirect(base_url('login'));
-        }
       }
       
       public function index(){
@@ -57,6 +53,18 @@ class Kontak extends CI_Controller {
     
         $this->db->insert('contact', $data);
         $check = $this->db->affected_rows() > 0;
+
+        $data2= array(
+          'pesan' => 'Kontak terbaru dari ' . $nama . '',
+          'date_created' => date("Y-m-d h:i:sa"),
+          'status' => 'unread',
+          'type' => 'kontak',
+          'link' => '/admin/kontak'
+        );
+
+        $this->db->insert('notifikasi', $data2);
+        $check2 = $this->db->affected_rows() > 0;
+
         if($check){
             $this->session->set_flashdata('message', 'Data berhasil dikirim');
             $this->session->set_flashdata('allowlogin', 'Login untuk melanjutkan');

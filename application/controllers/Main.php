@@ -350,6 +350,17 @@ class Main extends CI_Controller {
 		'no_telepon' => $telepon,
 	);
 
+	$data2= array(
+		'pesan' =>  $nama . ' terdaftar sebagai calon pasien',
+		'date_created' => date("Y-m-d h:i:sa"),
+		'status' => 'unread',
+		'type' => 'kontak',
+		'link' => '/admin/pasien'
+	);
+
+	$this->db->insert('notifikasi', $data2);
+	$check2 = $this->db->affected_rows() > 0;
+
 	$this->db->insert('daftarpasien', $data);
 	$check = $this->db->affected_rows() > 0;
 	if($check){
