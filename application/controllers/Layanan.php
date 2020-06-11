@@ -21,7 +21,7 @@ class Layanan extends CI_Controller {
         $data['title_bar'] = "";
         $data['header_page'] = "";
         
-        $query2="SELECT * FROM layanan  order by id DESC";
+        $query2="SELECT * FROM layanan  order by id ASC";
         $query_result2 = $this->db->query($query2)->result();
         $data['daftar_layanan'] = $query_result2;
 
@@ -35,7 +35,7 @@ class Layanan extends CI_Controller {
         $data['title_bar'] = "";
         $data['header_page'] = "";
         
-        $query2="SELECT * FROM layanan WHERE id = $id order by id DESC";
+        $query2="SELECT * FROM layanan WHERE id = $id order by id ASC";
         $query_result2 = $this->db->query($query2)->result();
         $data['daftar_layanan'] = $query_result2;
 
