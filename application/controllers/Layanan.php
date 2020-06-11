@@ -141,7 +141,7 @@ class Layanan extends CI_Controller {
     }
 
       public function daftar_layanan(){
-          $query="SELECT * FROM layanan order by id DESC";
+          $query="SELECT * FROM layanan order by id ASC";
           $query_result = $this->db->query($query);
           $result = json_encode($query_result->result());
           echo $result;
