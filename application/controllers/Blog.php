@@ -17,6 +17,19 @@ class Blog extends CI_Controller {
         date_default_timezone_set('Asia/Jakarta'); // default time zone indonesia
         $login_status = $this->session->userdata('status');
       }
+
+      public function edit($id){
+        $data['title_bar'] = "";
+        $data['header_page'] = "";
+        $query="SELECT blog_id, title, subtitle, author_id, date_created, max_length, image_path, category, tag, bookmark, likes, content FROM blog WHERE blog_id = $id order by date_created";
+        $query_result = $this->db->query($query)->result();
+
+        $data['blog'] = $query_result;
+        $this->load->view('backview/header.php', $data);
+        $this->load->view('backview/admin/navbar.php', $data);
+        $this->load->view('backview/admin/dashboard/blog_edit.php', $data);
+        $this->load->view('backview/footer.php', $data);
+      }
       
       public function submit_blog(){
           $login_status = $this->session->userdata('status');
@@ -86,6 +99,57 @@ class Blog extends CI_Controller {
               }
           }
       }
+
+
+      public function edit_blog(){
+        $login_status = $this->session->userdata('status');
+        if($login_status == 'login'){
+            // $thumbnail = $this->input->post('blog_thumb', TRUE);
+            $id = $this->input->post('blog_id', TRUE);
+            $title = $this->input->post('blog_title', TRUE);
+            $content = $this->input->post('blog_content', TRUE);
+            $submit = $this->input->post('submit_blog');
+            $blog_category = $this->input->post('blog_category');
+            //Buat slug
+            $string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $title); //filter karakter unik dan replace dengan kosong ('')
+            $trim=trim($string); // hilangkan spasi berlebihan dengan fungsi trim
+            $pre_slug=strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
+            $slug=$pre_slug; // tambahkan ektensi .html pada slug
+            // $foto = $_FILES['upload_thumb'];
+            // $image_path = "";
+            if($submit){
+              // $config['upload_path'] = './assets/layanan/thumb/';
+              // $config['allowed_types'] = 'jpg|png|gif|svg|pdf|tif';
+              // $this->load->library('upload', $config);
+              // if(!$this->upload->do_upload('upload_thumb')){
+              //   echo 'Gagal upload';
+              // }else{
+              //   $image_path = $this->upload->data('file_name');
+              // }
+                  
+              $data = array(
+                'title' => $title,
+                'slug' => $slug,
+                'content' => $content,
+                'category' => $blog_category
+              );
+      
+              $this->db->where('blog_id', $id);
+              $this->db->update('blog', $data);
+              $affect_row = $this->db->affected_rows();
+          
+              // $this->db->insert('layanan', $data);
+              // $affect_row = $this->db->affected_rows();
+              // var_dump($affect_row);exit;
+              if($affect_row > 0){
+                $this->session->set_flashdata('message', 'Berhasil menambahkan konten');
+              }else{
+                $this->session->set_flashdata('error', 'Gagal menambahkan konten');
+              }
+              redirect(base_url("admin"));
+            }
+        }
+    }
 
       public function blog_content_detail($slug){
         $query = "SELECT * FROM blog where slug='$slug'";

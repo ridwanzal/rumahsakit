@@ -87,7 +87,7 @@
                                                                 <td><?php echo $list->nama; ?></td>
                                                                 <td><?php echo $list->deskripsi; ?></td>
                                                                 <td><img style="height:50px;border-radius:4px;" src="<?php echo base_url()?>/assets/layanan/thumb/<?php echo $list->thumb;?>"></td>
-                                                                <td><a href="<?php echo base_url()?>layanan/delete/<?php echo $list->id; ?>" class="btn btn-danger btn-xs">Delete</a></td>
+                                                                <td><a href="<?php echo base_url()?>admin/layanan/edit/<?php echo $list->id; ?>" class="btn btn-primary btn-xs">Edit   </a>&nbsp;<a href="<?php echo base_url()?>layanan/delete/<?php echo $list->id; ?>" class="btn btn-danger btn-xs">Delete</a></td>
                                                             </tr>
                                                         <?php }
                                                     ?>

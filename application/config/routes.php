@@ -96,6 +96,9 @@ $route['admin/jadwaldokter'] = 'jadwaldokter';
 $route['admin/rekanan'] = 'rekanan';
 $route['admin/pasien'] = 'pasien';
 $route['admin/layanan'] = 'layanan';
+$route['admin/layanan/edit/(:any)'] = 'layanan/edit/$1';
 $route['admin/penunjang'] = 'layananpenunjang';
+$route['admin/penunjang/edit/(:any)'] = 'layananpenunjang/edit/$1';
+$route['admin/blog/edit/(:any)'] = 'blog/edit/$1';
 $route['admin/notifikasi'] = 'notifikasi';
 

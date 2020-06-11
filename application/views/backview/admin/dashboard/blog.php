@@ -104,7 +104,7 @@
                                                                 <td><?php echo $list->author_id; ?></td>
                                                                 <td><?php echo $list->date_created; ?></td>
                                                                 <td><?php echo $list->category; ?></td>
-                                                                <td><a href="<?php echo base_url()?>blog/deletepost/<?php echo $list->blog_id; ?>" class="btn btn-danger btn-xs">Delete</a></td>
+                                                                <td><a href="<?php echo base_url()?>blog/edit/<?php echo $list->blog_id; ?>" class="btn btn-primary btn-xs">Edit</a>&nbsp;<a href="<?php echo base_url()?>blog/deletepost/<?php echo $list->blog_id; ?>" class="btn btn-danger btn-xs">Delete</a></td>
                                                             </tr>
                                                         <?php }
                                                     ?>
