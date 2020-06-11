@@ -285,7 +285,7 @@
                                                     </div>
                                                     <div class="col-lg-9 col-md-9 col-xs-12">
                                                         <h6>`+decode_result[i].nama+`</h6>
-                                                        <p class="card-text">`+decode_result[i].deskripsi+`</p>
+                                                        <p class="card-text">`+limitstr(decode_result[i].deskripsi)+`</p>
                                                     </div>
                                             </div>
                                         </div>
