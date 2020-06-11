@@ -237,11 +237,7 @@
                                                     </div>
                                                     <div class="col-lg-9 col-md-9 col-xs-12">
                                                         <h6>`+decode_result[i].nama+`</h6>
-                                                        <p class="card-text" style="overflow: hidden;
-                                                                            text-overflow: ellipsis;
-                                                                            display: -webkit-box;
-                                                                            -webkit-line-clamp: 2; /* number of lines to show */
-                                                                            -webkit-box-orient: vertical;">`+limitstr(decode_result[i].deskripsi)+`</p>
+                                                        <p class="card-text">`+limitstr(decode_result[i].deskripsi)+`</p>
                                                     </div>
                                             </div>
                                         </div>
