@@ -257,7 +257,7 @@
 
     function limitstr(str){
         result = str.substr(1, 200).concat('...'); 
-        return 
+        return result;
     }
 
     function fetchlayanan_penunjang(){
