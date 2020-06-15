@@ -21,7 +21,7 @@ class Profil extends CI_Controller {
         $data['title_bar'] = "";
         $data['header_page'] = "";
         
-        $query2="SELECT * FROM $konteks order by id DESC";
+        $query2="SELECT * FROM $konteks order by id DESC LIMIT 1";
         $query_result2 = $this->db->query($query2)->result();
         $data['daftar'] = $query_result2;
         $data['konteks'] = $konteks;
@@ -47,14 +47,15 @@ class Profil extends CI_Controller {
         $this->load->view('backview/footer.php', $data);
       }
       
-      public function submit_layanan(){
+      public function submit_profil(){
           $login_status = $this->session->userdata('status');
           if($login_status == 'login'){
               // $thumbnail = $this->input->post('blog_thumb', TRUE);
               $title = $this->input->post('nama', TRUE);
               $content = $this->input->post('deskripsi', TRUE);
+              $konteks = $this->input->post('konteks', TRUE);
               $author_id = $this->session->userdata('id_user');
-              $submit = $this->input->post('submit_sejarah');
+              $submit = $this->input->post('submit_profil');
               $category = $this->input->post('blog_category');
               //Buat slug
               $string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $title); //filter karakter unik dan replace dengan kosong ('')
@@ -63,12 +64,12 @@ class Profil extends CI_Controller {
               $slug=$pre_slug; // tambahkan ektensi .html pada slug
               $foto = $_FILES['upload_thumb'];
               $image_path = "";
-              if($submit && !$foto == ''){
+              if($submit){
                 $config['upload_path'] = './assets/profil/thumb/';
                 $config['allowed_types'] = 'jpg|png|gif|svg|pdf|tif';
                 $this->load->library('upload', $config);
                 if(!$this->upload->do_upload('upload_thumb')){
-                  echo 'Gagal upload';
+                  $image_path = "";
                 }else{
                   $image_path = $this->upload->data('file_name');
                 }
@@ -80,7 +81,7 @@ class Profil extends CI_Controller {
                   'deskripsi' => $content
                 );
         
-                $this->db->insert('layanan', $data);
+                $this->db->insert($konteks, $data);
                 $affect_row = $this->db->affected_rows();
                 // var_dump($affect_row);exit;
                 if($affect_row > 0){
@@ -88,7 +89,7 @@ class Profil extends CI_Controller {
                 }else{
                   $this->session->set_flashdata('error', 'Gagal menambahkan konten');
                 }
-                redirect(base_url("admin/layanan"));
+                redirect(base_url("admin/profil/" .$konteks));
               }
           }
       }
@@ -175,7 +176,7 @@ class Profil extends CI_Controller {
         if($login_status == 'login'){
           $this->db->where('id', $id);
           $this->db->delete($konteks);
-          redirect(base_url('admin/' .$konteks));
+          redirect(base_url('admin/profil/' .$konteks));
         }
       }
   

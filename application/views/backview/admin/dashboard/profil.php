@@ -9,7 +9,7 @@
 	                                <nav aria-label="breadcrumb">
 	                                    <ol class="breadcrumb">
 	                                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
-	                                        <li class="breadcrumb-item active" aria-current="page">Kelola <?php echo $konteks?></li>
+	                                        <li class="breadcrumb-item active" aria-current="page">Kelola <?php echo $konteks; ?></li>
 	                                    </ol>
 	                                </nav>
 	                            </div>
@@ -19,7 +19,7 @@
                     <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="card">
-                                        <?php echo form_open_multipart('profil/submit_profil'); ?>
+                                        <?php echo form_open_multipart('admin/profil/add/submit_profil'); ?>
                                             <h5 class="card-header">Tambah Baru</h5>
                                             <div class="card-body">
                                                     <div class="row">
@@ -29,7 +29,8 @@
                                                             <div class="col-lg-11 col-md-11 col-xs-12 upload_component">
                                                             <div class="form-group">
                                                                 <label for="exampleFormControlFile1">Thumbnails</label>
-                                                                <input type="file" class="form-control" id="upload_thumb" name="upload_thumb" required>
+                                                                <input type="hidden" class="form-control" id="" name="konteks" value="<?php echo $konteks; ?>">
+                                                                <input type="file" class="form-control" id="upload_thumb" name="upload_thumb">
                                                             </div>
                                                             </div>
                                                     </div>
@@ -41,7 +42,7 @@
                                                         <label for="exampleFormControlTextarea1">Content</label>
                                                         <textarea class="form-control" id="editor" rows="3" name="deskripsi"></textarea>
                                                     </div>
-                                                    <input style="padding-left:20px;padding-right:20px;" type="submit" value="Tambah" class="btn btn-sm btn-success" name="submit_layanan" id="submit blog"/> 
+                                                    <input style="padding-left:20px;padding-right:20px;" type="submit" value="Tambah" class="btn btn-sm btn-success" name="submit_profil" id="submit blog"/> 
                                             </div>
                                         <?php echo form_close();?>
                                 </div>
@@ -87,7 +88,7 @@
                                                                 <td><?php echo $list->nama; ?></td>
                                                                 <td><?php echo $list->deskripsi; ?></td>
                                                                 <!-- <td><img style="height:50px;border-radius:4px;" src="<?php echo base_url()?>/assets/layanan/thumb/<?php echo $list->thumb;?>"></td> -->
-                                                                <td><a href="<?php echo base_url()?>admin/profil/edit/<?php echo $list->id; ?>/<?php echo $konteks; ?>" class="btn btn-primary btn-xs">Edit   </a>&nbsp;<a href="<?php echo base_url()?>layanan/delete/<?php echo $list->id; ?>" class="btn btn-danger btn-xs">Delete</a></td>
+                                                                <td><a href="<?php echo base_url()?>admin/profil/edit/<?php echo $list->id; ?>/<?php echo $konteks; ?>" class="btn btn-primary btn-xs">Edit   </a>&nbsp;<a href="<?php echo base_url()?>admin/profil/delete/<?php echo $list->id; ?>/<?php echo $konteks ?>" class="btn btn-danger btn-xs">Delete</a></td>
                                                             </tr>
                                                         <?php }
                                                     ?>

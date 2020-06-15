@@ -101,7 +101,10 @@ $route['admin/layanan/edit/(:any)'] = 'layanan/edit/$1';
 $route['admin/penunjang'] = 'layananpenunjang';
 $route['admin/penunjang/edit/(:any)'] = 'layananpenunjang/edit/$1';
 $route['admin/profil/(:any)'] = 'profil/page/$1';
+$route['admin/profil/add/submit_profil'] = 'profil/submit_profil';
 $route['admin/profil/edit/(:any)/(:any)'] = 'profil/edit/$1/$2';
+$route['admin/profil/delete/(:any)/(:any)'] = 'profil/delete/$1/$2';
+
 $route['admin/blog/edit/(:any)'] = 'blog/edit/$1';
 $route['admin/notifikasi'] = 'notifikasi';
 
