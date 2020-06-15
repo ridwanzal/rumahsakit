@@ -86,7 +86,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav flex-column">
-                             <li class="nav-item active">
+                             <li class="nav-item active" style="margin-top:10px;">
                                 <a class="nav-link active" href="<?php echo base_url(); ?>" target="_blank"><i class="fa fa-fw fa-comments"></i>Go to Main Page<span class="badge badge-success"></span></a>
                             </li>
                             <div style="border:0.1px solid #206f44; margin-top:15px; margin-bottom:15px;">
