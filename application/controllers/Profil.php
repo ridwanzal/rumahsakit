@@ -32,17 +32,17 @@ class Profil extends CI_Controller {
         $this->load->view('backview/footer.php', $data);
       }
 
-      public function edit($id){
+      public function edit($id, $konteks){
         $data['title_bar'] = "";
         $data['header_page'] = "";
         
-        $query2="SELECT * FROM layanan WHERE id = $id order by id DESC";
+        $query2="SELECT * FROM $konteks WHERE id = $id order by id DESC";
         $query_result2 = $this->db->query($query2)->result();
         $data['daftar'] = $query_result2;
 
         $this->load->view('backview/header.php', $data);
         $this->load->view('backview/admin/navbar.php', $data);
-        $this->load->view('backview/admin/dashboard/sejarah_edit.php', $data);
+        $this->load->view('backview/admin/dashboard/profil_edit.php', $data);
         $this->load->view('backview/footer.php', $data);
       }
       
@@ -93,7 +93,7 @@ class Profil extends CI_Controller {
       }
 
 
-      public function edit_layanan(){
+      public function edit_profil(){
         $login_status = $this->session->userdata('status');
         if($login_status == 'login'){
             // $thumbnail = $this->input->post('blog_thumb', TRUE);
@@ -101,6 +101,7 @@ class Profil extends CI_Controller {
             $title = $this->input->post('nama', TRUE);
             $content = $this->input->post('deskripsi', TRUE);
             $submit = $this->input->post('submit_sejarah');
+            $konteks= $this->input->post('konteks', TRUE);
             //Buat slug
             $string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $title); //filter karakter unik dan replace dengan kosong ('')
             $trim=trim($string); // hilangkan spasi berlebihan dengan fungsi trim
@@ -125,7 +126,7 @@ class Profil extends CI_Controller {
               );
       
               $this->db->where('id', $id);
-              $this->db->update('sejarah', $data);
+              $this->db->update($konteks, $data);
               $affect_row = $this->db->affected_rows();
           
               // $this->db->insert('layanan', $data);
@@ -136,7 +137,7 @@ class Profil extends CI_Controller {
               }else{
                 $this->session->set_flashdata('error', 'Gagal menambahkan konten');
               }
-              redirect(base_url("admin/sejarah"));
+              redirect(base_url("admin/".$konteks));
             }
         }
     }

@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <h5>Informasi</h5>
-                <ul class="list-unstyled text-small">
+                <ul class="list-unstyled text-small listfooters">
                     <li class="text-muted">
                     Jln. H.M Saleh No 2 KM 7, Palembang - Jambi
                     </li>
@@ -19,18 +19,24 @@
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <h5>Layanan</h5>
                 <ul class="list-unstyled text-small listfooters">
-                    <li><a class="text-muted" href="#">IGD</a></li>
-                    <li><a class="text-muted" href="#">Radiologi</a></li>
-                    <li><a class="text-muted" href="#">Laboratorium</a></li>
-                    <li><a class="text-muted" href="#">Poliklinik</a></li>
+                    <li><a class="text-muted" href="https://rsarrasyid.id/layanan/list/igd-instalasi-gawat-darurat">IGD</a></li>
+                    <li><a class="text-muted" href="https://rsarrasyid.id/layanan/list/medical-check-up">Medical Checkup</a></li>
+                    <li><a class="text-muted" href="https://rsarrasyid.id/layanan/list/rawat-jalan">Rawat Jalan</a></li>
+                    <li><a class="text-muted" href="https://rsarrasyid.id/layanan/list/rawat-inap">Rawat Inap</a></li>
+                    <li><a class="text-muted" href="https://rsarrasyid.id/layanan/list/layanan-farmasi">Layanan Farmasi</a></li>
+                    <li><a class="text-muted" href="https://rsarrasyid.id/layanan/list/rawat-inap">Rawat Inap</a></li>
+                    <li><a class="text-muted" href="https://rsarrasyid.id/layanan/list/pelayanan-gizi">Pelayanan Gizi</a></li>
+                    <li><a class="text-muted" href="https://rsarrasyid.id/layanan/list/layanan-penunjang-medis">Layanan Penunjang Medis</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <h5>Informasi</h5>
                 <ul class="list-unstyled text-small listfooters">
-                    <li><a class="text-muted" href="#">Pengunjung</a></li>
-                    <li><a class="text-muted" href="#">H & K Pasien</a></li>
-                    <li><a class="text-muted" href="#">PMKP</a></li>
+                    <li><a class="text-muted" href="https://rsarrasyid.id/jadwaldokter">Jadwal Dokter</a></li>
+                    <li><a class="text-muted" href="https://rsarrasyid.id/daftarpasien">Pendaftaran Pasien</a></li>
+                    <li><a class="text-muted" href="https://rsarrasyid.id/artikel">Galeri</a></li>
+                    <li><a class="text-muted" href="https://rsarrasyid.id/karir">Karir</a></li>
+                    <li><a class="text-muted" href="https://rsarrasyid.id/artikel">Artikel</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">

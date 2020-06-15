@@ -15,8 +15,8 @@ body{
 }
 
 .section_footer{
-    padding-top:100px;
-    padding-bottom:100px;
+    padding-top:80px;
+    padding-bottom:60px;
     background:#fafafa;
     border-top:1px solid #f1f1f1;
     border-bottom:1px solid #f1f1f1;
@@ -405,9 +405,13 @@ body{
     padding: 3px 3px 6px 8px !important;
 }
 
+.listfooters{
+    margin-top:20px;
+}
+
 .listfooters >  li {
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 #wa_navbar{
