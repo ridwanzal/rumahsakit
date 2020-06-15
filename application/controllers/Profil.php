@@ -39,10 +39,11 @@ class Profil extends CI_Controller {
         $query2="SELECT * FROM $konteks WHERE id = $id order by id DESC";
         $query_result2 = $this->db->query($query2)->result();
         $data['daftar'] = $query_result2;
+        $data['konteks'] = $konteks;
 
         $this->load->view('backview/header.php', $data);
         $this->load->view('backview/admin/navbar.php', $data);
-        $this->load->view('backview/admin/dashboard/profil_edit.php', $data);
+        $this->load->view('backview/admin/dashboard/profiledit.php', $data);
         $this->load->view('backview/footer.php', $data);
       }
       
@@ -100,15 +101,15 @@ class Profil extends CI_Controller {
             $id = $this->input->post('id', TRUE);
             $title = $this->input->post('nama', TRUE);
             $content = $this->input->post('deskripsi', TRUE);
-            $submit = $this->input->post('submit_sejarah');
+            $submit = $this->input->post('submit_profil');
             $konteks= $this->input->post('konteks', TRUE);
             //Buat slug
             $string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $title); //filter karakter unik dan replace dengan kosong ('')
             $trim=trim($string); // hilangkan spasi berlebihan dengan fungsi trim
             $pre_slug=strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
             $slug=$pre_slug; // tambahkan ektensi .html pada slug
-            $foto = $_FILES['upload_thumb'];
-            $image_path = "";
+            // $foto = $_FILES['upload_thumb'];
+            // $image_path = "";
             if($submit){
               // $config['upload_path'] = './assets/layanan/thumb/';
               // $config['allowed_types'] = 'jpg|png|gif|svg|pdf|tif';
@@ -137,7 +138,7 @@ class Profil extends CI_Controller {
               }else{
                 $this->session->set_flashdata('error', 'Gagal menambahkan konten');
               }
-              redirect(base_url("admin/".$konteks));
+              redirect(base_url("admin/profil/".$konteks));
             }
         }
     }

@@ -20,7 +20,7 @@
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="card">
                                         <?php echo form_open_multipart('profil/submit_profil'); ?>
-                                            <h5 class="card-header">Tambah Layanan Baru</h5>
+                                            <h5 class="card-header">Tambah Baru</h5>
                                             <div class="card-body">
                                                     <div class="row">
                                                             <div class="col-lg-1 col-md-1 col-xs-6">
@@ -64,7 +64,7 @@
                                                         <th>No</th>
                                                         <th>Title</th>
                                                         <th>Description</th>
-                                                        <th>Thumb</th>
+                                                        <!-- <th>Thumb</th> -->
                                                         <th>Action</th>
                                                     </tr>
                                                 </thead>
@@ -86,8 +86,8 @@
                                                                 <td><?php echo $i; ?></td>
                                                                 <td><?php echo $list->nama; ?></td>
                                                                 <td><?php echo $list->deskripsi; ?></td>
-                                                                <td><img style="height:50px;border-radius:4px;" src="<?php echo base_url()?>/assets/layanan/thumb/<?php echo $list->thumb;?>"></td>
-                                                                <td><a href="<?php echo base_url()?>admin/layanan/edit/<?php echo $list->id; ?>" class="btn btn-primary btn-xs">Edit   </a>&nbsp;<a href="<?php echo base_url()?>layanan/delete/<?php echo $list->id; ?>" class="btn btn-danger btn-xs">Delete</a></td>
+                                                                <!-- <td><img style="height:50px;border-radius:4px;" src="<?php echo base_url()?>/assets/layanan/thumb/<?php echo $list->thumb;?>"></td> -->
+                                                                <td><a href="<?php echo base_url()?>admin/profil/edit/<?php echo $list->id; ?>/<?php echo $konteks; ?>" class="btn btn-primary btn-xs">Edit   </a>&nbsp;<a href="<?php echo base_url()?>layanan/delete/<?php echo $list->id; ?>" class="btn btn-danger btn-xs">Delete</a></td>
                                                             </tr>
                                                         <?php }
                                                     ?>

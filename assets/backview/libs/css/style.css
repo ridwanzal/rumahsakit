@@ -6976,3 +6976,23 @@ Media Query
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width:320px) {}
+
+.nav-left-sidebar .navbar{
+    position: relative !important;
+    overflow-y: scroll !important;
+    height: 850px !important;
+    padding: 14px !important;
+}
+
+
+.nav-left-sidebar .navbar::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+}
+.nav-left-sidebar .navbar::-webkit-scrollbar-track {
+    background: #278c55;     /* color of the tracking area */
+}
+.nav-left-sidebar .navbar::-webkit-scrollbar-thumb {
+    background-color: #206f44;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #206f44;  /* creates padding around scroll thumb */
+}
