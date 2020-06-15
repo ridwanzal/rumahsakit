@@ -71,6 +71,7 @@ $route['pengunjung'] = 'main/pengunjung';
 $route['fasilitas/layanan'] = 'main/layanan';
 $route['fasilitas/penunjang'] = 'main/penunjang';
 $route['profil/sejarah'] = 'main/sejarah';
+$route['profil/direksi'] = 'main/direksi';
 $route['profil/visimisi'] = 'main/visimisi';
 $route['profil/rekanan'] = 'main/rekanan';
 $route['profil/prestasi'] = 'main/prestasi';
@@ -99,6 +100,8 @@ $route['admin/layanan'] = 'layanan';
 $route['admin/layanan/edit/(:any)'] = 'layanan/edit/$1';
 $route['admin/penunjang'] = 'layananpenunjang';
 $route['admin/penunjang/edit/(:any)'] = 'layananpenunjang/edit/$1';
+$route['admin/profil/(:any)'] = 'profil/page/$1';
+$route['admin/profil/edit/(:any)'] = 'profil/edit/$1';
 $route['admin/blog/edit/(:any)'] = 'blog/edit/$1';
 $route['admin/notifikasi'] = 'notifikasi';
 

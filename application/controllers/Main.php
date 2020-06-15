@@ -233,6 +233,9 @@ class Main extends CI_Controller {
   public function sejarah(){
 	$data['title_bar'] = "";
 	$data['header_page'] = "";
+	$query2="SELECT * FROM sejarah order by id DESC LIMIT 1";
+	$query_result2 = $this->db->query($query2)->result();
+	$data['daftar'] = $query_result2;
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
 	$this->load->view('frontview/page/sejarah/sejarah', $data);
@@ -242,9 +245,24 @@ class Main extends CI_Controller {
   public function visimisi(){
 	$data['title_bar'] = "";
 	$data['header_page'] = "";
+	$query2="SELECT * FROM visimisi order by id DESC LIMIT 1";
+	$query_result2 = $this->db->query($query2)->result();
+	$data['daftar'] = $query_result2;
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
 	$this->load->view('frontview/page/visimisi/visimisi', $data);
+	$this->load->view('frontview/footer', $data);
+  }
+
+  public function direksi(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$query2="SELECT * FROM direksi order by id DESC LIMIT 1";
+	$query_result2 = $this->db->query($query2)->result();
+	$data['daftar'] = $query_result2;
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/direksi/direksi', $data);
 	$this->load->view('frontview/footer', $data);
   }
 
@@ -300,6 +318,9 @@ class Main extends CI_Controller {
   public function prestasi(){
 	$data['title_bar'] = "";
 	$data['header_page'] = "";
+	$query2="SELECT * FROM prestasi order by id DESC LIMIT 1";
+	$query_result2 = $this->db->query($query2)->result();
+	$data['daftar'] = $query_result2;
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
 	$this->load->view('frontview/page/prestasi/prestasi', $data);
@@ -309,6 +330,9 @@ class Main extends CI_Controller {
   public function pmkp(){
 	$data['title_bar'] = "";
 	$data['header_page'] = "";
+	$query2="SELECT * FROM pmkp order by id DESC LIMIT 1";
+	$query_result2 = $this->db->query($query2)->result();
+	$data['daftar'] = $query_result2;
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
 	$this->load->view('frontview/page/pmkp/pmkp', $data);

@@ -30,7 +30,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="<?php echo base_url();?>profil/sejarah">Sejarah</a>
-                  <a class="dropdown-item" href="<?php echo base_url();?>profil/sejarah">Direksi</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>profil/direksi">Direksi</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>profil/visimisi">Visi Misi</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>profil/pmkp">PMKP</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>profil/rekanan">Rekanan</a>

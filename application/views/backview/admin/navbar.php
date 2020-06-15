@@ -121,6 +121,21 @@
                             <li class="nav-item ">
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin/layanan" ><i class="fa fa-fw fa-ambulance"></i>Kelola Layanan Medis<span class="badge badge-success">6</span></a>
                             </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/profil/sejarah" ><i class="fa fa-fw fa-ambulance"></i>Kelola Sejarah RS<span class="badge badge-success">6</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/profil/direksi" ><i class="fa fa-fw fa-ambulance"></i>Kelola Direksi RS<span class="badge badge-success">6</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/profil/visimisi" ><i class="fa fa-fw fa-ambulance"></i>Kelola Visi & Misi<span class="badge badge-success">6</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/direksi" ><i class="fa fa-fw fa-ambulance"></i>Kelola PMKP<span class="badge badge-success">6</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/direksi" ><i class="fa fa-fw fa-ambulance"></i>Kelola Prestasi<span class="badge badge-success">6</span></a>
+                            </li>
                             <!-- <li class="nav-item ">
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin/penunjang" ><i class="fa fa-fw fa-medkit"></i>Kelola Layanan Penunjang<span class="badge badge-success">6</span></a>
                             </li> -->
