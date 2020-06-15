@@ -121,9 +121,9 @@
                             <li class="nav-item ">
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin/layanan" ><i class="fa fa-fw fa-ambulance"></i>Kelola Layanan Medis<span class="badge badge-success">6</span></a>
                             </li>
-                            <li class="nav-item ">
+                            <!-- <li class="nav-item ">
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin/penunjang" ><i class="fa fa-fw fa-medkit"></i>Kelola Layanan Penunjang<span class="badge badge-success">6</span></a>
-                            </li>
+                            </li> -->
                             <div style="border:0.1px solid #206f44; margin-top:15px; margin-bottom:15px;">
                             </div>
                             <li class="nav-item ">
