@@ -41,7 +41,7 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <h5>Social</h5>
-                <div style="display:flex;float:left;margin-top:2px;" id="footer_rights2">
+                <div class="listfooters" style="display:flex;float:left;" id="footer_rights2">
                         <a href="https://www.facebook.com/Rumah-Sakit-Islam-Ar-rasyid-114286013618366"><img src="https://image.flaticon.com/icons/svg/145/145802.svg" style="width:40px;"></a>
                         <a href="https://instagram.com/rs_islam_arrasyid"><img src="https://image.flaticon.com/icons/svg/145/145805.svg" style="width:40px;"></a>
                         <!-- <a href="#"><img src="https://image.flaticon.com/icons/svg/145/145812.svg" style="width:40px;"></a> -->
