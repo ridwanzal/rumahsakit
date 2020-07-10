@@ -367,11 +367,13 @@ class Main extends CI_Controller {
 	$nama = $this->input->post('nama', TRUE);
 	$telepon = $this->input->post('telepon', TRUE);
 	$nik = $this->input->post('nik', TRUE);
+	$bpjs = $this->input->post('bpjs', TRUE);
 		
 	$data = array(
 		'nik' => $nik,
 		'nama' => $nama,
 		'no_telepon' => $telepon,
+		'bpjs' => $bpjs
 	);
 
 	$data2= array(

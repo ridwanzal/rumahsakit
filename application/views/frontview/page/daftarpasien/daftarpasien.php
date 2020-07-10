@@ -42,6 +42,10 @@
                             <input name="telepon" type="number" class="form-control" id="exampleInputPassword1" placeholder="Masukkan no.telepon anda" required>
                         </div>
                         <div class="form-group">
+                            <label for="exampleInputPassword1">No. Kartu BPJS * </label>
+                            <input name="bpjs" type="number" class="form-control" id="exampleInputPassword1" placeholder="Masukkan no.kartu BPJS anda" required>
+                        </div>
+                        <div class="form-group">
                             <input type="submit" class="btn btn-success btn-sm" value="Submit">
                         </div>
                     </div>
