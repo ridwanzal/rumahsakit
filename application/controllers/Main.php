@@ -14,7 +14,8 @@ class Main extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->load->helper('form');
 		$this->load->library('form_validation');
-        date_default_timezone_set('Asia/Jakarta'); // default time zone indonesia
+		date_default_timezone_set('Asia/Jakarta'); // default time zone indonesia
+		
 	}
 	
 	public function index()
@@ -227,6 +228,15 @@ class Main extends CI_Controller {
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
 	$this->load->view('frontview/page/daftarpasien/daftarpasien', $data);
+	$this->load->view('frontview/footer', $data);
+ }
+ 
+ public function hakkewajiban(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/hakkewajiban/hakkewajiban', $data);
 	$this->load->view('frontview/footer', $data);
  }
 

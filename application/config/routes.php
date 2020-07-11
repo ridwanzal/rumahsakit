@@ -65,6 +65,7 @@ $route['kontak'] = 'main/contact';
 $route['galeri'] = 'main/galeri';
 $route['jadwaldokter'] = 'main/jadwaldokter';
 $route['daftarpasien'] = 'main/daftarpasien';
+$route['hakkewajiban'] = 'main/hakkewajiban';
 $route['karir'] = 'main/karir';
 $route['karir/post/(:any)'] = 'main/karirdetail/$1';
 $route['pengunjung'] = 'main/pengunjung';
