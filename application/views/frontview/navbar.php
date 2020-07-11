@@ -43,7 +43,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="<?php echo base_url();?>fasilitas/layanan">Layanan Medis</a>
-                  <!-- <a class="dropdown-item" href="<?php echo base_url();?>fasilitas/penunjang">Fasilitas Penunjang</a> -->
+                  <a class="dropdown-item" href="<?php echo base_url();?>fasilitas/penunjang">Layanan Penunjang Medis</a>
                 </div>
               </li>
               <li class="nav-item">

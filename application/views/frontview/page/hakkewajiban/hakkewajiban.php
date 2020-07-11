@@ -22,7 +22,7 @@
                         Hak Pasien dan Keluarga
                     </strong>
                 </h5>
-                <ol>
+                <ol>    
                     <li>&nbsp;Memperoleh informasi mengenai tata tertib dan peraturan yang berlaku di Rumah Sakit</li>
                     <li>&nbsp;Memperoleh informasi tentang hak dan kewajiban Pasien</li>
                     <li>&nbsp;Memperoleh layanan yang manusiawi, adil, jujur, dan tanpa diskriminasi</li>
