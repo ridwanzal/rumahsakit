@@ -240,6 +240,7 @@ class Main extends CI_Controller {
 	$this->load->view('frontview/footer', $data);
  }
 
+ 
   public function sejarah(){
 	$data['title_bar'] = "";
 	$data['header_page'] = "";
