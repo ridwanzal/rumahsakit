@@ -141,7 +141,7 @@
                         image_path = "<?php echo base_url() ?>assets/blog/thumb_img/" + decode_result[i].image_path ;
                     }
                     let adapter = `
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card mb-4 box-shadow">
                                 <a href=`+result_url+`><img class="card-img-top" src=`+image_path+` alt="Card image cap" style="height:150px;background-size:cover;"></a>
                                 <div class="card-body">
@@ -187,7 +187,7 @@
                         image_path = "<?php echo base_url() ?>assets/blog/thumb_img/" + decode_result[i].image_path ;
                     }
                     let adapter = `
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="card mb-4 box-shadow">
                                 <a href=`+result_url+`><img class="card-img-top" src=`+image_path+` alt="Card image cap" style="height:150px;background-size:cover;"></a>
                                 <div class="card-body">

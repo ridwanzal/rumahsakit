@@ -42,6 +42,7 @@
                     <li>&nbsp;Menggugat dan/atau menuntut Rumah Sakit apabila Rumah Sakit diduga memberikan pelayanan yang tidak sesuai dengan standar baik secara perdata ataupun pidana; dan</li>
                     <li>&nbsp;Mengeluhkan pelayanan Rumah Sakit yang tidak sesuai dengan standar pelayanan melalui media cetak dan elektronik sesuai dengan ketentuan peraturan perundang-undangan.</li>
                 </ol>
+                <br/>
                 <h5><strong>Kewajiban Pasien dan Keluarga</strong></h5>
                 <ol>
                     <li>&nbsp;Mematuhi peraturan yang berlaku di Rumah Sakit</li>

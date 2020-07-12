@@ -47,7 +47,7 @@ function fetchblog(){
               image_path = "<?php echo base_url() ?>assets/thumb_img/" + decode_result[i].image_path ;
           }
           let adapter = `
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card mb-4 box-shadow">
                     <img class="card-img-top" src=`+image_path+` alt="Card image cap" style="height:150px;background-size:cover;">
                     <div class="card-body">
