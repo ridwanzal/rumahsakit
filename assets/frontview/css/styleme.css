@@ -15,8 +15,8 @@ body{
 }
 
 .section_footer{
-    padding-top:80px;
-    padding-bottom:60px;
+    padding-top:50px;
+    padding-bottom:30px;
     background:#fafafa;
     border-top:1px solid #f1f1f1;
     border-bottom:1px solid #f1f1f1;
@@ -147,22 +147,22 @@ body{
 }
 
 .section_two{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #278c55;
     border-bottom: 1px solid #f1f1f1;
 }
 
 .section_three{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #f9f9f9;
     border-bottom: 1px solid #f1f1f1;
 }
 
 .section_four{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background : #ffffff !important;
 }
 
@@ -438,9 +438,6 @@ body{
     color: #fff;
     position: relative;
     right: 9px;
-}
-.search_inputs{
-
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu{
