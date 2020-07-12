@@ -158,8 +158,8 @@
                     `;
                     setTimeout(function(){
                         $('#bloglist_container').append(adapter);   
-                        $('.loaderse').fadeOut(500);
-                        $('.containerblog').fadeIn(100);
+                        $('.loaderse').fadeOut(300);
+                        $('.containerblog').fadeIn(50);
                     }, 1)
                     }
             }
@@ -204,8 +204,8 @@
                     `;
                     setTimeout(function(){
                         $('#bloglist_container').append(adapter);   
-                        $('.loaderse').fadeOut(500);
-                        $('.containerblog').fadeIn(100);
+                        $('.loaderse').fadeOut(300);
+                        $('.containerblog').fadeIn(50);
                     }, 1)
                     }
             }
