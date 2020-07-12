@@ -65,7 +65,7 @@
                     <a href="<?php base_url();?>galeri">Galeri</a>
                     <a href="<?php base_url();?>karir">Karir</a>
                     <a href="<?php base_url();?>kontak">Kontak</a>
-                    <a href="<?php base_url();?>kontak">Promosi</a>
+                    <a href="<?php base_url();?>profil/rekanan">Rekanan</a>
                 </div>
             </div>
         </div>
