@@ -341,7 +341,7 @@ class Main extends CI_Controller {
   public function dokter(){
 	$data['title_bar'] = "";
 	$data['header_page'] = "";
-	$query2="SELECT * FROM prestasi order by id DESC ";
+	$query2="SELECT * FROM dokter order by id DESC ";
 	$query_result2 = $this->db->query($query2)->result();
 	$data['daftar'] = $query_result2;
 	$this->load->view('frontview/header', $data);
