@@ -62,7 +62,7 @@
                                         if($getformat[1] == 'png' || $getformat[1] == 'jpg' || $getformat[1] == 'jpeg'){
                                             ?>         
                                                 <div class="col-lg-3 col-md-4 col-xs-12 image_container" style="cursor:pointer !important;" >
-                                                    <div class="card image_galeri_container" style="cursor:pointer;">
+                                                    <div class="card image_galeri_container" style="cursor:pointer;padding:10px;">
                                                         <a  href="<?php echo base_url()?>assets/profil/thumb//<?php echo $list->thumb;?>" data-toggle="lightbox">
                                                             <img  style="cursor:pointer;" class="img-fluid" src="<?php echo base_url()?>assets/profil/thumb/<?php echo $list->thumb;?>" alt="/<?php echo $list->thumb;?>">
                                                         </a>
