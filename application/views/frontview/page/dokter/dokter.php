@@ -65,8 +65,10 @@
                                                     <div class="card image_galeri_container" style="cursor:pointer;">
                                                         <a  href="<?php echo base_url()?>assets/profil/thumb//<?php echo $list->thumb;?>" data-toggle="lightbox">
                                                             <img  style="cursor:pointer;" class="img-fluid" src="<?php echo base_url()?>assets/profil/thumb/<?php echo $list->thumb;?>" alt="/<?php echo $list->thumb;?>">
-                                                            <p class="card-text" style="font-size:13px;"><?php echo $list->nama;?></p>
                                                         </a>
+                                                        <div class="card-body">
+                                                                <p class="card-text"><?php echo $list->nama;?></p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             <?php 
