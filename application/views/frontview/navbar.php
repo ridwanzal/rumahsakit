@@ -35,6 +35,7 @@
                   <a class="dropdown-item" href="<?php echo base_url();?>profil/pmkp">PMKP</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>profil/rekanan">Rekanan</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>profil/prestasi">Prestasi</a>
+                  
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -63,6 +64,7 @@
                   <a class="dropdown-item" href="<?php echo base_url();?>jadwaldokter">Jadwal Dokter </a>
                   <a class="dropdown-item" href="<?php echo base_url();?>daftarpasien">Daftar Pasien</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>hakkewajiban">Hak dan Kewajiban Pasien</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>profil/dokter">Daftar Dokter</a>
                 </div>
               </li> 
               <li class="nav-item">
