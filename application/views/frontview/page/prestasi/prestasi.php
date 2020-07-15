@@ -49,36 +49,32 @@
                     <a class="nav-link active" id="image-tab" data-toggle="tab" href="#image" role="tab" aria-controls="image" aria-selected="true">Foto</a>
                 </li>
                 </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="image" role="tabpanel" aria-labelledby="image-tab">
-                            <div class="row">
-                                    <?php 
-                                        foreach($daftar as $list){ ?>
-                                            <!-- <div class="col-lg-3 col-md-4 col-xs-12">
-                                                <a href="#" class="d-block mb-4 h-100">
-                                                    <img class="img-fluid img-thumbnail" src="<?php echo base_url()?>/assets/galeri/<?php echo $list->thumb;?>" alt="">
-                                                </a>
-                                            </div> -->
-                                            <?php
-                                                $getformat = explode('.', $list->thumb);
-                                                if($getformat[1] == 'png' || $getformat[1] == 'jpg' || $getformat[1] == 'jpeg'){
-                                                    ?>         
-                                                        <div class="col-lg-3 col-md-4 col-xs-12 image_container" style="cursor:pointer !important;" >
-                                                            <div class="card image_galeri_container" style="cursor:pointer;">
-                                                                <a  href="<?php echo base_url()?>assets/profil/thumb//<?php echo $list->thumb;?>" data-toggle="lightbox">
-                                                                    <img  style="cursor:pointer;" class="img-fluid" src="<?php echo base_url()?>assets/profil/thumb/<?php echo $list->thumb;?>" alt="/<?php echo $list->thumb;?>">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    <?php 
-                                                }
-                                            ?>
-                                        <?php }
+                    <div class="row">
+                            <?php 
+                                foreach($daftar as $list){ ?>
+                                    <!-- <div class="col-lg-3 col-md-4 col-xs-12">
+                                        <a href="#" class="d-block mb-4 h-100">
+                                            <img class="img-fluid img-thumbnail" src="<?php echo base_url()?>/assets/galeri/<?php echo $list->thumb;?>" alt="">
+                                        </a>
+                                    </div> -->
+                                    <?php
+                                        $getformat = explode('.', $list->thumb);
+                                        if($getformat[1] == 'png' || $getformat[1] == 'jpg' || $getformat[1] == 'jpeg'){
+                                            ?>         
+                                                <div class="col-lg-3 col-md-4 col-xs-12 image_container" style="cursor:pointer !important;" >
+                                                    <div class="card image_galeri_container" style="cursor:pointer;">
+                                                        <a  href="<?php echo base_url()?>assets/profil/thumb//<?php echo $list->thumb;?>" data-toggle="lightbox">
+                                                            <img  style="cursor:pointer;" class="img-fluid" src="<?php echo base_url()?>assets/profil/thumb/<?php echo $list->thumb;?>" alt="/<?php echo $list->thumb;?>">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            <?php 
+                                        }
                                     ?>
-                            </div>
+                                <?php }
+                            ?>
                     </div>
-                </div>
-                </div>
+            </div>
         </div>
     </div>
 </section>
