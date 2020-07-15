@@ -66,6 +66,9 @@
                                                         <a  href="<?php echo base_url()?>assets/profil/thumb//<?php echo $list->thumb;?>" data-toggle="lightbox">
                                                             <img  style="cursor:pointer;" class="img-fluid" src="<?php echo base_url()?>assets/profil/thumb/<?php echo $list->thumb;?>" alt="/<?php echo $list->thumb;?>">
                                                         </a>
+                                                        <div class="card-body" style="position:absolute;bottom:10px;">
+                                                            <p class="card-text" style="font-size:13px;"><?php echo $list->caption;?></p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             <?php 
