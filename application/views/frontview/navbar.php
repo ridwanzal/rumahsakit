@@ -61,10 +61,10 @@
                     Informasi
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="<?php echo base_url();?>profil/dokter">Daftar Dokter</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>jadwaldokter">Jadwal Dokter </a>
                   <a class="dropdown-item" href="<?php echo base_url();?>daftarpasien">Daftar Pasien</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>hakkewajiban">Hak dan Kewajiban Pasien</a>
-                  <a class="dropdown-item" href="<?php echo base_url();?>profil/dokter">Daftar Dokter</a>
                 </div>
               </li> 
               <li class="nav-item">
