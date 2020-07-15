@@ -329,7 +329,7 @@ class Main extends CI_Controller {
   public function prestasi(){
 	$data['title_bar'] = "";
 	$data['header_page'] = "";
-	$query2="SELECT * FROM prestasi order by id DESC LIMIT 1";
+	$query2="SELECT * FROM prestasi order by id DESC ";
 	$query_result2 = $this->db->query($query2)->result();
 	$data['daftar'] = $query_result2;
 	$this->load->view('frontview/header', $data);
