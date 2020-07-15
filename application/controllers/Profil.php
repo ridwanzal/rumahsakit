@@ -66,7 +66,7 @@ class Profil extends CI_Controller {
               $image_path = "";
               if($submit){
                 $config['upload_path'] = './assets/profil/thumb/';
-                $config['allowed_types'] = 'jpg|png|gif|svg|pdf|tif';
+                $config['allowed_types'] = 'jpeg|jpg|png|gif|svg|pdf|tif';
                 $this->load->library('upload', $config);
                 if(!$this->upload->do_upload('upload_thumb')){
                   $image_path = "";
