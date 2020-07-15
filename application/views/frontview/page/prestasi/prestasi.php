@@ -18,6 +18,9 @@
                 <h4><?php echo $daftar[0]->nama; ?></h4>
                 <br/>
                 <p class="text_justify">
+                    <?php echo $daftar[0]->thumb; ?>
+                </p>
+                <p class="text_justify">
                     <?php echo $daftar[0]->deskripsi; ?>
                 </p>
                
