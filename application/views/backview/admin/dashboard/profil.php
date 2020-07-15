@@ -28,7 +28,7 @@
                                                             </div>
                                                             <div class="col-lg-11 col-md-11 col-xs-12 upload_component">
                                                             <div class="form-group">
-                                                                <label for="exampleFormControlFile1">Thumbnails</label>
+                                                                <label for="exampleFormControlFile1">Thumbnails (Max Upload 700KB)</label>
                                                                 <input type="hidden" class="form-control" id="" name="konteks" value="<?php echo $konteks; ?>">
                                                                 <input type="file" class="form-control" id="upload_thumb" name="upload_thumb">
                                                             </div>
