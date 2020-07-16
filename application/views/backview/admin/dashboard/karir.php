@@ -55,7 +55,7 @@
                                                     </div>
                                                     <div class="form-group" id="link_googleform" style="display:none;">
                                                         <label for="inputText3" class="col-form-label">Link Information</label>
-                                                        <input name="link" type="text" class="form-control">
+                                                        <input name="link" type="text" class="form-control" id="link_to_google_forms">
                                                     </div>  
                                                     <input type="submit" value="Post" class="btn btn-sm btn-success" name="submit_blog" id="submit blog"/> 
                                                     
@@ -226,7 +226,7 @@
                 let data = $('#lamar_mekanisme').val();
                 if(data == "google"){
                     $('#link_googleform').show();
-                    $('#link_googleform').val('https://forms.gle/MGU9FehkZz2HpdnM7');
+                    $('#link_to_google_forms').val('https://forms.gle/MGU9FehkZz2HpdnM7');
                 }else{
                     $('#link_googleform').hide();
                 }
