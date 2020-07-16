@@ -226,6 +226,7 @@
                 let data = $('#lamar_mekanisme').val();
                 if(data == "google"){
                     $('#link_googleform').show();
+                    $('#link_googleform').val('https://forms.gle/MGU9FehkZz2HpdnM7');
                 }else{
                     $('#link_googleform').hide();
                 }
