@@ -447,6 +447,6 @@ body{
     left: 0px;
 } */
 
-.easyimage-full {
+.easyimage-full > img{
     width : 100% !important;
 }
