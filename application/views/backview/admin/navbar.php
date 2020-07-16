@@ -125,6 +125,9 @@
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin/penunjang" ><i class="fa fa-fw fa-medkit"></i>Kelola Layanan Penunjang<span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/pendukung" ><i class="fa fa-fw fa-medkit"></i>Kelola Layanan Pendukung<span class="badge badge-success">6</span></a>
+                            </li>
+                            <li class="nav-item ">
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin/profil/sejarah" ><i class="fa fa-fw fa-ambulance"></i>Kelola Sejarah RS<span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
