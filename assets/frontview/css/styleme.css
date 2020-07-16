@@ -412,7 +412,6 @@ body{
     padding-top: 4px;
     padding-bottom: 4px;
 }
-
 #wa_navbar{
     background:#03a84e;
     border-radius:4px;
@@ -448,6 +447,6 @@ body{
     left: 0px;
 } */
 
-.easyimage > .easyimage-full {
+.easyimage-full {
     width : 100% !important;
 }
