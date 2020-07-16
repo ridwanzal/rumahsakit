@@ -240,10 +240,11 @@
                                         <div class="card-body">
                                             <div class="row">
                                                     <div class="col-lg-3 col-md-3 col-xs-3 img_bar">
-                                                    <img src=`+image_path+` style="border:1px solid #bbb; position:relative;top:0px;width:100px;height:100px;background-size:cover;margin-bottom:0px;border-radius:5px;">
+                                                    <img src=`+image_path+` style="border:1px solid #bbb; position:relative;top:5px;width:65px;height:65px;background-size:cover;margin-bottom:0px;border-radius:50px;">
                                                     </div>
                                                     <div class="col-lg-9 col-md-9 col-xs-12">
                                                         <h6>`+decode_result[i].nama+`</h6>
+                                                        <p class="card-text">`+limitstr(decode_result[i].deskripsi)+`</p>
                                                     </div>
                                             </div>
                                         </div>
