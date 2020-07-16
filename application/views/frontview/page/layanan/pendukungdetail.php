@@ -18,7 +18,7 @@
 <section class="section_four_two">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-xs-12">
+            <div class="col-lg-8 col-md-8 col-xs-12">
                 <?php 
                     foreach ($layanandetail->result() as $row){ ?>
                         <h2 style="font-family: 'Roboto Slab', serif; "><?php echo $row->nama; ?></h2>
