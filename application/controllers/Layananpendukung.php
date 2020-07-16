@@ -87,7 +87,7 @@ class Layananpendukung extends CI_Controller {
                 }else{
                   $this->session->set_flashdata('error', 'Gagal menambahkan konten');
                 }
-                redirect(base_url("admin/pedukung"));
+                redirect(base_url("admin/pendukung"));
               }
           }
       }
