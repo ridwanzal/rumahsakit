@@ -21,7 +21,7 @@
             <div class="col-lg-8 col-md-8 col-xs-12">
                 <?php 
                     foreach ($datapost->result() as $row){ ?>
-                        <h2 style="font-family: 'Roboto Slab', serif; "><?php echo $row->title; ?></h2>
+                        <h2 style=""><?php echo $row->title; ?></h2>
                         <br/>
                         <?php
                             if($row->image_path == '' || $row->image_path == NULL){ ?>
