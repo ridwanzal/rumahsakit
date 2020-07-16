@@ -6980,7 +6980,7 @@ Media Query
 .nav-left-sidebar .navbar{
     position: relative !important;
     overflow-y: scroll !important;
-    height: 950px !important;
+    height: auto !important;
     padding: 14px !important;
 }
 
