@@ -106,7 +106,7 @@ class Layananpendukung extends CI_Controller {
             $pre_slug=strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
             $slug=$pre_slug; // tambahkan ektensi .html pada slug
             $foto = $_FILES['upload_thumb'];
-            $image_path = "";s
+            $image_path = "";
             if($submit){
               // $config['upload_path'] = './assets/layanan/thumb/';
               // $config['allowed_types'] = 'jpg|png|gif|svg|pdf|tif';
