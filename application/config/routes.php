@@ -82,6 +82,7 @@ $route['artikel'] = 'main/artikel';
 $route['artikel/(:any)'] = 'blog/blog_content_detail/$1'; 
 $route['layanan/list/(:any)'] = 'layanan/layanan_detail/$1'; 
 $route['layanan_penunjang/list/(:any)'] = 'layananpenunjang/layanan_detail/$1'; 
+$route['layanan_pendukung/list/(:any)'] = 'layananpendukung/layanan_detail/$1'; 
 
 // route pelanggan
 $route['pelanggan'] = 'pelanggan';
@@ -102,6 +103,8 @@ $route['admin/layanan'] = 'layanan';
 $route['admin/layanan/edit/(:any)'] = 'layanan/edit/$1';
 $route['admin/penunjang'] = 'layananpenunjang';
 $route['admin/penunjang/edit/(:any)'] = 'layananpenunjang/edit/$1';
+$route['admin/pendukung'] = 'layananpendukung';
+$route['admin/pendukung/edit/(:any)'] = 'layananpendukung/edit/$1';
 $route['admin/profil/(:any)'] = 'profil/page/$1';
 $route['admin/profil/add/submit_profil'] = 'profil/submit_profil';
 $route['admin/profil/edit/(:any)/(:any)'] = 'profil/edit/$1/$2';
