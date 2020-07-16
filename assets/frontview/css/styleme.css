@@ -132,8 +132,8 @@ body{
 
 .breadcrumbs_custom{
     background : #e9ecef;
-    padding-top: 14px;
-    padding-bottom: 7px;
+    padding-top: 6px;
+    padding-bottom: 1px;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
