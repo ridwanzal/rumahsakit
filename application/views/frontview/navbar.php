@@ -45,6 +45,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="<?php echo base_url();?>fasilitas/layanan">Layanan Medis</a>
                   <a class="dropdown-item" href="<?php echo base_url();?>fasilitas/penunjang">Layanan Penunjang Medis</a>
+                  <a class="dropdown-item" href="<?php echo base_url();?>fasilitas/pendukung">Layanan Pendukung Lainnya</a>
                 </div>
               </li>
               <li class="nav-item">

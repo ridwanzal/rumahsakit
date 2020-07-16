@@ -71,6 +71,7 @@ $route['karir/post/(:any)'] = 'main/karirdetail/$1';
 $route['pengunjung'] = 'main/pengunjung';
 $route['fasilitas/layanan'] = 'main/layanan';
 $route['fasilitas/penunjang'] = 'main/penunjang';
+$route['fasilitas/pendukung'] = 'main/pendukung';
 $route['profil/sejarah'] = 'main/sejarah';
 $route['profil/direksi'] = 'main/direksi';
 $route['profil/visimisi'] = 'main/visimisi';
