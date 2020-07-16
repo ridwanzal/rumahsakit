@@ -447,3 +447,7 @@ body{
     position: relative;
     left: 0px;
 } */
+
+.easyimage > .easyimage-full {
+    width : 100%;
+}
