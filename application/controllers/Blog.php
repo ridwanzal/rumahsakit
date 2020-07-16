@@ -50,7 +50,7 @@ class Blog extends CI_Controller {
               $image_path = "";
               if($submit && !$foto == ''){
                 $config['upload_path'] = './assets/blog/thumb_img/';
-                $config['allowed_types'] = 'jpg|png|gif';
+                $config['allowed_types'] = 'jpeg|svg|jpg|png|gif';
                 $this->load->library('upload', $config);
                 if(!$this->upload->do_upload('upload_thumb')){
                   echo 'Gagal upload';

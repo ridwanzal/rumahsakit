@@ -64,7 +64,7 @@ class Layananpendukung extends CI_Controller {
               $image_path = "";
               if($submit && !$foto == ''){
                 $config['upload_path'] = './assets/layananpendukung/thumb/';
-                $config['allowed_types'] = 'jpg|png|gif|svg|pdf|tif';
+                $config['allowed_types'] = 'jpeg|jpeg|jpg|png|gif|svg|pdf|tif';
                 $this->load->library('upload', $config);
                 if(!$this->upload->do_upload('upload_thumb')){
                   echo 'Gagal upload';
