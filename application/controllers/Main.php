@@ -189,6 +189,15 @@ class Main extends CI_Controller {
 	$this->load->view('frontview/footer', $data);
  }
 
+ public function pendukung(){
+	$data['title_bar'] = "";
+	$data['header_page'] = "";
+	$this->load->view('frontview/header', $data);
+	$this->load->view('frontview/navbar', $data);
+	$this->load->view('frontview/page/layanan/pendukung', $data);
+	$this->load->view('frontview/footer', $data);
+ }
+
  public function galeri(){
 	$data['title_bar'] = "";
 	$data['header_page'] = "";
