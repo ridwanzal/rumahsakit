@@ -3,7 +3,7 @@
         <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="<?php echo base_url();?>">Home</a></li>
-            <li class="breadcrumb-item active"><a href="<?php echo base_url();?>fasilitas/layanan">Layanan Penunjang</a></li>
+            <li class="breadcrumb-item active"><a href="<?php echo base_url();?>fasilitas/penunjang">Layanan Penunjang</a></li>
             <?php 
                 foreach ($layanandetail->result() as $row){ ?>
                     <li class="breadcrumb-item active" aria-current="page"><?php echo $row->nama; ?></li>
@@ -25,9 +25,9 @@
                         <br/>
                         <?php
                             if($row->thumb == '' || $row->thumb == NULL){ ?>
-                                <img src="<?php echo base_url()?>assets/layanan/thumb.png" style="width:inherit;margin-bottom:0px;border-radius:10px;">
+                                <img src="<?php echo base_url()?>assets/penunjang/thumb.png" style="width:inherit;margin-bottom:0px;border-radius:10px;">
                                 <?php }else{ ?>
-                                    <img src="<?php echo base_url()?>assets/layanan/thumb/<?php echo $row->thumb;?>" style="width:200px;margin-bottom:0px;border-radius:10px;">
+                                    <img src="<?php echo base_url()?>assets/penunjang/thumb/<?php echo $row->thumb;?>" style="width:200px;margin-bottom:0px;border-radius:10px;">
                                     <?php }
                         ?>
                         <div class="content" style="margin-top:30px;">
