@@ -35,7 +35,9 @@
                                                 <tr>
                                                     <th>No</th>
                                                     <th>Nama</th>
+                                                    <th>NIK</th>
                                                     <th>Kontak</th>
+                                                    <th>BPJS</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
@@ -55,8 +57,10 @@
                                                             ?>
                                                         <tr>
                                                             <td><?php echo $i; ?></td>
+                                                            <td><?php echo $list->nik; ?></td>
                                                             <td><?php echo $list->nama; ?></td>
                                                             <td><?php echo $list->no_telepon; ?></td>
+                                                            <td><?php echo $list->bpjs; ?></td>
                                                             <td><a href="<?php echo base_url()?>pasien/delete/<?php echo $list->id; ?>" class="btn btn-danger btn-xs">Delete</a></td>
                                                         </tr>
                                                     <?php }
