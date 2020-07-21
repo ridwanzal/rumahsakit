@@ -21,7 +21,7 @@
             <div class="col-lg-8 col-md-8 col-xs-12">
                 <?php 
                     foreach ($layanandetail->result() as $row){ ?>
-                        <h2 style="font-family: 'Roboto Slab', serif; "><?php echo $row->nama; ?></h2>
+                        <h2 style="font-weight:bold;"><?php echo $row->nama; ?></h2>
                         <br/>
                         <?php
                             if($row->thumb == '' || $row->thumb == NULL){ ?>
