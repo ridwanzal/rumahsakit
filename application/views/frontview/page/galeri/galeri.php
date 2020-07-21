@@ -78,16 +78,23 @@
                     </div>
                     <div class="tab-pane fade" id="youtube" role="tabpanel" aria-labelledby="youtube-tab">
                         <div class="row">
-                                <?php 
+                                
+                                    <?php 
+                                    function convertYoutube($string) {
+                                        return preg_replace(
+                                            "/\s*[a-zA-Z\/\/:\.]*youtu(be.com\/watch\?v=|.be\/)([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i",
+                                            "<iframe style='width:100%;border:1px solid #fff;' src=\"//www.youtube.com/embed/$2\" allowfullscreen></iframe>",
+                                            $string
+                                        );
+                                    }
+
                                     foreach($galeri_video as $list){ ?>
-                                        <!-- <div class="col-lg-6 col-md-6 col-xs-12">
-                                            <a href="#" class="d-block mb-4 h-100">
-                                                <img class="img-fluid img-thumbnail" src="<?php echo base_url()?>/assets/galeri/<?php echo $list->image_name;?>" alt="">
-                                            </a>
-                                        </div> -->
                                         <div class="col-lg-6 col-md-6 col-xs-12">
-                                            <iframe style="width:100%;height:350px;" src="<?php echo $list->link;?>">
-                                            </iframe>
+                                            <!-- <iframe style="width:100%;" src="<?php echo $list->link;?>">
+                                            </iframe> -->
+                                            <?php
+                                                echo convertYoutube($list->link);
+                                            ?>
                                         </div>
                                     <?php }
                                 ?>
