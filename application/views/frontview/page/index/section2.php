@@ -34,7 +34,7 @@
                                 </div>
                                 <div class="col-lg-10 col-md-10">
                                     <h4>Tenaga Medis Berpengalaman</h4>
-                                    <p class="card-text">Rumah Sakit AR-Rasyid mengerti akan pentingnya peran dari tenaga medis, oleh karena itu kami pun melakukan perekrutan tenaga medis yang handal, berpegalaman dan berdedikasi.</p>
+                                    <p class="card-text">Kami mengerti akan pentingnya peran dari tenaga medis, oleh karena itu kami pun melakukan perekrutan tenaga medis yang handal, berpegalaman dan berdedikasi.</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>

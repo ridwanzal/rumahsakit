@@ -259,7 +259,7 @@
     }
 
     function limitstr(str){
-        result = str.substr(3, 110).concat('...'); 
+        result = str.substr(3, 90).concat('...'); 
         return result;
     }
 
