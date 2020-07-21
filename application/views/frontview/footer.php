@@ -243,7 +243,7 @@
                                                     <img src=`+image_path+` style="border:1px solid #bbb; position:relative;top:5px;width:65px;height:65px;background-size:cover;margin-bottom:0px;border-radius:50px;">
                                                     </div>
                                                     <div class="col-lg-8 col-md-8 col-xs-8">
-                                                        <h6>`+decode_result[i].nama+`</h6>
+                                                        <h6 style="font-weight:bold">`+decode_result[i].nama+`</h6>
                                                         <p class="card-text">`+limitstr(decode_result[i].deskripsi)+`</p>
                                                     </div>
                                             </div>
@@ -291,7 +291,7 @@
                                                     <img src=`+image_path+` style="border:1px solid #bbb; position:relative;top:0px;width:100px;height:100px;background-size:cover;margin-bottom:0px;border-radius:5px;">
                                                     </div>
                                                     <div class="col-lg-8 col-md-8 col-xs-8">
-                                                        <h6>`+decode_result[i].nama+`</h6>
+                                                        <h6 style="font-weight:bold">`+decode_result[i].nama+`</h6>
                                                     </div>
                                             </div>
                                         </div>
@@ -333,7 +333,7 @@
                                                     <img src=`+image_path+` style="border:1px solid #bbb; position:relative;top:0px;width:100px;height:100px;background-size:cover;margin-bottom:0px;border-radius:5px;">
                                                     </div>
                                                     <div class="col-lg-8 col-md-8 col-xs-4">
-                                                        <h6>`+decode_result[i].nama+`</h6>
+                                                        <h6 style="font-weight:bold">`+decode_result[i].nama+`</h6>
                                                     </div>
                                             </div>
                                         </div>
