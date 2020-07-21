@@ -111,9 +111,12 @@
                       extend: 'pdfHtml5',
                       title : 'Rumah Sakit Islam Ar-Rasyid',
                       filename : 'Daftar Pasien',
-                      orientation: 'portrait',
+                      orientation: 'landscape',
                       autowidth: 'true',
                       pageSize : 'A4',
+                      exportOptions: {
+                        columns: [0,1,2,3,4]
+                      },
                       styles: {overflow: 'linebreak', columnWidth: 'wrap'},
                       customize: function ( doc ) {
                           // Splice the image in after the header, but before the tabl
