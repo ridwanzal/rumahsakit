@@ -12,6 +12,9 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto navbar-right-top">
                         <li class="nav-item dropdown notification">
+                            <a class="nav-link active btn-primary" href="<?php echo base_url(); ?>" target="_blank"><i class="fa fa-fw fa-angle-right"></i>&nbsp;Go to Main Page<span class="badge badge-success"></span></a>
+                        </li>
+                        <li class="nav-item dropdown notification">
                             <a class="nav-link nav-icons" href="<?php echo base_url()?>admin/notifikasi" id="navbarDropdownMenuLink1"><i class="fas fa-fw fa-bell"></i> Notifikasi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="indicator"></span></a>
                             <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
                                 <li>
@@ -86,9 +89,6 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav flex-column">
-                             <li class="nav-item active" style="margin-top:10px;">
-                                <a class="nav-link active" href="<?php echo base_url(); ?>" target="_blank"><i class="fa fa-fw fa-comments"></i>Go to Main Page<span class="badge badge-success"></span></a>
-                            </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin" ><i class="fa fa-fw fa-comments"></i>Kelola Blog <span class="badge badge-success">6</span></a>
                             </li>
