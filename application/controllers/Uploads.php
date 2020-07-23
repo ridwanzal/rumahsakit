@@ -21,11 +21,12 @@ class Uploads extends CI_Controller {
         // echo $pathname;
         // echo $tables;
 		$config['upload_path']          = './assets/' .$pathname. '/';
-		$config['allowed_types']        = 'gif|jpg|png|jpeg';
+		$config['allowed_types']        = 'jpeg|tif|svg|gif|jpg|png|tif';
 		$config['max_size']             = 100000;
 		$config['max_width']            = 8000;
 		$config['max_height']           = 100000;
-		$config['encrypt_name'] 		= false;
+		$config['encrypt_name'] 		= FALSE;
+		$config['overwrite'] 		= FALSE;
 		$this->load->library('upload',$config);
 		$jumlah_berkas = count($_FILES['berkas']['name']);
 		for($i = 0; $i < $jumlah_berkas; $i++){
@@ -195,6 +196,56 @@ class Uploads extends CI_Controller {
 				redirect(base_url('admin/rekanan'));
 			break;
  		}
+	}
+
+	public function update($id, $pathname, $tables, $context){
+		$caption = $this->input->post('caption', TRUE);
+		$link = $this->input->post('link', TRUE);
+		if($pathname == 'layanan'){
+			$pathname = 'layanan/thumb';
+		}else if($pathname == 'penunjang'){
+			$pathname = 'layananpenunjang/thumb';
+		}else if($pathname == 'pendukung'){
+			$pathname = 'layananpendukung/thumb';
+		}
+		$config['upload_path']          = './assets/' .$pathname. '/';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg';
+		$config['max_size']             = 1000000;
+		$config['max_width']            = 8000;
+		$config['max_height']           = 1000000;
+		$image_file = "";
+		$this->load->library('upload',$config);
+		$foto = $_FILES['berkas'];
+		IF($foto != ''){
+			if(!$this->upload->do_upload('berkas')){
+				echo 'Gagal upload';
+			}else{
+				$image_file = $this->upload->data('file_name');
+			}
+	
+			$data = array(
+				'thumb' => $image_file,
+			);
+
+			$this->db->where('id', $id);
+			$this->db->update($tables, $data);
+			switch($context){
+				case  'layanan' :
+					redirect(base_url('admin/layanan'));
+				break;
+				case  'penunjang' :
+					redirect(base_url('admin/penunjang'));
+				break;
+				case  'pendukung' :
+					redirect(base_url('admin/pendukung'));
+				break;
+				default : 
+					redirect(base_url('admin'));
+				break;
+			 }
+		}else{
+			echo 'empty broh';
+		}
 	}
 	
 }
