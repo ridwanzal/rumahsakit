@@ -26,7 +26,7 @@
                                             <div class="card-body">
                                                     <div class="row">
                                                             <div class="col-lg-1 col-md-1 col-xs-6">
-                                                                <img style="object-fit:cover;border-radius:10px;position:relative;top:6px;margin-bottom:10px;" width="50" height="50" id="img_thumb" src="<?php echo base_url() ?>assets/layanan/thumb/<?php echo $daftar_layanan[0]->thumb;?>">
+                                                                <img style="object-fit:cover;border-radius:10px;position:relative;top:6px;margin-bottom:10px;" width="50" height="50" id="img_thumb" src="<?php echo base_url() ?>assets/layanan/thumb/<?php echo $daftar_layanan_pendukung[0]->thumb;?>">
                                                                 <img style="object-fit:cover;border-radius:10px;position:relative;top:6px;margin-bottom:10px;display:none;" width="50" height="50" id="img_thumb_edit" src="<?php echo base_url() ?>assets/backview/images/image_default.png">
                                                             </div>
                                                             <br/>
@@ -34,7 +34,7 @@
                                                                 <div class="form-group" >
                                                                     <div>
                                                                         <p>Ganti Logo &nbsp;<input type="checkbox" id="check_images"></p>
-                                                                        <?php echo form_open_multipart('uploads/update/'.$daftar_layanan[0]->id.'/pendukung/layanan_pendukung/pendukung'); ?>
+                                                                        <?php echo form_open_multipart('uploads/update/'.$daftar_layanan_pendukung[0]->id.'/pendukung/layanan_pendukung/pendukung'); ?>
                                                                             <div id="form_upload_edit" style="display:none;">
                                                                                 <input type="file" placeholder="Pilih Gambar" id="upload_thumb_edit" name="berkas" required>&nbsp;
                                                                                 <input type="submit" class="btn btn-success btn-xs"   name="upload_thumb_edit" value="Ganti Thumb">
