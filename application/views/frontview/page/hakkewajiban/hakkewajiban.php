@@ -130,7 +130,6 @@
                             <p class="text_justify">
                                 <?php echo $daftar[0]->deskripsi; ?>
                             </p>
-                        
                         </div>
                     </div>
                 </div>
