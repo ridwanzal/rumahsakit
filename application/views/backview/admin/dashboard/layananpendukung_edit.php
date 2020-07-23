@@ -26,7 +26,7 @@
                                             <div class="card-body">
                                                     <div class="row">
                                                             <div class="col-lg-1 col-md-1 col-xs-6">
-                                                                <img style="object-fit:cover;border-radius:10px;position:relative;top:6px;margin-bottom:10px;" width="50" height="50" id="img_thumb" src="<?php echo base_url() ?>assets/layanan_pendukung/thumb/<?php echo $daftar_layanan_pendukung[0]->thumb;?>">
+                                                                <img style="object-fit:cover;border-radius:10px;position:relative;top:6px;margin-bottom:10px;" width="50" height="50" id="img_thumb" src="<?php echo base_url() ?>assets/layananpendukung/thumb/<?php echo $daftar_layanan_pendukung[0]->thumb;?>">
                                                                 <img style="object-fit:cover;border-radius:10px;position:relative;top:6px;margin-bottom:10px;display:none;" width="50" height="50" id="img_thumb_edit" src="<?php echo base_url() ?>assets/backview/images/image_default.png">
                                                             </div>
                                                             <br/>
