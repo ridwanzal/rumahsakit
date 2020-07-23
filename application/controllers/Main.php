@@ -243,6 +243,9 @@ class Main extends CI_Controller {
  public function hakkewajiban(){
 	$data['title_bar'] = "";
 	$data['header_page'] = "";
+	$query2="SELECT * FROM hakkewajiban order by id DESC LIMIT 1";
+	$query_result2 = $this->db->query($query2)->result();
+	$data['daftar'] = $query_result2;
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
 	$this->load->view('frontview/page/hakkewajiban/hakkewajiban', $data);
