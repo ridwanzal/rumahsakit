@@ -57,17 +57,23 @@
 </section>
 <br/>
 <br/>
-<section class="section_four_two">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-xs-12">
-                <h4><?php echo $daftar[0]->nama; ?></h4>
-                <br/>
-                <p class="text_justify">
-                    <?php echo $daftar[0]->deskripsi; ?>
-                </p>
-               
-            </div>
-        </div>
-    </div>
-</section>
+<?php
+    if(sizeof($daftar) > 0){
+        ?>
+            <section class="section_four_two">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-xs-12">
+                            <h4><?php echo $daftar[0]->nama; ?></h4>
+                            <br/>
+                            <p class="text_justify">
+                                <?php echo $daftar[0]->deskripsi; ?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <?php
+    }
+
+?>
