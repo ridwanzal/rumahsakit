@@ -67,7 +67,8 @@
                                                             <img  style="cursor:pointer;" class="img-fluid" src="<?php echo base_url()?>assets/profil/thumb/<?php echo $list->thumb;?>" alt="/<?php echo $list->thumb;?>">
                                                         </a>
                                                         <div class="card-body">
-                                                                <p class="card-text"><?php echo $list->nama;?></p>
+                                                                <p class="card-text" style="font-weight:bold;"><?php echo $list->nama;?></p>
+                                                                <p class="card-text"><?php echo $list->deskripsi;?></p>
                                                         </div>
                                                     </div>
                                                 </div>
