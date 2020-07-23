@@ -89,11 +89,6 @@
                              <li class="nav-item active" style="margin-top:10px;">
                                 <a class="nav-link active" href="<?php echo base_url(); ?>" target="_blank"><i class="fa fa-fw fa-comments"></i>Go to Main Page<span class="badge badge-success"></span></a>
                             </li>
-                            <div style="border:0.1px solid #206f44; margin-top:15px; margin-bottom:15px;">
-                            </div>
-                            <li class="nav-divider">
-                                LAMAN ADMIN 
-                            </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="<?php echo base_url(); ?>admin" ><i class="fa fa-fw fa-comments"></i>Kelola Blog <span class="badge badge-success">6</span></a>
                             </li>
