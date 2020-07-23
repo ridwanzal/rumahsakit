@@ -78,6 +78,7 @@ $route['profil/visimisi'] = 'main/visimisi';
 $route['profil/rekanan'] = 'main/rekanan';
 $route['profil/prestasi'] = 'main/prestasi';
 $route['profil/pmkp'] = 'main/pmkp';
+$route['profil/hakdankewajiban'] = 'main/hakdankewajiban';
 $route['profil/dokter'] = 'main/dokter';
 $route['artikel'] = 'main/artikel';
 $route['artikel/(:any)'] = 'blog/blog_content_detail/$1'; 
