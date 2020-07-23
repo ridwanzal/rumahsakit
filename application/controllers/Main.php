@@ -367,7 +367,7 @@ class Main extends CI_Controller {
 	$data['daftar'] = $query_result2;
 	$this->load->view('frontview/header', $data);
 	$this->load->view('frontview/navbar', $data);
-	$this->load->view('frontview/page/pmkp/pmkp', $data);
+	$this->load->view('frontview/page/profil/pmkp', $data);
 	$this->load->view('frontview/footer', $data);
   }
 
