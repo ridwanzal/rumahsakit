@@ -183,9 +183,10 @@
                       extend: 'pdfHtml5',
                       title : 'Rumah Sakit Islam Ar-Rasyid',
                       filename : 'Daftar Kontak',
-                      orientation: 'portrait',
+                      orientation: 'landscape',
                       autowidth: 'true',
                       pageSize : 'A4',
+                      styles: {overflow: 'linebreak', columnWidth: 'wrap'},
                       customize: function ( doc ) {
                           // Splice the image in after the header, but before the tabl
                           doc.content[1].table.widths = Array(doc.content[1].table.body[0].length + 1).join('*').split(''),
