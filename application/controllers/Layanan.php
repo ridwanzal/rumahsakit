@@ -108,7 +108,7 @@ class Layanan extends CI_Controller {
             $trim=trim($string); // hilangkan spasi berlebihan dengan fungsi trim
             $pre_slug=strtolower(str_replace(" ", "-", $trim)); // hilangkan spasi, kemudian ganti spasi dengan tanda strip (-)
             $slug=$pre_slug; // tambahkan ektensi .html pada slug
-            $foto = $_FILES['upload_thumb'];
+            // $foto = $_FILES['upload_thumb'];
             $image_path = "";
             if($submit){
               // $config['upload_path'] = './assets/layanan/thumb/';

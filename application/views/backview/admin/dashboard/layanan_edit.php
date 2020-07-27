@@ -21,7 +21,6 @@
                     <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="card">
-                                            <input type="hidden" value="<?php echo $daftar_layanan[0]->id;?>" name="id">
                                             <h5 class="card-header">Tambah Layanan Baru</h5>
                                             <div class="card-body">
                                                     <div class="row">
@@ -31,20 +30,21 @@
                                                             </div>
                                                             <br/>
                                                             <div class="col-lg-11 col-md-11 col-xs-12 upload_component">
-                                                            <div class="form-group" >
-                                                                <div>
-                                                                    <p>Ganti Logo &nbsp;<input type="checkbox" id="check_images"></p>
-                                                                    <?php echo form_open_multipart('uploads/update/'.$daftar_layanan[0]->id.'/layanan/layanan/layanan'); ?>
-                                                                        <div id="form_upload_edit" style="display:none;">
-                                                                            <input type="file" placeholder="Pilih Gambar" id="upload_thumb_edit" name="berkas" required>&nbsp;
-                                                                            <input type="submit" class="btn btn-success btn-xs"   name="upload_thumb_edit" value="Ganti Thumb">
-                                                                        </div>
-                                                                    <?php echo form_close(); ?>
+                                                                <div class="form-group" >
+                                                                    <div>
+                                                                        <p>Ganti Logo &nbsp;<input type="checkbox" id="check_images"></p>
+                                                                        <?php echo form_open_multipart('uploads/update/'.$daftar_layanan[0]->id.'/layanan/layanan/layanan'); ?>
+                                                                            <div id="form_upload_edit" style="display:none;">
+                                                                                <input type="file" placeholder="Pilih Gambar" id="upload_thumb_edit" name="berkas" required>&nbsp;
+                                                                                <input type="submit" class="btn btn-success btn-xs"   name="upload_thumb_edit" value="Ganti Thumb">
+                                                                            </div>
+                                                                        <?php echo form_close(); ?>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
                                                             </div>
                                                     </div>
                                                     <?php echo form_open_multipart('layanan/edit_layanan'); ?>
+                                                    <input type="hidden" value="<?php echo $daftar_layanan[0]->id;?>" name="id">
                                                     <div class="form-group">
                                                         <label for="inputText3" class="col-form-label">Judul</label>
                                                         <input id="inputText3" name="nama" tyspe="text" class="form-control" value="<?php echo $daftar_layanan[0]->nama; ?>" required>
@@ -53,7 +53,7 @@
                                                         <label for="exampleFormControlTextarea1">Content</label>
                                                         <textarea class="form-control" id="editor" rows="3" name="deskripsi" ><?php echo $daftar_layanan[0]->deskripsi; ?></textarea>
                                                     </div>
-                                                    <input style="padding-left:20px;padding-right:20px;" type="submit" value="Tambah" class="btn btn-sm btn-success" name="submit_layanan" id="submit blog"/> 
+                                                    <input style="padding-left:20px;padding-right:20px;" type="submit" value="Ubah" class="btn btn-sm btn-success" name="submit_layanan" id="submit blog"/> 
                                                 <?php echo form_close();?>
                                             </div>
                                 </div>
