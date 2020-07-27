@@ -21,7 +21,6 @@
                     <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="card">
-                                            <input type="hidden" value="<?php echo $daftar_layanan_pendukung[0]->id;?>" name="id">
                                             <h5 class="card-header">Edit Layanan Pendukung Baru</h5>
                                             <div class="card-body">
                                                     <div class="row">
@@ -45,6 +44,7 @@
                                                             </div>
                                                     </div>
                                                 <?php echo form_open_multipart('layananpendukung/edit_layananpendukung'); ?>
+                                                    <input type="hidden" value="<?php echo $daftar_layanan_pendukung[0]->id;?>" name="id">
                                                     <div class="form-group">
                                                         <label for="inputText3" class="col-form-label">Judul</label>
                                                         <input id="inputText3" name="nama" tyspe="text" class="form-control" value="<?php echo $daftar_layanan_pendukung[0]->nama; ?>" required>
