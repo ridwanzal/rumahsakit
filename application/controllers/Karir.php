@@ -30,8 +30,12 @@ class Karir extends CI_Controller {
         $query2="SELECT * FROM banner_karir order by id DESC";
         $query_result2 = $this->db->query($query2)->result();
 
+        $query3="SELECT a.*, b.posisi as posisi FROM karir_open_pelamar a, karir_open b WHERE b.id = a.id_karir_open order by a.id DESC";
+        $query_result3 = $this->db->query($query3)->result();
+
         $data['karir_open'] = $query_result;
         $data['banner_karir'] = $query_result2;
+        $data['karir_open_pelamar'] = $query_result3;
         $this->load->view('backview/header.php', $data);
         $this->load->view('backview/admin/navbar.php', $data);
         $this->load->view('backview/admin/dashboard/karir.php', $data);
