@@ -121,6 +121,52 @@
                             <!-- ============================================================== -->
                         </div>
                         <div class="row">
+                            <!-- ============================================================== -->
+                            <!-- data table  -->
+                            <!-- ============================================================== -->
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">Daftar Pelamar</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="karir_table" class="table table-striped table-bordered second" style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>No</th>
+                                                        <th>Nama</th>
+                                                        <th>Email</th>
+                                                        <th>Posisi yang dilamar</th>
+                                                        <th>Tanggal</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <?php
+                                                            $j = 0; 
+                                                            foreach($karir_open_pelamar as $list){
+                                                                $j = $j + 1;
+                                                                ?>
+                                                            <tr>
+                                                                <td><?php echo $j; ?></td>
+                                                                <td><?php echo $list->nama; ?></td>
+                                                                <td><?php echo $list->email; ?></td>
+                                                                <td><?php echo $list->posisi; ?></td>
+                                                                <td><?php echo $list->date_created; ?></td>
+                                                            </tr>
+                                                        <?php }
+                                                    ?>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ============================================================== -->
+                            <!-- end data table  -->
+                            <!-- ============================================================== -->
+                        </div>
+                        <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="card">
 
