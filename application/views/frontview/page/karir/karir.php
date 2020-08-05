@@ -75,7 +75,7 @@
                 <h4>Berkembang bersama kami</h4>
                 <br/>
                 <p class="text_justify">
-                    Kami menawarkan pengalaman menarik dan jenjang karir untuk mengembangkan karir Anda. <b>RS AR-RASYID</b> telah menjadi Pusat Studi Banding Pelayanan BPJS lebih dari 400 Rumah Sakit di Indonesia di Era JKN dan BPJS. Dimana tempat bekerja (Lahan Ibadah) kami penuh dengan beragam pegawai yang ingin maju, semangat kerja keras, kreatif dan kemauan berkembang meng-upgrade diri dalam tiap tetes kontribusi yang di berikan. Di <b>RS AR-RASYID</b>, kami percaya bahwa setiap orang membawa talenta yang bernilai dalam memberikan pelayanan kepada setiap manusia. Jadi, apa yang Anda tunggu?
+                    Kami menawarkan pengalaman menarik dan jenjang karir untuk mengembangkan karir Anda. <b>RS AR-RASYID</b> telah menjadi Pusat Studi Banding Pelayanan BPJS lebih dari 400 Rumah Sakit di Indonesia. Dimana tempat bekerja (Lahan Ibadah) kami penuh dengan beragam pegawai yang ingin maju, semangat kerja keras, kreatif dan kemauan berkembang meng-upgrade diri dalam tiap tetes kontribusi yang di berikan. Di <b>RS AR-RASYID</b>, kami percaya bahwa setiap orang membawa talenta yang bernilai dalam memberikan pelayanan kepada setiap manusia. Jadi, apa yang Anda tunggu?
                 </p>
             </div>
         </div>
