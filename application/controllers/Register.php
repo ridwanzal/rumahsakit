@@ -31,6 +31,7 @@ class Register extends CI_Controller {
         $nama = $this->input->post('nama', TRUE);
 		$username = $this->input->post('username', TRUE);
 		$email = $this->input->post('email', TRUE);
+		$alamat = $this->input->post('alamat', TRUE);
 		$password = $this->input->post('password', TRUE);
 
 		$encrypted_password = md5($password);
@@ -40,6 +41,7 @@ class Register extends CI_Controller {
 			'nama_lengkap' => ''.$nama,
 			'role' => 'pelanggan',
 			'email' => ''.$email,
+			'alamat' => ''.$alamat,
 			'password' => $encrypted_password
 		);
 

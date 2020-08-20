@@ -21,7 +21,7 @@ class Profil extends CI_Controller {
         $data['title_bar'] = "";
         $data['header_page'] = "";
         
-        $query2="SELECT * FROM $konteks order by id DESC LIMIT 1";
+        $query2="SELECT * FROM $konteks order by id DESC";
         $query_result2 = $this->db->query($query2)->result();
         $data['daftar'] = $query_result2;
         $data['konteks'] = $konteks;
