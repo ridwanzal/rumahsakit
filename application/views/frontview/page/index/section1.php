@@ -17,7 +17,7 @@
                                 if(!isset($banner)){ ?>
                                     <div class="carousel-item active">
                                         <div class="carousel-caption">
-                                            <div class="carousel_content">
+                                            <div class="carousel_content" style="display:none;">
                                                 <h1>RS. AR-Rasyid</h1>
                                                 <p>Dengan pelayanan yang prima serta di dukung oleh tenaga medis yang berpengalaman, peralatan yang modern dan canggih.</p>
                                             </div>
@@ -31,7 +31,7 @@
                                         ?>
                                         <div class="carousel-item <?php if($i  == 1 ) echo 'active' ?>">
                                             <div class="carousel-caption">
-                                                <div class="carousel_content">
+                                                <div class="carousel_content" style="display:none;">
                                                     <h1>RS. AR-Rasyid</h1>
                                                     <p>Dengan pelayanan yang prima serta di dukung oleh tenaga medis yang berpengalaman, peralatan yang modern dan canggih.</p>
                                                 </div>
