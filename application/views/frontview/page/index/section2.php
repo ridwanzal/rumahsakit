@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-xs-12">
-                <center><h4 class="section_two_head">Kenapa harus Rumah Sakit Islam Ar Rasyid</h4></center>
+                <center><h4 class="section_two_head">Rumah Sakit Islam</h4></center>
             </div>
         </div>
         <br/>
@@ -17,7 +17,10 @@
                                 </div>
                                 <div class="col-lg-10 col-md-10">
                                     <h4>Rumah Sakit Islam</h4>
-                                    <p class="card-text">Rumah Sakit AR-Rasyid merupakan salah satu Rumah Sakit Islam yang tersebar di Indonesia. Dengan tujuan untuk memberikan pelayanan madani bagi masyarakat.</p>
+                                    <p class="card-text">Rumah Sakit Islam Ar Rasyid merupakan salah satu
+                                                        Rumah Sakit Islam diPalembang, Sumatera Selatan yang
+                                                        bertujuan memberikan pelayanan kesehatan secara islami,
+                                                        modern dan profesional.</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -34,7 +37,8 @@
                                 </div>
                                 <div class="col-lg-10 col-md-10">
                                     <h4>Tenaga Medis Berpengalaman</h4>
-                                    <p class="card-text">Kami mengerti akan pentingnya peran dari tenaga medis, oleh karena itu kami pun melakukan perekrutan tenaga medis yang handal, berpegalaman dan berdedikasi.</p>
+                                        <p class="card-text">Tenaga medis Rumah Sakit Islam Ar Rasyid tentunya memiliki akhlak islami
+                                        dan kompeten dalam bidang nya sesuai dengan standar pelayanan Rumah Sakit Islam Ar rasyid.</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -51,7 +55,9 @@
                                 </div>
                                 <div class="col-lg-10 col-md-10">
                                     <h4>Pelayanan 24 Jam</h4>
-                                    <p class="card-text">Pelayanan medis yang disediakan 24 jam, dengan harapan ini kami berdoa semoga pelayanan kesehatan Rumah Sakit AR-Rasyid menjadi yang terbaik.</p>
+                                    <p class="card-text">Pelayanan yang disediakan 24 Jam dengan harapan kami
+                                                        menjadi Rumah Sakit pilihan yang memberikan pelayanan
+                                                        yang cepat, tepat, dan akurat.</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -85,7 +91,8 @@
                                 </div>
                                 <div class="col-lg-10 col-md-10">
                                     <h4>Peralatan yang Canggih</h4>
-                                    <p class="card-text">Tidak hanya lengkap kami juga mengupayakan, menginventarisasi perangkat modern, guna memberikan pelayanan yang lebih baik.</p>
+                                    <p class="card-text">Peralatan kami lengkap, modern dan canggih untuk menunjang
+                                                         pelayanan yang optimal.</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
@@ -102,7 +109,8 @@
                                 </div>
                                 <div class="col-lg-10 col-md-10">
                                     <h4>Pelayanan yang memuaskan</h4>
-                                    <p class="card-text">Semoga RS-Arrasyid menjadi salah satu percontohan Rumah Sakit berbasis Islam di Indonesia, membawa dan memberikan pelayanannya yang terbaik.</p>
+                                    <p class="card-text">Harapan besar Rumah Sakit Islam Ar Rasyid menjadi contoh
+Rumah Sakit Islam berbasis Islam di Indonesia.</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
