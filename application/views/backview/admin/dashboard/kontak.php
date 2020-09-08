@@ -63,7 +63,6 @@
                                                             <td><?php echo $list->telepon; ?></td>
                                                             <td><?php echo $list->subject; ?></td>
                                                             <td><?php echo $list->pesan; ?></td>
-                                                            <td><?php echo $list->pesan; ?></td>
                                                             <td><a href="<?php echo base_url()?>kontak/delete/<?php echo $list->id; ?>" class="btn btn-danger btn-xs">Delete</a></td>
                                                         </tr>
                                                     <?php }
