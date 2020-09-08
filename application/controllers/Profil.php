@@ -20,8 +20,11 @@ class Profil extends CI_Controller {
       public function page($konteks){
         $data['title_bar'] = "";
         $data['header_page'] = "";
-        
-        $query2="SELECT * FROM $konteks order by id DESC";
+        if($konteks == 'direksi'){
+          $query2="SELECT * FROM $konteks order by id DESC limit 1";
+        }else{
+          $query2="SELECT * FROM $konteks order by id DESC";
+        }
         $query_result2 = $this->db->query($query2)->result();
         $data['daftar'] = $query_result2;
         $data['konteks'] = $konteks;
