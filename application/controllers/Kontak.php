@@ -72,7 +72,7 @@ class Kontak extends CI_Controller {
         }
       }
 
-      public function delete(){
+      public function delete($id){
         $login_status = $this->session->userdata('status');
         if($login_status == 'login'){
           $this->db->where('id', $id);
