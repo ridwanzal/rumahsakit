@@ -21,7 +21,7 @@ class Uploads extends CI_Controller {
         // echo $pathname;
         // echo $tables;
 		$config['upload_path']          = './assets/' .$pathname. '/';
-		$config['allowed_types']        = 'jpeg|tif|svg|gif|jpg|png|tif';
+		$config['allowed_types']        = 'jpeg|tif|svg|gif|jpg|png|tif|JPG|JPEG|PNG';
 		$config['max_size']             = 100000;
 		$config['max_width']            = 8000;
 		$config['max_height']           = 100000;
@@ -67,7 +67,7 @@ class Uploads extends CI_Controller {
 	public function single($pathname, $tables, $context){
 		$caption = $this->input->post('caption', TRUE);
 		$config['upload_path']          = './assets/' .$pathname. '/';
-		$config['allowed_types']        = 'gif|jpg|png|jpeg|mp4|webm|ogv';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg|mp4|webm|ogv|JPG|JPEG|PNG';
 		$config['max_size']             = 1000000;
 		$config['max_width']            = 8000;
 		$config['max_height']           = 1000000;
@@ -117,7 +117,7 @@ class Uploads extends CI_Controller {
 		$caption = $this->input->post('caption', TRUE);
 		$link = $this->input->post('link', TRUE);
 		$config['upload_path']          = './assets/' .$pathname. '/';
-		$config['allowed_types']        = 'gif|jpg|png|jpeg|mp4|webm|ogv';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg|mp4|webm|ogv|JPG|JPEG|PNG';
 		$config['max_size']             = 1000000;
 		$config['max_width']            = 8000;
 		$config['max_height']           = 1000000;
@@ -209,7 +209,7 @@ class Uploads extends CI_Controller {
 			$pathname = 'layananpendukung/thumb';
 		}
 		$config['upload_path']          = './assets/' .$pathname. '/';
-		$config['allowed_types']        = 'gif|jpg|png|jpeg';
+		$config['allowed_types']        = 'gif|jpg|png|jpeg|JPG|JPEG|PNG';
 		$config['max_size']             = 1000000;
 		$config['max_width']            = 8000;
 		$config['max_height']           = 1000000;
