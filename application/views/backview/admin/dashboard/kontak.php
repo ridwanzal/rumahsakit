@@ -188,10 +188,12 @@
                       orientation: 'landscape',
                       autowidth: 'true',
                       pageSize : 'A4',
-                      styles: {overflow: 'linebreak', columnWidth: 'wrap'},
+                      exportOptions: {
+                        columns: [0,1,2,3,4,5]
+                      },
                       customize: function ( doc ) {
                           // Splice the image in after the header, but before the tabl
-                          doc.content[1].table.widths = Array(doc.content[1].table.body[0].length + 1).join('*').split(''),
+                        //   doc.content[1].table.widths = Array(doc.content[1].table.body[0].length + 1).join('*').split(''),
                           doc.defaultStyle.fontSize = 10,
                           doc.styles.tableHeader.fontSize = 10,
                           doc.styles.title.fontSize = 14,
@@ -219,7 +221,7 @@
                           // ),
                           doc.content.splice(1, 0, 
                               {
-                                margin: [ 0, 0, 0, 25  ],
+                                margin: [ 0, 0, 0, 11  ],
                                 alignment: 'center',
                                 text : 'Daftar Kontak'
                               }
