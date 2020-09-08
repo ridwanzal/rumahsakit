@@ -72,4 +72,13 @@ class Kontak extends CI_Controller {
         }
       }
 
+      public function delete(){
+        $login_status = $this->session->userdata('status');
+        if($login_status == 'login'){
+          $this->db->where('id', $id);
+          $this->db->delete('contact');
+          redirect(base_url('admin/kontak'));
+        }
+      }
+
 }
