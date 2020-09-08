@@ -6,7 +6,7 @@
                 <h5>Informasi</h5>
                 <ul class="list-unstyled text-small listfooters">
                     <li class="text-muted">
-                    Jln. H.M Saleh No 2 KM 7, Palembang - Jambi
+                    Jln. H.M Saleh No 2 KM 7, Palembang
                     </li>
                     <li class="text-muted">
                      Telp : (0711) 5610503
