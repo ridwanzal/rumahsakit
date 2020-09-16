@@ -27,7 +27,7 @@
                             if($row->thumb == '' || $row->thumb == NULL){ ?>
                                 <img src="<?php echo base_url()?>assets/layananpenunjang/thumb.png" style="width:inherit;margin-bottom:0px;border-radius:10px;">
                                 <?php }else{ ?>
-                                    <img src="<?php echo base_url()?>assets/layananpenunjang/thumb/<?php echo $row->thumb;?>" style="width:200px;margin-bottom:0px;border-radius:10px;">
+                                    <img src="<?php echo base_url()?>assets/layananpenunjang/thumb/<?php echo $row->thumb;?>" style="width:100%;margin-bottom:0px;border-radius:10px;">
                                     <?php }
                         ?>
                         <div class="content" style="margin-top:30px;">
