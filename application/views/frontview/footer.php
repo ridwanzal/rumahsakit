@@ -244,7 +244,6 @@
                                                     </div>
                                                     <div class="col-lg-8 col-md-8 col-xs-8">
                                                         <h6 style="font-weight:bold;position: relative;top: 18px;">`+decode_result[i].nama+`</h6>
-                                                        <p class="card-text" style="display:none">`+limitstr(decode_result[i].deskripsi)+`</p>
                                                     </div>
                                             </div>
                                         </div>
