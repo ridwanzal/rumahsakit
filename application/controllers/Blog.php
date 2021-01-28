@@ -62,6 +62,7 @@ class Blog extends CI_Controller {
                   'title' => $title,
                   'slug' => $slug,
                   'author_id' => $author_id,
+                  'date_created' => date("Y-m-d"),
                   'image_path' => $image_path,
                   'content' => $content,
                   'category' => $category,
