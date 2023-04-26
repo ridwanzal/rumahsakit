@@ -5,13 +5,13 @@
             <h5>Informasi</h5>
             <ul class="list-unstyled text-small listfooters">
                <li class="text-muted">
-                  Jln. H.M Saleh No 2 KM 7, Palembang
+                  Jl. Raya Ujungrusi - Adiwerna Kec. Adiwerna Kab. Tegal
                </li>
                <li class="text-muted">
-                  Telp : (0711) 5610503
+                  Telp. (0283) 442278
                </li>
                <li class="text-muted">
-                  Fax : (0711) 5610503
+                  Telp. (0283) 442279
                </li>
             </ul>
          </div>
@@ -35,11 +35,11 @@
          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <h5>Informasi</h5>
             <ul class="list-unstyled text-small listfooters">
-               <li><a class="text-muted" href="https://rsarrasyid.id/jadwaldokter">Jadwal Dokter</a></li>
-               <li><a class="text-muted" href="https://rsarrasyid.id/daftarpasien">Pendaftaran Pasien</a></li>
-               <li><a class="text-muted" href="https://rsarrasyid.id/artikel">Galeri</a></li>
-               <li><a class="text-muted" href="https://rsarrasyid.id/karir">Karir</a></li>
-               <li><a class="text-muted" href="https://rsarrasyid.id/artikel">Artikel</a></li>
+               <li><a class="text-muted" href="<?= base_url();?>jadwaldokter">Jadwal Dokter</a></li>
+               <li><a class="text-muted" href="<?= base_url();?>daftarpasien">Pendaftaran Pasien</a></li>
+               <li><a class="text-muted" href="<?= base_url();?>artikel">Galeri</a></li>
+               <li><a class="text-muted" href="<?= base_url();?>karir">Karir</a></li>
+               <li><a class="text-muted" href="<?= base_url();?>artikel">Artikel</a></li>
             </ul>
          </div>
          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">

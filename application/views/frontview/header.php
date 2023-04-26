@@ -8,7 +8,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="author" content="M. Ridwan Zalbina">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Rumah Sakit AR-Rasyid</title>
+   <title>Klinik Pratama Kartika Yonif 407/PK</title>
    <link rel="icon" href="<?php echo base_url();?>/assets/frontview/img/favicon.png" sizes="16x16" type="image/png">
    <!-- Google Font -->
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,700&display=swap"
